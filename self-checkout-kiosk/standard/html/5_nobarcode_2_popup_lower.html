@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_바코드 없는 상품 구매_2_바코드 없는 상품 선택</title>
+  </head>
+  <body class="lower-screen">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <button type="button" class="button header__button" aria-label="처음으로">
+              <span class="header__icon header__icon--home" aria-hidden="true"></span>
+              <span class="header__button-text">처음으로</span>
+            </button>
+            <div class="header__actions">     
+              <div class="header__action header__action--call">
+                <span class="header__icon header__icon--call" aria-hidden="true"></span>
+                <span class="header__action-text">문의 1600-0000</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--current" aria-current="step">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">바코드 스캔</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">포인트 조회</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>4</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main">
+            <div class="sub__service--cctv">
+              <span class="cctv__text">CCTV 영역</span>
+            </div>             
+            <div class="cart" role="region" aria-label="바코드 스캔중">
+              <div class="cart__header">
+                <div>상품명</div>
+                <div style="text-align:center">수량</div>
+                <div style="text-align:center">가격</div>
+              </div>
+              <div class="cart__content">
+                <div class="cart__list">
+                  <div class="cart__items">
+                    <div class="cart-item">
+                      <div class="cart-item__name"><span class="cart-item__index">1</span>누가바</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소" disabled><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">1</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        500원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"><span class="cart-item__index">2</span>돼지바</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소" disabled><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">1</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        500원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"><span class="cart-item__index">3</span>요맘때</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소" disabled><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">1</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        600원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>
+                    </div>
+                    <div class="cart-item cart-item--active">
+                      <div class="cart-item__name"><span class="cart-item__index">4</span>메로나</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소"><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">4</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        2,000원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>                    
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"></div>
+                      <div class="cart-item__quantity">
+                      </div>
+                      <div class="cart-item__price">
+                      </div>                    
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"></div>
+                      <div class="cart-item__quantity">
+                      </div>
+                      <div class="cart-item__price">
+                      </div>                    
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"></div>
+                      <div class="cart-item__quantity">
+                      </div>
+                      <div class="cart-item__price">
+                      </div>                    
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"></div>
+                      <div class="cart-item__quantity">
+                      </div>
+                      <div class="cart-item__price">
+                      </div>                    
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"></div>
+                      <div class="cart-item__quantity">
+                      </div>
+                      <div class="cart-item__price">
+                      </div>                    
+                    </div>                    
+                    <div class="cart-item">
+                      <div class="cart-item__name"></div>
+                      <div class="cart-item__quantity">
+                      </div>
+                      <div class="cart-item__price">
+                      </div>                    
+                    </div>  
+                  </div>
+                </div>
+                <!-- Scroll -->
+                <div class="cart-scroll__wrap">
+                  <div class="cart-scroll">
+                    <button class="cart-scroll__btn" aria-label="이전 페이지" disabled>
+                      <span class="scroll-icon-up"></span>
+                    </button>
+                    <span class="cart-scroll__page"><strong>1</strong> / 1</span>
+                    <button class="cart-scroll__btn" aria-label="다음 페이지" disabled>
+                      <span class="scroll-icon-down"></span>
+                    </button>
+                  </div>   
+                </div>
+              </div>
+              <!-- Shortcut -->
+              <div class="cart-shortcut">
+                <button class="cart-shortcut__item">지구젤리<br><strong>500원</strong></button>
+                <button class="cart-shortcut__item">맥주사탕<br><strong>500원</strong></button>
+                <button class="cart-shortcut__item">발바닥사탕<br><strong>500원</strong></button>
+                <button class="cart-shortcut__item">비닐봉투(소)<br><strong>100원</strong></button>
+                <button class="cart-shortcut__item more">더보기<br><strong>&gt;</strong></button>
+              </div>
+            </div>
+
+            <!-- Cart Bottom -->
+            <div class="cart-bottom">
+              <div class="cart__manual-input">
+                <button class="cart-shortcut__item">바코드 없는<br>상품 <strong>&gt;</strong></button>
+              </div>               
+              <div class="cart-info">
+                <div class="cart-info-text">실시간 촬영 및<br>보안 시스템 작동 중</div>
+                <div class="cart-payment__cctv">CCTV 영역</div>
+              </div>
+              <div class="cart-payment-wrap">
+                <div class="cart-summary">
+                  <div class="cart-summary-item">
+                    <span>금액</span>
+                    <span class="cart-summary__price">3,600원</span>
+                  </div>
+                  <div class="cart-summary-item">
+                    <span>할인</span>
+                    <span class="cart-summary__discount">-0원</span>
+                  </div>
+                </div>
+                <div class="cart-payment">                
+                  <button class="cart-payment__btn">
+                    3,600원 <br class="is-lower"><span class="cart-payment__text">결제하기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">낮은화면</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">3</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop">
+      <div class="modal__wrap">
+        <div class="modal">
+          <div class="modal__title">원하시는 상품을 선택하세요.</div>           
+          <div class="modal__body">
+            <div class=".modal__content">
+              <div class="item-select" data-page-size="6">
+                <ul class="item-select__grid">
+                  <li class="item-select__list">
+                    <button class="item-select__button item-select__button--selected">
+                      <span class="item-select__name">지구젤리</span>
+                      <span class="item-select__price">500원</span>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button">
+                      <span class="item-select__name">맥주사탕</span>
+                      <span class="item-select__price">500원</span>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button">
+                      <span class="item-select__name">발바닥사탕</span>
+                      <span class="item-select__price">500원</span>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button">
+                      <span class="item-select__name">비닐봉투(소)</span>
+                      <span class="item-select__price">100원</span>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button">
+                      <span class="item-select__name">비닐봉투(중)</span>
+                      <span class="item-select__price">300원</span>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button">
+                      <span class="item-select__name">비닐봉투(대)</span>
+                      <span class="item-select__price">500원</span>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button item-select__button--disabled">
+                      <span class="item-select__name">준비 중</span>
+                      <div class="line line--lt-rb"></div>
+                      <div class="line line--rt-lb"></div>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button item-select__button--disabled">
+                      <span class="item-select__name">준비 중</span>
+                      <div class="line line--lt-rb"></div>
+                      <div class="line line--rt-lb"></div>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button item-select__button--disabled">
+                      <span class="item-select__name">준비 중</span>
+                      <div class="line line--lt-rb"></div>
+                      <div class="line line--rt-lb"></div>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button item-select__button--disabled">
+                      <span class="item-select__name">준비 중</span>
+                      <div class="line line--lt-rb"></div>
+                      <div class="line line--rt-lb"></div>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button item-select__button--disabled">
+                      <span class="item-select__name">준비 중</span>
+                      <div class="line line--lt-rb"></div>
+                      <div class="line line--rt-lb"></div>
+                    </button>
+                  </li>
+                  <li class="item-select__list">
+                    <button class="item-select__button item-select__button--disabled">
+                      <span class="item-select__name">준비 중</span>
+                      <div class="line line--lt-rb"></div>
+                      <div class="line line--rt-lb"></div>
+                    </button>
+                  </li>                  
+                </ul>
+              </div>
+              
+              <div class="pagination pagination--horizontal">
+                <button class="pagination__button pagination__button--prev" aria-label="이전 페이지">
+                  <span class="pagination-icon-arrow-prev"></span>
+                </button>
+                <span class="pagination__page"><strong>1</strong> / 1</span>
+                <button class="pagination__button pagination__button--next" aria-label="다음 페이지">
+                  <span class="pagination-icon-arrow-next"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="modal__footer center">         
+            <button class="button modal__button modal__button--secondary" aria-label="닫기">
+              <span class="modal__icon modal__icon--close" aria-hidden="true"></span>
+              <span class="modal__button-text">닫기</span>
+            </button>
+            <button class="button modal__button modal__button--primary" aria-label="1개 선택">
+              <span class="modal__icon modal__icon--next" aria-hidden="true"></span>
+              <span class="modal__button-text">1개 선택</span>
+            </button>
+          </div>   
+        </div>
+      </div>      
+    </div>  
+    
+    <script>
+    (function () {
+      const itemSelect = document.querySelector('.item-select');
+      if (!itemSelect) return;
+
+      const items = Array.from(
+        itemSelect.querySelectorAll('.item-select__list')
+      );
+
+      const pageSize = Number(itemSelect.dataset.pageSize) || 6;
+      const totalItems = items.length;
+      const totalPages = Math.ceil(totalItems / pageSize);
+
+      const pagination = document.querySelector('.pagination');
+      const prevBtn = pagination.querySelector('.pagination__button--prev');
+      const nextBtn = pagination.querySelector('.pagination__button--next');
+      const pageText = pagination.querySelector('.pagination__page strong');
+
+      let currentPage = 1;
+
+      function renderPage(page) {
+        currentPage = page;
+
+        const start = (page - 1) * pageSize;
+        const end = start + pageSize;
+
+        items.forEach((item, index) => {
+          item.classList.toggle(
+            'is-visible',
+            index >= start && index < end
+          );
+        });
+
+        // 페이지 텍스트
+        pageText.textContent = page;
+        pagination.querySelector('.pagination__page').innerHTML =
+          `<strong>${page}</strong> / ${totalPages}`;
+
+        // 버튼 상태
+        prevBtn.disabled = page === 1;
+        nextBtn.disabled = page === totalPages;
+      }
+
+      prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) {
+          renderPage(currentPage - 1);
+        }
+      });
+
+      nextBtn.addEventListener('click', () => {
+        if (currentPage < totalPages) {
+          renderPage(currentPage + 1);
+        }
+      });
+
+      // 초기 렌더
+      renderPage(1);
+    })();
+    </script>
+  </body>
+</html>

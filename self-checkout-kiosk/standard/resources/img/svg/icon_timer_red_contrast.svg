@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="60" height="60" version="1.1" viewBox="0 0 60 60">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: red;
+      }
+    </style>
+  </defs>
+  <path class="st0" d="M24,10c0-1.1.9-2,2-2h8c1.1,0,2,.9,2,2v2c0,1.1-.9,2-2,2h-8c-1.1,0-2-.9-2-2v-2Z"/>
+  <path class="st0" d="M30,16c9.9,0,18,8.1,18,18s-8.1,18-18,18-18-8.1-18-18,8.1-18,18-18ZM30,20.5c-.8,0-1.5.7-1.5,1.5v12s0,0,0,0c0,0,0,0,0,0,0,0,0,0,0,.1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,.1,0,.2.2.4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,.1.1.2.2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0l8,4c.7.4,1.6,0,2-.7.4-.7,0-1.6-.7-2l-7.2-3.6v-11.1c0-.8-.7-1.5-1.5-1.5Z"/>
+  <metadata>
+    <sfw xmlns="http://ns.adobe.com/SaveForWeb/1.0/">
+      <slices/>
+      <sliceSourceBounds x="12" y="8" width="36" height="44" bottomLeftOrigin="true"/>
+    </sfw>
+  </metadata>
+</svg>
