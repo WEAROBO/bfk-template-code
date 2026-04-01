@@ -1,0 +1,262 @@
+const fileList = [
+
+  { main: "normal", title: '기본 프로레스' },
+  { title: '기본 화면' },
+  { html: "1_main.html", title: "1. 메인" },
+  { html: "2_travel_main.html", title: "2. 여행지 메인" },
+  { html: "2-1_introduce.html", title: "2-1 여행지 소개" },
+  { html: "2-2_detail.html", title: "2-2 여행지 상세 정보" },
+  { html: "2-3_transportation.html", title: "2-3 여행지 교통 정보" },
+  { html: "3_food_main.html", title: "3. 음식점 메인" },
+  { html: "3-1_food_introduce.html", title: "3-1 음식점 소개" },
+  { html: "3-2_food_detail.html", title: "3-2 음식점 상세 정보" },
+  { html: "3-3_food_transportation.html", title: "3-3 음식점 교통 정보" },
+  { html: "4_festival.html", title: "4. 축제 & 행사 메인" },
+  { html: "4-1_festival_detail.html", title: "4-1 축제 & 행사 상세" },
+  { html: "5_theme.html", title: "5. 테마 코스 메인" },
+  { html: "5-1_theme_detail.html", title: "5-1 테마 코스 상세" },
+  { html: "6_transportation.html", title: "6. 교통 지하철 메인" },
+  { html: "6-1_transportation_detail.html", title: "6-1 교통 지하철 이용시간 및 요금" },
+  { html: "7_info.html", title: "7-1 안내 정보 관광안내소 메인" },
+  { html: "7-2_info_detail.html", title: "7-2 안내 정보 관광안내소 상세" },
+  { html: "7-3_info_tourist.html", title: "7-3 안내 정보 여행자 지원" },
+  { html: "7-4_info_service.html", title: "7-4 안내 정보 편의 서비스" },
+  
+
+  { main: "normal_contrast", title: '기본 프로레스' },
+  { title: '기본 화면 고대비' },
+  { html: "1_main_contrast.html", title: "1. 메인" },
+  { html: "2_travel_main_contrast.html", title: "2. 여행지 메인" },
+  { html: "2-1_introduce_contrast.html", title: "2-1 여행지 소개" },
+  { html: "2-2_detail_contrast.html", title: "2-2 여행지 상세 정보" },
+  { html: "2-3_transportation_contrast.html", title: "2-3 여행지 교통 정보" },
+  { html: "3_food_main_contrast.html", title: "3. 음식점 메인" },
+  { html: "3-1_food_introduce_contrast.html", title: "3-1 음식점 소개" },
+  { html: "3-2_food_detail_contrast.html", title: "3-2 음식점 상세 정보" },
+  { html: "3-3_food_transportation_contrast.html", title: "3-3 음식점 교통 정보" },
+  { html: "4_festival_contrast.html", title: "4. 축제 & 행사 메인" },
+  { html: "4-1_festival_detail_contrast.html", title: "4-1 축제 & 행사 상세" },
+  { html: "5_theme_contrast.html", title: "5. 테마 코스 메인" },
+  { html: "5-1_theme_detail_contrast.html", title: "5-1 테마 코스 상세" },
+  { html: "6_transportation_contrast.html", title: "6. 교통 지하철 메인" },
+  { html: "6-1_transportation_detail_contrast.html", title: "6-1 교통 지하철 이용시간 및 요금" },
+  { html: "7_info_contrast.html", title: "7-1 안내 정보 관광안내소 메인" },
+  { html: "7-2_info_detail_contrast.html", title: "7-2 안내 정보 관광안내소 상세" },
+  { html: "7-3_info_tourist_contrast.html", title: "7-3 안내 정보 여행자 지원" },
+  { html: "7-4_info_service_contrast.html", title: "7-4 안내 정보 편의 서비스" },  
+
+
+
+  { main: "lower", title: '기본 프로레스' },
+  { title: '낮은 화면' },
+  { html: "1_main_lower.html", title: "1. 메인" },
+  { html: "2_travel_main_lower.html", title: "2. 여행지 메인" },
+  { html: "2-1_introduce_lower.html", title: "2-1 여행지 소개" },
+  { html: "2-2_detail_lower.html", title: "2-2 여행지 상세 정보" },
+  { html: "2-3_transportation_lower.html", title: "2-3 여행지 교통 정보" },
+  { html: "3_food_main_lower.html", title: "3. 음식점 메인" },
+  { html: "3-1_food_introduce_lower.html", title: "3-1 음식점 소개" },
+  { html: "3-2_food_detail_lower.html", title: "3-2 음식점 상세 정보" },
+  { html: "3-3_food_transportation_lower.html", title: "3-3 음식점 교통 정보" },
+  { html: "4_festival_lower.html", title: "4. 축제 & 행사 메인" },
+  { html: "4-1_festival_detail_lower.html", title: "4-1 축제 & 행사 상세" },
+  { html: "5_theme_lower.html", title: "5. 테마 코스 메인" },
+  { html: "5-1_theme_detail_lower.html", title: "5-1 테마 코스 상세" },
+  { html: "6_transportation_lower.html", title: "6. 교통 지하철 메인" },
+  { html: "6-1_transportation_detail_lower.html", title: "6-1 교통 지하철 이용시간 및 요금" },
+  { html: "7_info_lower.html", title: "7-1 안내 정보 관광안내소 메인" },
+  { html: "7-2_info_detail_lower.html", title: "7-2 안내 정보 관광안내소 상세" },
+  { html: "7-3_info_tourist_lower.html", title: "7-3 안내 정보 여행자 지원" },
+  { html: "7-4_info_service_lower.html", title: "7-4 안내 정보 편의 서비스" },
+
+  
+  { main: "lower_contrast", title: '기본 프로레스' },
+  { title: '낮은 화면 고대비' },
+  { html: "1_main_lower_contrast.html", title: "1. 메인" },
+  { html: "2_travel_main_lower_contrast.html", title: "2. 여행지 메인" },
+  { html: "2-1_introduce_lower_contrast.html", title: "2-1 여행지 소개" },
+  { html: "2-2_detail_lower_contrast.html", title: "2-2 여행지 상세 정보" },
+  { html: "2-3_transportation_lower_contrast.html", title: "2-3 여행지 교통 정보" },
+  { html: "3_food_main_lower_contrast.html", title: "3. 음식점 메인" },
+  { html: "3-1_food_introduce_lower_contrast.html", title: "3-1 음식점 소개" },
+  { html: "3-2_food_detail_lower_contrast.html", title: "3-2 음식점 상세 정보" },
+  { html: "3-3_food_transportation_lower_contrast.html", title: "3-3 음식점 교통 정보" },
+  { html: "4_festival_lower_contrast.html", title: "4. 축제 & 행사 메인" },
+  { html: "4-1_festival_detail_lower_contrast.html", title: "4-1 축제 & 행사 상세" },
+  { html: "5_theme_lower_contrast.html", title: "5. 테마 코스 메인" },
+  { html: "5-1_theme_detail_lower_contrast.html", title: "5-1 테마 코스 상세" },
+  { html: "6_transportation_lower_contrast.html", title: "6. 교통 지하철 메인" },
+  { html: "6-1_transportation_detail_lower_contrast.html", title: "6-1 교통 지하철 이용시간 및 요금" },
+  { html: "7_info_lower_contrast.html", title: "7-1 안내 정보 관광안내소 메인" },
+  { html: "7-2_info_detail_lower_contrast.html", title: "7-2 안내 정보 관광안내소 상세" },
+  { html: "7-3_info_tourist_lower_contrast.html", title: "7-3 안내 정보 여행자 지원" },
+  { html: "7-4_info_service_lower_contrast.html", title: "7-4 안내 정보 편의 서비스" },
+
+
+
+
+]
+
+
+window.onload = function () {
+  const list_ul = document.getElementById("list_ul")
+
+
+  let main_type;
+  for (let i = 0; i < fileList.length; i++) {
+    const file = fileList[i]
+    let li = document.createElement('div');
+    let a = document.createElement('div');
+    if (file.main) {
+      main_type = document.createElement('div');
+      main_type.classList.add("main_type", file.main)
+      const main_line = document.createElement('div');
+      main_line.classList.add("main_line")
+      main_type.append(main_line)
+      list_ul.append(main_type)
+    } else if (file.html) {
+      li.classList.add("item")
+      li.dataset.url = file.html;
+      li.innerHTML = file.title
+      li.addEventListener("click", () => {
+        clickContent(i)
+      })
+      main_type.append(li)
+    } else {
+      li.classList.add("sub")
+      a.innerHTML = file.title
+      li.append(a)
+      main_type.append(li)
+    }
+  }
+
+  clickContent(2)
+
+  // Navigation Logic
+  const btnPrev = document.getElementById("btn_prev");
+  const btnNext = document.getElementById("btn_next");
+
+  if (btnPrev) {
+    btnPrev.addEventListener("click", () => {
+      clickPrev();
+    });
+  }
+
+  if (btnNext) {
+    btnNext.addEventListener("click", () => {
+      clickNext();
+    });
+  }
+}
+
+let data_url;
+let currentIndex = -1; // Track current index
+
+function clickContent(index) {
+  console.log("clickContent", index)
+
+  // Update currentIndex if valid
+  if (fileList[index] && fileList[index].html) {
+    currentIndex = index;
+    updateButtonState();
+  }
+
+  const iframe = document.getElementById("iframe")
+  const item = fileList[index]
+  console.log("clickContent item", item)
+  if (!item || !item.html) return;
+  if (data_url) {
+    const target = document.querySelector(`.item[data-url="${data_url}"]`);
+    console.log("target", target)
+    if (target) target.classList.remove("active");
+  }
+  data_url = item.html;
+  const target = document.querySelector(`.item[data-url="${item.html}"]`);
+  console.log("target", target)
+
+  if (target) {
+    target.classList.add("active");
+    // Auto scroll to active item
+    target.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  iframe.src = "./html/" + item.html;
+  iframe.classList.add("hide");
+  iframe.onload = () => {
+    const doc = iframe.contentDocument;
+    const body = doc.body;
+
+    const scale = iframe.clientHeight / body.scrollHeight;
+    const html = doc.documentElement;
+
+    const contentWidth = Math.max(body.scrollWidth, html.scrollWidth);
+    const contentHeight = Math.max(body.scrollHeight, html.scrollHeight);
+
+    console.log("scale", scale)
+    body.style.transformOrigin = 'center top';
+    body.style.transform = `scale(${scale})`;
+    body.style.width = contentWidth + 'px';
+    body.style.overflow = 'hidden';
+    body.style.background = '#c4c4c4';
+
+    iframe.style.height = contentHeight * scale + 'px';
+    iframe.classList.remove("hide");
+  }
+}
+
+function updateButtonState() {
+  const btnPrev = document.getElementById("btn_prev");
+  const btnNext = document.getElementById("btn_next");
+
+  if (btnPrev) {
+    let hasPrev = false;
+    let prevIndex = currentIndex - 1;
+    while (prevIndex >= 0) {
+      if (fileList[prevIndex].html) {
+        hasPrev = true;
+        break;
+      }
+      prevIndex--;
+    }
+    btnPrev.disabled = !hasPrev;
+  }
+
+  if (btnNext) {
+    let hasNext = false;
+    let nextIndex = currentIndex + 1;
+    while (nextIndex < fileList.length) {
+      if (fileList[nextIndex].html) {
+        hasNext = true;
+        break;
+      }
+      nextIndex++;
+    }
+    btnNext.disabled = !hasNext;
+  }
+}
+
+function clickPrev() {
+  if (currentIndex <= 0) return;
+
+  let newIndex = currentIndex - 1;
+  while (newIndex >= 0) {
+    if (fileList[newIndex].html) {
+      clickContent(newIndex);
+      return;
+    }
+    newIndex--;
+  }
+}
+
+function clickNext() {
+  if (currentIndex >= fileList.length - 1) return;
+
+  let newIndex = currentIndex + 1;
+  while (newIndex < fileList.length) {
+    if (fileList[newIndex].html) {
+      clickContent(newIndex);
+      return;
+    }
+    newIndex++;
+  }
+}

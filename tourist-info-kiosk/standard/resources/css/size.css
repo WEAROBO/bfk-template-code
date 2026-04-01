@@ -1,0 +1,174 @@
+.mr-5 {
+  margin-right: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-15 {
+  margin-top: 15px;
+  display: block;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-30 {
+  margin-top: 30px;
+  display: block;
+}
+.mt-40 {
+  margin-top: 40px !important;
+}
+.mt-60 {
+  margin-top: 60px;
+}
+.mt-62 {
+  margin-top: 62px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+.mt-80 {
+  margin-top: 80px;
+}
+.mt-95 {
+  margin-top: 95px;
+}
+.mt-120 {
+  margin-top: 120px;
+}
+.lower-screen .mt-120 {
+  margin-top: 70px;
+}
+.mt-140 {
+  margin-top: 140px;
+}
+.mt-160 {
+  margin-top: 160px;
+}
+.mt-243 {
+  margin-top: 243px;
+}
+.mb-10 {
+  margin-bottom: 10px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+.lower-screen .mt-243 {
+  margin-top: 0px;
+  padding: 30px 0;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.empty-40 {
+  width: 100%;
+  height: 40px;
+}
+.empty-60 {
+  width: 100%;
+  height: 60px;
+}
+.lower-screen .empty-60 {
+  width: 100%;
+  height: 0px;
+}
+.empty-174 {
+  width: 100%;
+  height: 174px;
+}
+.h-60 {
+  height: 60px;
+}
+.h-70 {
+  height: 70px !important;
+}
+.h-80 {
+  height: 80px;
+}
+.h-100 {
+  height: 100px;
+}
+.h-110 {
+  height: 110px;
+}
+.h-120 {
+  height: 120px;
+}
+.h-150 {
+  height: 150px;
+}
+.h-160 {
+  height: 160px;
+}
+.h-170 {
+  height: 170px;
+}
+.h-200 {
+  height: 200px !important;
+}
+.h-230 {
+  height: 230px !important;
+}
+.h-240 {
+  height: 240px !important;
+}
+
+
+.w-60 {
+  width: 60px;
+}
+.w-88 {
+  width: 88px;
+}
+.lower-screen .w-88 {
+  width: 74px;
+}
+.w-85 {
+  width: 85px;
+}
+.w-100 {
+  width: 100px !important;
+}
+.w-140 {
+  width: 140px;
+}
+.w-160 {
+  width: 160px;
+}
+.w-190 {
+  width: 190px;
+}
+.lower-screen .w-190 {
+  width: 160px;
+}
+.w-192 {
+  width: 192px;
+}
+.w-200 {
+  width: 200px;
+}
+.w-240 {
+  width: 240px;
+}
+.w-300 {
+  width: 300px;
+}
+.w-310 {
+  width: 310px;
+}
+.w-360 {
+  width: 360px;
+}
+.w-500 {
+  width: 500px;
+}
+.center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;  
+}
+
+.color-b {
+  color: var(--primary-color) !important;
+}

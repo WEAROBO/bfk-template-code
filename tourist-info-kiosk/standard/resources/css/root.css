@@ -1,0 +1,686 @@
+:root {
+  --font-family-default: "Pretendard", sans-serif;
+
+
+  --container-bg-color: #fff;
+  --container-width: 1080px;
+  --container-height: 1920px;
+
+	--header-logo-img: url("../img/logo/header_logo.svg");	
+  --header-btn-language-img: url("../img/button/btn_flag_kr.png") no-repeat center center / contain;
+  --header-btn-language-img--a: url("../img/button/btn_flag_kr--a.png") no-repeat center center / contain;
+  --header-btn-language_l-img: url("../img/icon/icon_flag_kr.png") no-repeat center center / contain;
+
+  --button-language-bg: #fff;
+  --button-language-bg-a: #E7E7E7;
+  --button-language-border: 2px solid #3D3D3D;
+  --button-language-box-shadow: 0px 1px 2px 0px #00000033, 0px -4px 0px 0px #00000040 inset;
+  --button-language-box-shadow-a: 0px;
+  --button-language-color: #3d3d3d;
+  --button-language-color-a: #3d3d3d;
+  --button-call-employee-bg: #DEEAFB;
+  --button-call-employee-border: 2px solid #3D3D3D;
+  --button-call-employee-box-shadow: 0px 1px 2px 0px #00000033, 0px -4px 0px 0px #00000040 inset;
+  --button-call-employee-text-color: #2846A5;
+  --button-call-employee-text-color--a: #243B7C;
+  --button-bell: url("../img/button/bell.svg") no-repeat center center / contain;
+  --button-bell--a: url("../img/button/bell--a.svg") no-repeat center center / contain;
+
+  --weather_text-color: #3d3d3d;
+  --weather_comp_bg: #F6F6F6;
+  --weather_comp_sunny_bg: url("../img/weather/sunny.svg") no-repeat center center;
+
+  --flag-button-border: 1px solid #3D3D3D;
+
+  --control-bar-width: 100%;
+	--control-bar-height: 90px;
+  --control-bar-bg: #FFFFFF;
+	--control-bar--no_bg: #FFFFFF;
+  --control-bar--border-top: 2px solid #E7E7E7;
+	--control-bar-sound-bg: #F6F6F6;	
+  --control-bar-sound-button-border: 2px solid #6F6F6F;
+  --control-bar-sound-button-box-shadow: 0px 1px 2px 0px #00000033, 0px -2px 0px 0px #00000040 inset;
+
+	--control-bar-sound-button-bg: #FFFFFF;
+	--control-bar-sound-button-bg-active: #E7E7E7;
+  --control-bar-sound-button-box-shadow-active: 0px 2px 3px 0px #00000066;
+	--control-bar__sound-level-color: #262626;
+
+  --accessibility-btn-border: 2px solid #3D3D3D;
+  --accessibility-btn-color: #3D3D3D;
+	--accessibility-btn-color-active: #fff;
+  --control-bar__sound-icon--minus: url("../img/button/icon_minus.svg");
+  --control-bar__sound-icon--minus-d: url("../img/button/icon_minus-d.svg");
+  --control-bar__sound-icon--plus: url("../img/button/icon_plus.svg");
+  --control-bar__sound-icon--plus-d: url("../img/button/icon_plus-d.svg");
+	--control-bar__sound-icon--volume: url("../img/icon/volume.svg");
+
+  --accessibility-high-contrast: url("../img/button/accessibility-high-contrast.svg") center / cover no-repeat;
+	--accessibility-high-contrast-active: url("../img/button/accessibility-high-contrast-active.svg") center / cover no-repeat;
+	--accessibility-lower-screen: url("../img/button/accessibility-lower-screen.svg") center / cover no-repeat;
+	--accessibility-lower-screen-active: url("../img/button/accessibility-lower-screen-active.svg") center / cover no-repeat;
+	--accessibility-expand: url("../img/button/accessibility-expand.svg") center / cover no-repeat;
+	--accessibility-expand-active: url("../img/button/accessibility-expand-active.svg") center / cover no-repeat;
+
+  --nav-comp-btn-bg: url("../img/button/nav_button-bg.svg") no-repeat center center;
+  --nav-comp-btn-bg-a: url("../img/button/nav_button-bg-a.svg") no-repeat center center;
+  --nav-comp-color: #3D3D3D;
+  --nav-comp-color-a: #fff;
+
+  --btn-disabled-border: 2px solid #B0B0B0;
+  --btn-disabled-box-shadow: 0px;
+
+  --travel-item-border: 1px solid #5D5D5D;
+  --travel-item-box-shadow: 0px 2px 3px 0px #00000066;
+  --travel-item-bg: #fff;
+  --travel-item-name-color: #3D3D3D;
+  --travel-item-desc-color: #4F4F4F;
+
+  --menu-button-color: #262626;
+  --menu-button-color-a: #FFFFFF;
+  --menu-button-divider-color: #E7E7E7;
+  --menu-button-bg: #fff;
+  --menu-button-bg-a: #1B2750;
+  --menu-button-icon-travel: url("../img/travel/menu_travel.svg") no-repeat center center;
+  --menu-button-icon-travel-a: url("../img/travel/menu_travel-a.svg") no-repeat center center;
+  --menu-button-icon-food: url("../img/travel/menu_food.svg") no-repeat center center;
+  --menu-button-icon-food-a: url("../img/travel/menu_food-a.svg") no-repeat center center;
+  --menu-button-icon-festival: url("../img/travel/menu_festival.svg") no-repeat center center;
+  --menu-button-icon-festival-a: url("../img/travel/menu_festival-a.svg") no-repeat center center;
+  --menu-button-icon-theme: url("../img/travel/menu_theme.svg") no-repeat center center;
+  --menu-button-icon-theme-a: url("../img/travel/menu_theme-a.svg") no-repeat center center;
+  --menu-button-icon-transportation: url("../img/travel/menu_transportation.svg") no-repeat center center;
+  --menu-button-icon-transportation-a: url("../img/travel/menu_transportation-a.svg") no-repeat center center;
+  --menu-button-icon-info: url("../img/travel/menu_info.svg") no-repeat center center;
+  --menu-button-icon-info-a: url("../img/travel/menu_info-a.svg") no-repeat center center;
+
+  --scroll-btn-bg: #FFFFFF;
+	--scroll-btn-color: #3D3D3D;
+	--scroll-btn-border: 2px solid #3D3D3D;
+	--scroll-btn-box-shadow: 0px -4px 3px 0px #00000033 inset, 0px 2px 3px 0px #00000066;
+	--scroll-btn-bg-active: #E7E7E7;
+	--scroll-btn-box-shadow-active: 0px 2px 3px 0px #00000066;
+	--scroll-page-color: #4F4F4F;
+	--scroll-page-accent-color: #9B0024;
+	--scroll-btn-bg-disabled: #FFFFFF;
+	--scroll-btn-border-disabled: 2px solid #B0B0B0;	
+	--scroll-btn-box-shadow-disabled: 0px 0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;
+	--scroll-icon-up: url("../img/svg/icon_scroll_up.svg");
+	--scroll-icon-down: url("../img/svg/icon_scroll_down.svg");
+	--scroll-icon-up-disabled: url("../img/svg/icon_scroll_up_disabled.svg"); 
+	--scroll-icon-down-disabled: url("../img/svg/icon_scroll_down_disabled.svg");
+	--scroll-icon-opacity: 1;	
+	--scrollbar-corner-color: #000000;
+  --scrollbar-track-color: #000000;
+  --scrollbar-thumb-color: #FFFFFF;
+
+  --progress-steps-bg: #FFFFFF;
+	--progress-step-line: #6F6F6F;
+	--progress-step-line-current: #005AAB;
+	--progress-step-text-default: #6F6F6F;
+	--progress-step-text-current: #262626;
+	--progress-step-text-completed: #262626;
+	--progress-step-index-border: 2px solid #ffffff;
+	--progress-step-index-span-border: 2px solid #6F6F6F;	
+	--progress-step-border-current: #005AAB;
+	--progress-step-bg-current: #005AAB;
+	--progress-step-color-current: #FFFFFF;
+	--progress-step-border-completed: #005AAB;
+	--progress-step-bg-completed: #005AAB;
+	--progress-step-img-completed: url("../img/icon/icon_checked.svg");
+  --progress-step-index-current-border: 2px solid #005AAB;
+  --progress-step-index-current-bg: #F0F7FF;
+
+  --lower-screen-progress-step-text-current: #fff;
+  --lower-screen-progress-step-bg-current: #fff;
+  --lower-screen-progress-step-color-current: #000;
+  --lower-screen-progress-step-border-current: #fff;
+  --lower-screen-progress-step-index-current-border: 2px solid #fff;
+  --lower-screen-progress-step-index-current-bg: #000;
+  --lower-screen-progress-step-text: #D1D1D1;
+  --lower-screen-progress-step-index-span-border: 2px solid #D1D1D1;
+  --lower-screen-progress-step-index-border: #fff;
+  --lower-screen-progress-step-text-completed: #fff;
+  --lower-screen-progress-step-border-completed: #fff;
+  --lower-screen-progress-step-bg-completed: #fff;
+  --lower-screen-progress-step-line-current: #fff;
+  --lower-screen-progress-step-img-completed: url("../img/icon/icon_checked_bk.svg");
+
+  --product-layer-bg: #f6f6f6;
+  --product-layer--border-top: 2px solid #b0b0b0;
+  --product-item-bg: #FFFFFF;
+  --product-item-bg--active: #B0B0B0;
+  --product-item-border-color: #3D3D3D;
+  --product-item-box-shadow: 0px 2px 6px 0px #00000033, 0px -4px 0px 0px #00000040 inset;
+  --product-item-icon-bg: #F6F6F6;
+  --product-item-name-color: #3D3D3D;
+  --product-item-name-color--disabled: #B0B0B0;
+  --product-item-current-price-color: #005AAB;
+  --product-item-current-price-color--disabled: #B0B0B0;
+  --product-item-origin-price-color: #6F6F6F;
+  --product-item-disabled-border-color: #B0B0B0;
+  --product-item-disabled-bg: #fff;
+  --product_layer_divider_color: #E7E7E7;
+
+  --event_one_plus_one_bg: #DEEAFB;
+  --event_one_plus_one_color: #2B54CA;
+  --event_best_bg: #EBFAEE;
+  --event_best_color: #176334;
+  --event_discount_bg: #FFE6E6;
+  --event_discount_color: #D41515;
+  --event_souldout_bg: #D41515B2;
+  --event_souldout_color: #FFFFFF;
+
+  --icon-coke: url("../img/product/coke.png") no-repeat; 
+  --icon-fanta: url("../img/product/fanta.png") no-repeat; 
+  --icon-pocari: url("../img/product/pocari.png") no-repeat; 
+  --icon-monster: url("../img/product/monster.png") no-repeat; 
+  --icon-welchs: url("../img/product/welchs.png") no-repeat; 
+  --icon-letsbe: url("../img/product/letsbe.png") no-repeat; 
+  --icon-demisoda: url("../img/product/demisoda.png") no-repeat; 
+  --icon-janchi: url("../img/product/janchi.png") no-repeat; 
+  --icon-narand: url("../img/product/narand.png") no-repeat; 
+  --icon-chilsung: url("../img/product/chilsung.png") no-repeat; 
+  --icon-bongbong: url("../img/product/bongbong.png") no-repeat; 
+  --icon-oksusu: url("../img/product/oksusu.png") no-repeat; 
+
+  --floor-btn-bg: #fff;
+  --floor-btn-bg-img: url("../img/button/btn_floor.svg") no-repeat;
+  --floor-btn-bg-img--a: url("../img/button/btn_floor--a.svg") no-repeat;
+  --floor-btn-color: #3D3D3D;
+  --floor-btn-color--active: #fff;
+  --floor-btn-border: 1px solid #5D5D5D;
+
+  --font-size-label--smal: 40px;
+  --font-size-label--medium: 44px;
+  --font-size-heading--large: 70px;
+  --font-size-body--xlarge: 46px;
+  --font-size-body--large: 44px;
+  --font-size-body--medium: 40px;
+  --font-size-body--small: 36px;
+  --font-size-body--xsmall: 32px;
+
+  --pagination-btn-bg: #fff;
+  --pagination-btn-bg--active: #B0B0B0;
+  --pagination-btn-bg--disabled: #fff;
+  --pagination-btn-border-color: #3D3D3D;
+  --pagination-btn-border-color--active: #B0B0B0;
+  --pagination-btn-border-color--disabled: #B0B0B0;
+  --pagination-btn-box-shadow: 0px 2px 3px 0px #00000066, 0px -4px 0px 0px #00000033 inset;
+
+  --pagination-btn-box-shadow--active: 0px 2px 3px 0px #00000066;
+  --pagination-btn-box-shadow--disabled: 0px;
+  --pagination-current-color: #005AAB;
+  --pagination-total-color: #4F4F4F;
+
+  --button-normal-bg: #fff;
+  --button-normal-border: #4F4F4F;
+  --button-normal-color: #3D3D3D;
+  --button-border-wh-bg: #fff;
+  --button-border-wh-bg-a: #B0B0B0;
+  --button-border-wh-bg-d: #fff;
+  --button-border-wh-border: 3px solid #3D3D3D;
+  --button-border-wh-border-d: 2px solid  #B0B0B0;
+  --button-border-wh-color: #3D3D3D;
+  --button-border-wh-color-d: #B0B0B0;
+  --button-border-wh-box-shadow: 0px -8px 0px 0px #00000040 inset;
+  --button-border-wh-box-shadow-a: 0px;
+  --button-border-wh-box-shadow-d: 0px;
+  --button-icon-go-back: url("../img/button/icon_arrow_left.svg") no-repeat;
+  --button-border-bk-bg: #454545;
+  --button-border-bk-bg-a: #262626;
+  --button-border-bk-color: #fff;
+  --button-border-bk-color-d: #fff;
+  --button-border-bk-box-shadow: 0px -6px 0px 0px #3D3D3D inset;
+  --button-border-bk-box-shadow-a: 0px;
+  --button-border-bk-box-shadow-d: 0px -10px 0px 0px #E7E7E7 inset;
+  --button-icon-go-home: url("../img/button/home_wh.svg") no-repeat;
+  --button-border-bl-bg: #2B54CA;
+  --button-border-bl-bg--a: #1B2750;
+  --button-border-bl-box-shadow: 0px -8px 0px 0px #243B7C inset;
+  --button-border-bl-color: #fff;
+
+  --button-main-bg: linear-gradient(180deg, #3368DD 0%, #2846A5 100%);
+  --button-main-bg--a: linear-gradient(180deg, #1B2750 0%, #1B2750 100%);
+  --button-main-box-shadow: 0px 6px 15px 0px #00000080;
+  --button-main-box-shadow--a: 0 6px 15px 0 rgba(0, 0, 0, 0.50);
+  --button-main-color: #fff;
+  --button-main-color--a: #B0B0B0;
+
+  --icon-btn-bg: #fff;
+  --icon-btn-bg--active: #B0B0B0;
+  --icon-btn-border-color: #5D5D5D;
+  --icon-btn-border-color--disabled: #B0B0B0;
+  --icon-btn-text-color: #3D3D3D;
+  --icon-btn-text-color--disabled: #B0B0B0;
+  --icon-home: url("../img/button/home.svg") no-repeat;
+
+  --pay-icon-card: url("../img/pay/pay_card.svg") no-repeat;
+  --pay-icon-card-active: url("../img/pay/pay_card-a.svg") no-repeat;
+  --pay-icon-card-disabled: url("../img/pay/pay_card-d.svg") no-repeat;
+  --pay-icon-money: url("../img/pay/pay_money.svg") no-repeat;
+  --pay-icon-money-active: url("../img/pay/pay_money-a.svg") no-repeat;
+  --pay-icon-money-disabled: url("../img/pay/pay_money-d.svg") no-repeat;
+  --pay-icon-mobile: url("../img/pay/pay_mobile.svg") no-repeat;
+  --pay-icon-mobile-active: url("../img/pay/pay_mobile-a.svg") no-repeat;
+  --pay-icon-mobile-disabled: url("../img/pay/pay_mobile-d.svg") no-repeat;
+  --pay-item-bg: #fff;
+  --pay-item-bg-a: #B0B0B0;
+  --pay-item-bg-d: #fff;
+  --pay-item-border: 3px solid #3D3D3D;
+  --pay-item-border-d: 3px solid #B0B0B0;
+  --pay-item-box-shadow: 0px 2px 6px 0px #00000080, 0px -8px 0px 0px #00000040 inset;
+  --pay-item-box-shadow-a: 0px 2px 6px 0px #00000080;
+  --pay-item-text-color: #3D3D3D;
+  --pay-item-text-color-d: #B0B0B0;
+
+  --spinner-title--color: #262626;	
+  --spinner-box-desc-color: #262626;	
+  --spinner-circle-bg: url("../img/gif/loading.gif"); 
+  --spinner-circle-complete-bg: url("../img/gif/loading-complete.gif"); 
+	--spinner-wave-light: url("../img/ui/spinner_wave_light.png"); 
+	--spinner-wave-dark: url("../img/ui/spinner_wave_dark.png");
+
+  --product-detail-bg: #fff;
+  --product-detail-border: 1px solid #B0B0B0;
+  --product-detail-divider-color: #e7e7e7;
+  --product-detail-item-title-color: #4F4F4F;
+  --product-detail-item-value-color: #3D3D3D;
+
+  --payment_price_comp-bg: #DEEAFB;
+  --payment_price_comp-title-color: #3D3D3D;
+  --payment_price_comp-value-color: #2B54CA;
+
+  --insert_guide-bg: #fff;
+  --insert_guide-color: #2B54CA;
+  --insert_guide-border-color: #E7E7E7;
+
+  --notice-title-color: #3d3d3d;
+  --notice-title-item-color: #4F4F4F;
+  --notice-title-alert-color: #D41515;
+
+  --primary-color: #2B54CA;
+
+  --black: #000000;
+  --white: #ffffff;
+  --yellow: #F8DA29;
+  --yellow--a: #E7BE0B;
+
+  --main-title-color: #262626;
+
+  --guide-comp-bg: #fff;
+  --guide-comp--color: #3D3D3D;
+  --guide-comp--border: 2px solid #E7E7E7;
+  --guide-title-bg: #DEEAFB;
+  --guide-index-bg: #DEEAFB;
+  --guide-index-color: #2B54CA;
+  --guide-item-color: #3d3d3d;
+  --guide-item-info-color: #3d3d3d;
+
+  --lower-screen-container-bg: #262626;
+  --lower-screen-container-color: #888888;
+
+  --header-position-bg: #f6f6f6;
+  --header-position-color: #3D3D3D;
+  --header-position-icon: url("../img/icon/icon_location.svg") no-repeat center center / contain;
+
+  --nav-right-icon: url("../img/button/nav_right.svg") no-repeat center center / contain;
+  --nav-right-icon-d: url("../img/button/nav_right-d.svg") no-repeat center center / contain;
+
+  --popup-bg: #fff;
+  --popup-title-desc: #4F4F4F;
+  --popup-title-title: #262626;
+  --popup-category_color: #3D3D3D;
+  --popup-category_color-a: #fff;
+  --popup-category_bg: url("../img/button/btn_category_270_60.svg") no-repeat center center;
+  --popup-category_bg-a: url("../img/button/btn_category_270_60-a.svg") no-repeat center center;
+  --popup-desc_color: #3D3D3D;
+  --popup-btn-confirm-bg: #fff;
+  --popup-btn-confirm-bg-a: #B0B0B0;
+  --popup-btn-confirm-border: 3px solid #3D3D3D;
+  --popup-btn-confirm-color: #3D3D3D;
+  --popup-btn-confirm-box-shadow: 0px -8px 0px 0px #00000040 inset;
+  --popup-btn-confirm-icon: url("../img/button/btn_close.svg") no-repeat;
+
+  --detail-table-border: #B0B0B0;
+  --detail-table-title-color: #4F4F4F;
+  --detail-table-title-bg: #DEEAFB;
+  --detail-table-desc-color: #3D3D3D;
+  --detail-table-icon-wheelchar-toilet: url("../img/icon/wheelchair_toilet.png") no-repeat;
+  --detail-table-icon-wheelchar-ramp: url("../img/icon/wheelchair_ramp.png") no-repeat;
+  --detail-table-icon-wheelchar-elevator: url("../img/icon/wheelchair_elevator.png") no-repeat;
+  --detail-table-icon-wheelchar-info: url("../img/icon/wheelchair_info.png") no-repeat;
+  --detail-title: #4F4F4F;
+
+  --box-item-bg: #fff;
+  --box-item-border: 1px solid #5D5D5D;
+  --box-item-box-shadow: 0px 2px 3px 0px #00000066;
+  --box-item-title-color: #3D3D3D;
+  --box-item-desc-color: #4F4F4F;
+  --box-item-desc2-color: #6F6F6F;
+  --box-item-detail-color: #5d5d5d;
+
+  --info-item-bg: #fff;
+  --info-item-border: 2px solid #E7E7E7;
+  --info-item-icon-position: url("../img/icon/icon_position.svg") no-repeat;
+  --info-item-icon-clock: url("../img/icon/icon_clock.svg") no-repeat;
+  --info-item-icon-phone: url("../img/icon/icon_phone.svg") no-repeat;
+  --info-item-icon-language: url("../img/icon/icon_language.svg") no-repeat;
+
+  --category_color: #3D3D3D;
+  --category_color-a: #fff;
+  --category_300-bg: url("../img/button/nav_button_300-bg.svg") no-repeat center center;
+  --category_300-bg-a: url("../img/button/nav_button_300-bg-a.svg") no-repeat center center;
+} 
+
+body.high-contrast {
+  --header-logo-img: url("../img/logo/header_logo_contrast.svg");	
+  --container-bg-color: var(--black);
+
+  --main-title-color: var(--white);
+
+  --button-language-bg: #000;
+  --button-language-bg-a: #E7E7E7;
+  --button-language-border: 2px solid #fff;
+  --button-language-box-shadow: 0px 1px 2px 0px #00000033, 0px -4px 0px 0px #00000040 inset;
+  --button-language-box-shadow-a: 0px;
+  --button-language-color: #fff;
+  --button-language-color-a: #000;
+  --button-call-employee-bg: #262626;
+  --button-call-employee-border: 2px solid var(--white);
+  --button-call-employee-box-shadow: 0px;
+  --button-call-employee-text-color: var(--yellow);
+  --button-call-employee-text-color--a: var(--yellow--a);
+  --button-bell: url("../img/button/bell_contrast.svg") no-repeat center center / contain;
+  --button-bell--a: url("../img/button/bell--a_contrast.svg") no-repeat center center / contain;
+
+  --button-main-bg: #F8DA29;
+  --button-main-bg--a: #C89406;
+  --button-main-box-shadow: 0px;
+  --button-main-box-shadow--a: 0;
+  --button-main-color: #000;
+  --button-main-color--a: #000;
+  --button-normal-bg: #fff;
+  --button-normal-bg-a: #B0B0B0;
+  --button-normal-color: #3D3D3D;
+  --button-normal-border: 2px solid #3D3D3D;
+  --button-normal-box-shadow: 0px 2px 3px 0px #00000066;
+  --button-normal-box-shadow-a: 0px;
+
+  --guide-comp-bg: var(--black);
+  --guide-comp--color: #fff;
+  --guide-comp--border: 2px solid #5D5D5D;
+  --guide-title-bg: #262626;
+  --guide-index-bg: #262626;
+  --guide-index-color: #F8DA29;
+  --guide-item-color: #fff;
+  --guide-item-info-color: #d1d1d1;
+
+  --weather_text-color: #fff;
+  --weather_comp_bg: #262626;
+  --weather_comp_sunny_bg: url("../img/weather/sunny-wh.svg") no-repeat center center;
+
+  --flag-button-border: 1px solid #fff;
+
+  --nav-comp-btn-bg: url("../img/button/nav_button-bg_contrast.svg") no-repeat center center;
+  --nav-comp-btn-bg-a: url("../img/button/nav_button-bg-a_contrast.svg") no-repeat center center;
+  --nav-comp-color: #fff;
+  --nav-comp-color-a: #000000;
+
+  --btn-disabled-border: 2px solid #5D5D5D;
+  --btn-disabled-box-shadow: 0px;
+
+  --travel-item-border: 2px solid #fff;
+  --travel-item-box-shadow: 0px 2px 3px 0px #00000066;
+  --travel-item-bg: #000000;
+  --travel-item-name-color: #FFFFFF;
+  --travel-item-desc-color: #D1D1D1;
+
+  --menu-button-color: #fff;
+  --menu-button-color-a: #000;
+  --menu-button-divider-color: #5D5D5D;
+  --menu-button-bg: #262626;
+  --menu-button-bg-a: #F8DA29;
+  --menu-button-icon-travel: url("../img/travel/menu_travel-a.svg") no-repeat center center;
+  --menu-button-icon-travel-a: url("../img/travel/menu_travel.svg") no-repeat center center;
+  --menu-button-icon-food: url("../img/travel/menu_food-a.svg") no-repeat center center;
+  --menu-button-icon-food-a: url("../img/travel/menu_food.svg") no-repeat center center;
+  --menu-button-icon-festival: url("../img/travel/menu_festival-a.svg") no-repeat center center;
+  --menu-button-icon-festival-a: url("../img/travel/menu_festival.svg") no-repeat center center;
+  --menu-button-icon-theme: url("../img/travel/menu_theme-a.svg") no-repeat center center;
+  --menu-button-icon-theme-a: url("../img/travel/menu_theme.svg") no-repeat center center;
+  --menu-button-icon-transportation: url("../img/travel/menu_transportation-a.svg") no-repeat center center;
+  --menu-button-icon-transportation-a: url("../img/travel/menu_transportation.svg") no-repeat center center;
+  --menu-button-icon-info: url("../img/travel/menu_info-a.svg") no-repeat center center;
+  --menu-button-icon-info-a: url("../img/travel/menu_info.svg") no-repeat center center;
+
+  --control-bar-bg: #000;
+	--control-bar--no_bg: #000;
+  --control-bar--border-top: 2px solid #E7E7E7;
+	--control-bar-sound-bg: #262626;	
+  --control-bar-sound-button-border: 0px;
+  --control-bar-sound-button-box-shadow: 0px;
+	--control-bar-sound-button-bg: #FFFFFF;
+	--control-bar-sound-button-bg-active: #E7E7E7;
+  --control-bar-sound-button-box-shadow-active: 0px 2px 3px 0px #00000066;
+	--control-bar__sound-level-color: #fff;
+
+  --accessibility-btn-border: 2px solid #070707;
+  --accessibility-btn-color: #FFFFFF;
+	--accessibility-btn-color-active: #000000;
+  --control-bar__sound-icon--minus: url("../img/button/icon_minus.svg");
+  --control-bar__sound-icon--minus-d: url("../img/button/icon_minus-d.svg");
+  --control-bar__sound-icon--plus: url("../img/button/icon_plus.svg");
+  --control-bar__sound-icon--plus-d: url("../img/button/icon_plus-d.svg");
+	--control-bar__sound-icon--volume: url("../img/icon/volume_contrast.svg");
+  --accessibility-high-contrast: url("../img/button/accessibility-high-contrast_contrast.svg") center / cover no-repeat;
+	--accessibility-high-contrast-active: url("../img/button/accessibility-high-contrast_contrast.svg") center / cover no-repeat;
+	--accessibility-lower-screen: url("../img/button/accessibility-lower-screen_contrast.svg") center / cover no-repeat;
+	--accessibility-lower-screen-active: url("../img/button/accessibility-lower-screen_contrast-a.svg") center / cover no-repeat;
+	--accessibility-expand: url("../img/button/accessibility-expand_contrast.svg") center / cover no-repeat;
+	--accessibility-expand-active: url("../img/button/accessibility-expand_contrast-a.svg") center / cover no-repeat;
+
+  --icon-btn-bg: #000000;
+  --icon-btn-bg--active: #B0B0B0;
+  --icon-btn-border-color: #fff;
+  --icon-btn-border-color--disabled: #B0B0B0;
+  --icon-btn-text-color: #fff;
+  --icon-btn-text-color--disabled: #B0B0B0;
+  --icon-home: url("../img/button/home_wh.svg") no-repeat;
+
+
+  --progress-steps-bg: #000000;
+	--progress-step-line: #6F6F6F;
+	--progress-step-line-current: #F8DA29;
+	--progress-step-text-default: #D1D1D1;
+	--progress-step-text-current: #ffffff;
+	--progress-step-text-completed: #fff;
+	--progress-step-index-border: 2px solid #000000;
+	--progress-step-index-span-border: 2px solid #6F6F6F;	
+	--progress-step-border-current: #F8DA29;
+	--progress-step-bg-current: #F8DA29;
+	--progress-step-color-current: #000000;
+	--progress-step-border-completed: #F8DA29;
+	--progress-step-bg-completed: #F8DA29;
+	--progress-step-img-completed: url("../img/icon/icon_checked_contrast.svg");
+  --progress-step-index-current-border: 2px solid #F8DA29;
+  --progress-step-index-current-bg: #000000;
+
+  --product-layer-bg: #000;
+  --product-layer--border-top: 2px solid #b0b0b0;
+  --product-item-bg: #000;
+  --product-item-bg--active: #B0B0B0;
+  --product-item-border-color: #fff;
+  --product-item-box-shadow: 0px 2px 6px 0px #00000033, 0px -4px 0px 0px #00000040 inset;
+  --product-item-icon-bg: #F6F6F6;
+  --product-item-name-color: #fff;
+  --product-item-name-color--disabled: #5D5D5D;
+  --product-item-current-price-color: #F8DA29;
+  --product-item-current-price-color--disabled: #5D5D5D;
+  --product-item-origin-price-color: #6F6F6F;
+  --product-item-disabled-border-color: #5D5D5D;
+  --product-item-disabled-bg: #000;
+  --product_layer_divider_color: #5D5D5D;
+
+  --event_one_plus_one_bg: #DEEAFB;
+  --event_one_plus_one_color: #2B54CA;
+  --event_best_bg: #003308;
+  --event_best_color: #00E326;
+  --event_discount_bg: #FFE6E6;
+  --event_discount_color: #D41515;
+  --event_souldout_bg: #F93A3A66;
+  --event_souldout_color: #FFFFFF;
+
+  --icon-coke: url("../img/product/coke_contrast.png") no-repeat; 
+  --icon-fanta: url("../img/product/fanta_contrast.png") no-repeat; 
+  --icon-pocari: url("../img/product/pocari_contrast.png") no-repeat; 
+  --icon-monster: url("../img/product/monster_contrast.png") no-repeat; 
+  --icon-welchs: url("../img/product/welchs_contrast.png") no-repeat; 
+  --icon-letsbe: url("../img/product/letsbe_contrast.png") no-repeat; 
+  --icon-demisoda: url("../img/product/demisoda_contrast.png") no-repeat; 
+  --icon-janchi: url("../img/product/janchi_contrast.png") no-repeat; 
+  --icon-narand: url("../img/product/narand_contrast.png") no-repeat; 
+  --icon-chilsung: url("../img/product/chilsung_contrast.png") no-repeat; 
+  --icon-bongbong: url("../img/product/bongbong_contrast.png") no-repeat; 
+  --icon-oksusu: url("../img/product/oksusu_contrast.png") no-repeat; 
+
+  --floor-btn-bg: #000;
+  --floor-btn-bg-img: url("../img/button/btn_floor_contrast.svg") no-repeat;
+  --floor-btn-bg-img--a: url("../img/button/btn_floor--a_contrast.svg") no-repeat;
+  --floor-btn-color: #fff;
+  --floor-btn-color--active: #000;
+  --floor-btn-border: 1px solid #5D5D5D;
+
+  --pagination-btn-bg: #fff;
+  --pagination-btn-bg--active: #B0B0B0;
+  --pagination-btn-bg--disabled: #000;
+  --pagination-btn-border-color: #3D3D3D;
+  --pagination-btn-border-color--active: unset;
+  --pagination-btn-border-color--disabled: #5D5D5D;
+  --pagination-btn-box-shadow: 0px;
+  --pagination-btn-box-shadow--active: 0px;
+  --pagination-btn-box-shadow--disabled: 0px;
+  --pagination-current-color: #F8DA29;
+  --pagination-total-color: #fff;
+
+  --header-btn-language-img: url("../img/button/btn_flag_kr_contrast.png") no-repeat center center / contain;
+  --header-btn-language-img--a: url("../img/button/btn_flag_kr--a_contrast.png") no-repeat center center / contain;
+
+  --product-detail-bg: #000;
+  --product-detail-border: 1px solid #fff;
+  --product-detail-divider-color: #5D5D5D;
+  --product-detail-item-title-color: #d1d1d1;
+  --product-detail-item-value-color: #fff;
+
+  --button-normal-bg: #fff;
+  --button-normal-border: #4F4F4F;
+  --button-normal-color: #3D3D3D;
+  --button-border-wh-bg: #000;
+  --button-border-wh-bg-a: #B0B0B0;
+  --button-border-wh-bg-d: #fff;
+  --button-border-wh-border: 3px solid #fff;
+  --button-border-wh-border-d: 2px solid  #B0B0B0;
+  --button-border-wh-color: #fff;
+  --button-border-wh-color-d: #B0B0B0;
+  --button-border-wh-box-shadow: 0px;
+  --button-border-wh-box-shadow-a: 0px;
+  --button-border-wh-box-shadow-d: 0px;
+  --button-icon-go-back: url("../img/button/icon_arrow_left-wh.svg") no-repeat;
+  --button-border-bk-bg: #fff;
+  --button-border-bk-bg-a: #B0B0B0;
+  --button-border-bk-color: #000;
+  --button-border-bk-color-d: #000;
+  --button-border-bk-box-shadow: 0px;
+  --button-border-bk-box-shadow-a: 0px;
+  --button-border-bk-box-shadow-d: 0px -10px 0px 0px #E7E7E7 inset;
+  --button-icon-go-home: url("../img/button/home.svg") no-repeat;
+  --button-border-bl-bg: #F8DA29;
+  --button-border-bl-bg--a: #9F6A09;
+  --button-border-bl-box-shadow: 0px;
+  --button-border-bl-color: #000;
+
+
+  --payment_price_comp-bg: #262626;
+  --payment_price_comp-title-color: #fff;
+  --payment_price_comp-value-color: #F8DA29;
+
+  --pay-icon-card: url("../img/pay/pay_card_contrst.svg") no-repeat;
+  --pay-icon-card-active: url("../img/pay/pay_card-a.svg") no-repeat;
+  --pay-icon-card-disabled: url("../img/pay/pay_card-d.svg") no-repeat;
+  --pay-icon-money: url("../img/pay/pay_money_contrast.svg") no-repeat;
+  --pay-icon-money-active: url("../img/pay/pay_money-a.svg") no-repeat;
+  --pay-icon-money-disabled: url("../img/pay/pay_money-d.svg") no-repeat;
+  --pay-icon-mobile: url("../img/pay/pay_mobile_contrast.svg") no-repeat;
+  --pay-icon-mobile-active: url("../img/pay/pay_mobile-a.svg") no-repeat;
+  --pay-icon-mobile-disabled: url("../img/pay/pay_mobile-d.svg") no-repeat;
+  --pay-item-bg: #fff;
+  --pay-item-bg-a: #B0B0B0;
+  --pay-item-bg-d: #fff;
+  --pay-item-border: 3px solid #3D3D3D;
+  --pay-item-border-d: 3px solid #B0B0B0;
+  --pay-item-box-shadow: 0px;
+  --pay-item-box-shadow-a: 0px;
+  --pay-item-text-color: #3D3D3D;
+  --pay-item-text-color-d: #B0B0B0;
+
+  --insert_guide-bg: #000000;
+  --insert_guide-color: #F8DA29;
+  --insert_guide-border-color: #5D5D5D;
+
+  --spinner-title--color: #fff;	
+  --spinner-circle-bg: url("../img/gif/loading_contrast.gif"); 
+  --spinner-circle-complete-bg: url("../img/gif/loading_complete_contrast.gif");
+
+  --notice-title-color: #fff;
+  --spinner-box-desc-color: #fff;	
+  --notice-title-item-color: #d1d1d1;
+  --notice-title-alert-color: #FFA8A8;
+
+  --primary-color: #F8DA29;
+
+  --header-position-bg: #262626;
+  --header-position-color: #fff;
+  --header-position-icon: url("../img/icon/icon_location_wh.svg") no-repeat center center / contain;
+
+  --popup-bg: #000;
+  --popup-title-desc: #D1D1D1;
+  --popup-title-title: #fff;
+  --popup-category_color: #fff;
+  --popup-category_color-a: #000;
+  --popup-category_bg: url("../img/button/btn_category_270_60_contrast.svg") no-repeat center center;
+  --popup-category_bg-a: url("../img/button/btn_category_270_60-a_contrast.svg") no-repeat center center;
+  --popup-desc_color: #fff;
+  --popup-btn-confirm-bg: #000;
+  --popup-btn-confirm-bg-a: #5D5D5D;
+  --popup-btn-confirm-border: 3px solid #fff;
+  --popup-btn-confirm-color: #fff;
+  --popup-btn-confirm-box-shadow: 0px;
+  --popup-btn-confirm-icon: url("../img/button/btn_close_wh.svg") no-repeat;
+
+  --detail-table-border: #B0B0B0;
+  --detail-table-title-color: #D1D1D1;
+  --detail-table-title-bg: #262626;
+  --detail-table-desc-color: #fff;
+  --detail-table-icon-wheelchar-toilet: url("../img/icon/wheelchair_toilet_contrast.png") no-repeat;
+  --detail-table-icon-wheelchar-ramp: url("../img/icon/wheelchair_ramp_contrast.png") no-repeat;
+  --detail-table-icon-wheelchar-elevator: url("../img/icon/wheelchair_elevator_contrast.png") no-repeat;
+  --detail-table-icon-wheelchar-info: url("../img/icon/wheelchair_info_contrast.png") no-repeat;
+  --detail-title: #D1D1D1;
+
+  --box-item-bg: #000;
+  --box-item-border: 2px solid #fff;
+  --box-item-box-shadow: 0px 2px 3px 0px #00000066;
+  --box-item-title-color: #fff;
+  --box-item-desc-color: #D1D1D1;
+  --box-item-desc2-color: #D1D1D1;
+  --box-item-detail-color: #d1d1d1;
+  --info-item-icon-position: url("../img/icon/icon_position_contrast.svg") no-repeat;
+  --info-item-icon-clock: url("../img/icon/icon_clock_contrast.svg") no-repeat;
+  --info-item-icon-phone: url("../img/icon/icon_phone_contrast.svg") no-repeat;
+  --info-item-icon-language: url("../img/icon/icon_language_contrast.svg") no-repeat;
+
+  --category_color: #fff;
+  --category_color-a: #000;
+  --category_300-bg: url("../img/button/nav_button_300-bg_contrast.svg") no-repeat center center;
+  --category_300-bg-a: url("../img/button/nav_button_300-bg-a_contrast.svg") no-repeat center center;
+}
