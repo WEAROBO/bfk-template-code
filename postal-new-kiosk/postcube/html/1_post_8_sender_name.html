@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_우편접수_8_발송인_이름입력</title>
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <button class="button header__button" aria-label="처음으로">
+            <span class="header__button__icon--home" aria-hidden="true"></span>
+            <span class="button__title">처음으로</span>
+          </button>
+          <div class="header__buttons">
+            <button class="button header__button" aria-label="음성 다시듣기">
+              <span class="header__button__icon--play" aria-hidden="true"></span>
+              <span class="button__title">다시듣기</span>
+            </button>
+            <button class="button header__button header__button--call" aria-label="직원 호출">
+              <span class="header__button__icon--help" aria-hidden="true"></span>
+              <span class="button__title">직원호출</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="progress-steps">
+          <div class="progress-step progress-step--completed">
+            <div class="progress-step__index"><span>1</span></div>
+            <div class="progress-step__label">우편물 정보</div>
+          </div>
+          <div class="progress-step progress-step--current">
+            <div class="progress-step__index"><span>2</span></div>
+            <div class="progress-step__label">접수정보</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span>3</span></div>
+            <div class="progress-step__label">요금확인</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span>4</span></div>
+            <div class="progress-step__label">결제</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span>5</span></div>
+            <div class="progress-step__label">완료</div>
+          </div>
+        </div>
+
+        <main class="main">  
+          <h1 class="main__title main__title--step">보내는 사람의 <br>이름을 입력하세요</h1>
+
+          <div class="keyboard">
+            <div class="keyboard__input-valu-area center">
+              <input type="text" id="kioskInput" class="keyboard__input-value center" placeholder="" readonly>
+            </div>
+            <div class="empty-174"></div>
+            <div class="keyboard_buttons" id="keyboardarea">
+              <div class="keyboard_buttons-line">
+                <div class="keyboard__button h-80">1</div>
+                <div class="keyboard__button h-80">2</div>
+                <div class="keyboard__button h-80">3</div>
+                <div class="keyboard__button h-80">4</div>
+                <div class="keyboard__button h-80">5</div>
+                <div class="keyboard__button h-80">6</div>
+                <div class="keyboard__button h-80">7</div>
+                <div class="keyboard__button h-80">8</div>
+                <div class="keyboard__button h-80">9</div>
+                <div class="keyboard__button h-80">0</div>
+                <div class="keyboard__button h-80 type2 w-140">
+                  <img src="../resources/img/svg/keyboard-left-arrow.svg" class="mr-5" alt="">
+                  <span>지우기</span>
+                </div>
+              </div>
+              <div class="keyboard_buttons-line">
+                <div class="keyboard__button">ㅂ</div>
+                <div class="keyboard__button">ㅈ</div>
+                <div class="keyboard__button">ㄷ</div>
+                <div class="keyboard__button">ㄱ</div>
+                <div class="keyboard__button">ㅅ</div>
+                <div class="keyboard__button">ㅛ</div>
+                <div class="keyboard__button">ㅕ</div>
+                <div class="keyboard__button">ㅑ</div>
+                <div class="keyboard__button">ㅐ</div>
+                <div class="keyboard__button">ㅔ</div>
+                <div class="keyboard__button w-140">-</div>
+              </div>
+              <div class="keyboard_buttons-line keyboard_buttons-line--right">
+                <div class="keyboard__button">ㅁ</div>
+                <div class="keyboard__button">ㄴ</div>
+                <div class="keyboard__button">ㅇ</div>
+                <div class="keyboard__button">ㄹ</div>
+                <div class="keyboard__button">ㅎ</div>
+                <div class="keyboard__button">ㅗ</div>
+                <div class="keyboard__button">ㅓ</div>
+                <div class="keyboard__button">ㅏ</div>
+                <div class="keyboard__button">ㅣ</div>
+                <div class="keyboard__button type2 w-192">쌍자음</div>
+              </div>
+              <div class="keyboard_buttons-line">
+                <div class="keyboard__button type2 w-85">기호</div>
+                <div class="keyboard__button">ㅋ</div>
+                <div class="keyboard__button">ㅌ</div>
+                <div class="keyboard__button">ㅊ</div>
+                <div class="keyboard__button">ㅍ</div>
+                <div class="keyboard__button">ㅠ</div>
+                <div class="keyboard__button">ㅜ</div>
+                <div class="keyboard__button">ㅡ</div>
+                <div class="keyboard__button type2 w-85">영어</div>
+                <div class="keyboard__button type2 w-192">한칸 띄우기</div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="main__bottom-buttons">
+            <button class="button main__button main-button-secondary" aria-label="이전 단계로 이동">
+              <span class="main__button__icon--prev" aria-hidden="true"></span>
+              <span class="button__title">이전</span>
+            </button>
+            <button class="button main__button main-button-primary" aria-label="확인">
+              <span class="main__button__icon--next" aria-hidden="true"></span>
+              <span class="button__title">확인</span>
+            </button>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">3</span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </body>
+</html>
