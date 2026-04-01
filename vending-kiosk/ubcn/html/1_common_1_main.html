@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../resources/css/index.css">
+  <title>1_공통화면_1_메인</title>
+</head>
+
+<body class="">
+  <div class="container-wrap">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--main">
+          <div class="header__logo"></div>
+          <div class="header__actions">
+            <div class="header__action header__action--call">
+              <span class="header__icon header__icon--call" aria-hidden="true"></span>
+              <span class="header__action-text">문의 1600-0000</span>
+            </div>
+          </div>
+        </div>
+
+        <main class="main main--no-border main--no-bg">
+          <div class="slide_area">
+            <div class="slide_img"></div>
+            <div class="slide-arrow-area">
+              <button type="button" class="slide-button" aria-label="슬라이드 이전">
+                <span class="slide_left-button-icon" aria-hidden="true"></span>
+              </button>
+              <div class="count_area">
+                <div class="value">1</div>
+                <div class="divider">/</div>
+                <div class="total">5</div>
+              </div>
+              <button type="button" class="slide-button" aria-label="슬라이드 다음">
+                <span class="slide_right-button-icon" aria-hidden="true"></span>
+              </button>
+              <button type="button" class="slide-status-button" aria-label="슬라이드 상태" style="margin-left: 20px;">
+                <!-- <span class="slide_btn-pause" aria-hidden="true"></span> -->
+              </button>
+            </div>
+          </div>
+          <div class="main__button-area">
+            <button type="button" class="main__button--primary" aria-label="상품 구매하기">
+              상품 구매하기
+            </button>
+          </div>
+          <div class="lang_area">
+            <div class="lang_layer">
+              <div class="button lang_item active">한국어</div>
+              <div class="button lang_item">English</div>
+              <div class="button lang_item">中國語</div>
+              <div class="button lang_item">日本語</div>
+            </div>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button type="button" class="accessibility__button accessibility__button--high-contrast">
+              <span class="accessibility__text">고대비</span>
+            </button>
+            <button type="button" class="accessibility__button accessibility__button--lower-screen">
+              <span class="accessibility__text">낮은화면</span>
+            </button>
+            <button type="button" class="accessibility__button accessibility__button--expand">
+              <span class="accessibility__text">돋보기</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+              <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+            </button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">3</span>
+            </div>
+            <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+              <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+            </button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

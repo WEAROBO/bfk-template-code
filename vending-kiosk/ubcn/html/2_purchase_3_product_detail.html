@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../resources/css/index.css">
+  <title>2_구매_3_상품상세</title>
+</head>
+
+<body class="">
+  <div class="container-wrap">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--main">
+          <div class="button icon-btn h-80 w-240">
+            <div class="icon home-icon"></div>
+            <div class="text">처음으로</div>
+          </div>
+          <div class="header__actions">
+            <div class="header__action header__action--call">
+              <span class="header__icon header__icon--call" aria-hidden="true"></span>
+              <span class="header__action-text">문의 1600-0000</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="progress-steps">
+          <div class="progress-step progress-step--current" aria-current="step">
+            <div class="progress-step__index"><span><strong>1</strong></span></div>
+            <div class="progress-step__label">상품 스캔</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>2</strong></span></div>
+            <div class="progress-step__label">결제</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>3</strong></span></div>
+            <div class="progress-step__label">상품 꺼내기</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>4</strong></span></div>
+            <div class="progress-step__label">완료</div>
+          </div>
+        </div>
+
+        <main class="main">
+
+          <div class="product-layer">
+            <div class="floor-area">
+              <div class="button floor-item active">전체</div>
+              <div class="button floor-item">5층</div>
+              <div class="button floor-item">4층</div>
+              <div class="button floor-item">3층</div>
+              <div class="button floor-item">2층</div>
+              <div class="button floor-item">1층</div>
+            </div>
+            <div class="divider_area">
+              <div class="divider"></div>
+            </div>
+            <div class="product-area">
+              <div class="product-list">
+
+                <div class="button product-item">
+                  <div class="event_area">
+                    <div class="event one_one">1 + 1</div>
+                    <div class="event best">Best</div>
+                    <div class="event discount">50%</div>
+                  </div>
+                  <div class="icon damisoda"></div>
+                  <div class="name">데미소다 청포도</div>
+                  <div class="price-area">
+                    <div class="origin-price">1,400원</div>
+                    <div class="current-price">700원</div>
+                  </div>
+                </div>
+                <div class="button product-item">
+                  <div class="event_area">
+                    <div class="event best">Best</div>
+                    <div class="event discount">50%</div>
+                  </div>
+                  <div class="icon narangd"></div>
+                  <div class="name">나랑드 사이다</div>
+                  <div class="price-area">
+                    <div class="current-price">1,000원</div>
+                  </div>
+                </div>
+                <div class="button product-item">
+                  <div class="event_area">
+                    <div class="event discount">50%</div>
+                  </div>
+                  <div class="icon oranc"></div>
+                  <div class="name">오란씨 파인애플</div>
+                  <div class="price-area">
+                    <div class="origin-price">1,200원</div>
+                    <div class="current-price">600원</div>
+                  </div>
+                </div>
+                <div class="button product-item">
+                  <div class="icon pocari"></div>
+                  <div class="name">포카리스웨트</div>
+                  <div class="price-area">
+                    <div class="current-price">1,500원</div>
+                  </div>
+                </div>
+                <div class="button product-item">
+                  <div class="icon cola"></div>
+                  <div class="name">코카콜라</div>
+                  <div class="price-area">
+                    <div class="current-price">1,800원</div>
+                  </div>
+                </div>
+                <div class="button product-item">
+                  <div class="icon welchs"></div>
+                  <div class="name">웰치스 포도향</div>
+                  <div class="price-area">
+                    <div class="current-price">1,100원</div>
+                  </div>
+                </div>
+                <div class="button product-item">
+                  <div class="icon epro"></div>
+                  <div class="name">이프로</div>
+                  <div class="price-area">
+                    <div class="current-price">1,100원</div>
+                  </div>
+                </div>
+                <div class="button product-item">
+                  <div class="icon cider"></div>
+                  <div class="name">칠성사이다</div>
+                  <div class="price-area">
+                    <div class="current-price">1,500원</div>
+                  </div>
+                </div>
+                <div class="button product-item soldout disabled">
+                  <div class="icon bongbong"></div>
+                  <div class="name">봉봉 포도맛</div>
+                  <div class="price-area">
+                    <div class="current-price">매진</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pagination-area" style="padding-top: 20px;">
+                <div class="pagination-comp">
+                  <div class="button pagination-left pagination__btn disabled">
+                    <div class="arrow-icon"></div>
+                  </div>
+                  <div class="pagination__cnt">
+                    <div class="pagination__current">1</div>
+                    <div class="pagination__divider">/</div>
+                    <div class="pagination__total">4</div>
+                  </div>
+                  <div class="button pagination-right pagination__btn">
+                    <div class="arrow-icon"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="basket-area" style="padding: 0 30px;">
+            <div class="basket-comp">
+              <div class="basket-title-comp">
+                <div class="basket-title">장바구니</div>
+                <div class="button icon-btn h-60 w-200">
+                  <div class="icon delete-icon"></div>
+                  <div class="text">전체삭제</div>
+                </div>
+              </div>
+              <div class="basket-list-comp">
+                <div class="basket-list">
+                  <div class="basket-list-item">
+                    <div class="product-name">오란씨 파인애플</div>
+                    <div class="product-count-pagination">
+                      <button type="button" class="button product-count-btn" disabled aria-label="제품 빼기">
+                        <span class="product-count-btn-icon minus" aria-hidden="true"></span>
+                      </button>
+                      <div class="product-count__value">1</div>
+                      <button type="button" class="product-count-btn" aria-label="제품 추가">
+                        <span class="product-count-btn-icon plus" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                    <div class="product-price">600원</div>
+                    <div class="product-delete"></div>
+                  </div>
+                  <div class="basket-list-item active">
+                    <div class="product-name">이프로</div>
+                    <div class="product-count-pagination active">
+                      <button type="button" class="product-count-btn" aria-label="제품 빼기">
+                        <span class="product-count-btn-icon minus" aria-hidden="true"></span>
+                      </button>
+                      <div class="product-count__value">2</div>
+                      <button type="button" class="product-count-btn" aria-label="제품 추가">
+                        <span class="product-count-btn-icon plus" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                    <div class="product-price">2,200원</div>
+                    <div class="product-delete"></div>
+                  </div>
+                </div>
+                <div class="pagination-area" style="padding: 10px;">
+                  <div class="pagination-comp updown">
+                    <div class="button pagination-top pagination__btn disabled w-100 h-70">
+                      <div class="arrow-icon"></div>
+                    </div>
+                    <div class="pagination__cnt">
+                      <div class="pagination__current">1</div>
+                      <div class="pagination__divider">/</div>
+                      <div class="pagination__total">1</div>
+                    </div>
+                    <div class="button pagination-down pagination__btn disabled  w-100 h-70">
+                      <div class="arrow-icon"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="payment-comp" style="padding-top: 20px;">
+            <div class="price-area">
+              <div class="price-row">
+                <div class="label">총 수량</div>
+                <div class="value">3개</div>
+              </div>
+              <div class="price-row">
+                <div class="label">금액</div>
+                <div class="value price">2,800원</div>
+              </div>
+            </div>
+            <button type="button" class="main__button--primary w-500 h-150" aria-label="결제하기">
+              결제하기
+            </button>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button type="button" class="accessibility__button accessibility__button--high-contrast">
+              <span class="accessibility__text">고대비</span>
+            </button>
+            <button type="button" class="accessibility__button accessibility__button--lower-screen">
+              <span class="accessibility__text">낮은화면</span>
+            </button>
+            <button type="button" class="accessibility__button accessibility__button--expand">
+              <span class="accessibility__text">돋보기</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+              <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+            </button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">3</span>
+            </div>
+            <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+              <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+            </button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+
+    <div class="popup position-center">
+      <div class="popup-bg"></div>
+      <div class="product__popup">
+        <div class="title position-center">상품 정보를 확인하세요</div>
+        <div class="popup-body" style="padding: 0 40px;">
+          <div class="product_top" style="margin: 20px 0;">
+            <div class="product_img position-center">
+              <div class="img oranc"></div>
+            </div>
+            <div class="product_count-comp">
+              <div class="product_name">
+                오란씨 파인애플
+              </div>
+              <div class="product-price">
+                <div class="origin-price">1,200원</div>
+                <div class="current-price">600원</div>
+              </div>
+              <div class="product-count-pagination">
+                <button type="button" class="product-count-btn" aria-label="제품 빼기">
+                  <span class="product-count-btn-icon minus" aria-hidden="true"></span>
+                </button>
+                <div class="product-count__value">10</div>
+                <button type="button" class="product-count-btn" disabled aria-label="제품 추가">
+                  <span class="product-count-btn-icon plus" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="product_desc">
+            1970년대~1990년대까지 칠성사이다 뺨치는 대중성을 자랑했다. 또 적은 양이지만 천연향이 첨가된 것도 특징이다. 현재는 오렌지맛, 파인애플맛, 키위맛(저칼로리)만 생산되고 있지만 예전에는
+            바나나맛, 그레이프후르츠맛, 포도맛, 복숭아맛, 피치소다맛, 레몬맛, 깔라만시맛 등도 제조됐었다.
+          </div>
+        </div>
+        <div class="button_area">
+          <div class="button cancel-btn">취소</div>
+          <div class="button confirm-btn">1개 담기</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
