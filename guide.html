@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+  </head>
+  <body>
+    <h1 id="sample-markdown">GUIDE Doc</h1>
+    <h1 id="second-heading">파일 구조</h1>
+    <ul>
+      <li>src (Kiosk) <ul>
+          <li>ATM (업종)) <ul>
+              <li>Standard</li>
+              <li>(파생) 우리 은행</li>
+              <li>(파생) 신한 은행</li>
+            </ul>
+          </li>
+          <li>무인 발권기 (업종)) <ul>
+              <li>Standard</li>
+              <li>(파생) 코레일</li>
+              <li>(파생) 한국 도로 공사</li>
+            </ul>
+          </li>
+          <li>...</li>
+        </ul>
+      </li>
+    </ul>
+    <p>예) </p>
+<pre>
+<code>src/${업종 name}/${파생 name}/html/...
+
+standard 작업시: src/atm/standard/html/index.html
+우리은행   작업시: src/atm/uri_bank/html/index.html
+</code>
+</pre>
+
+    <h1 id="git-">GIT 관리</h1>
+    <p>마스터에는 코드를 넣지않고, 각 업종별 브랜치를 분리하여 관리한다.</p>
+    <ul>
+      <li>master: readme.md 파일만 존재한다.</li>
+      <li>ATM: 한 종류에 따라서 브랜치로 분류한다.
+        <ul>
+          <li>Standard: ATM의 기본 html 파일들이 들어 있다.</li>
+          <li>우리 은행(파생): ATM으로 부터 브랜치를 생성하고 파생에 대한 html 파일들이 들어 있다</li>
+          <li>신한 은행(파생): ATM으로 부터 브랜치를 생성한고 파생에 대한 html 파일들이 들어 있다</li>
+        </ul>
+      </li>
+      <li>무인 발권기
+        <ul>
+          <li>Standard</li>
+          <li>코레일</li>
+          <li>한국 도로공사</li>
+        </ul>
+      </li>
+      <li>...</li>
+    </ul>
+
+    <h1 id="-">코딩 스타일 규칙</h1>
+    <h2 id="javascript-">Javascript 코딩 규칙</h2>
+    <ul>
+      <li>들여쓰기: 두 칸의 공백을 사용한다. </li>
+      <li>세미콜론: 모든 구문의 끝에는 세미콜론을 붙인다. </li>
+      <li>명명 규칙: <ul>
+          <li>변수, 함수, 메서드: 소문자 카멜케이스 (예: myVariable, calculateSum, getUserData)를 사용한다. </li>
+          <li>생성자 함수: 대문자 카멜케이스를 사용한다. (예: MyConstructor) </li>
+          <li>상수: 밑줄이 있는 대문자를 사용한다. (예: MAX_VALUE) </li>
+          <li>boolean 변수/메서드: is, has, can 또는 should를 접두사로 사용한다 (예: isAdmin, hasPermission). </li>
+          <li>private 메서드: 밑줄을. 접두사로 사용한다 (예: _privateMethod). </li>
+        </ul>
+      </li>
+      <li>변수 선언: <ul>
+          <li>한줄에 하나의 변수를 선언한다. </li>
+          <li>변수는 범위 맨 위에 선언한다. </li>
+          <li>var 대신 const 또는 let을 사용한다. </li>
+        </ul>
+      </li>
+      <li>주석: <ul>
+          <li>복잡한 논리나 코드의 명확하지 않은 부분을 설명하려면 주석을 사용한다. </li>
+          <li>한 줄 주석에는 //를, JSDoc 스타일의 블록 주석에는 / <em>* ... </em>/를 사용한다. </li>
+        </ul>
+      </li>
+      <li>
+        <p>공백 </p>
+        <ul>
+          <li>연산자 및 구두점: 연산자(= + - * /) 앞뒤와 쉼표 뒤에 공백을 사용한다. </li>
+          <li>함수 호출: 함수 이름과 여는 괄호 사이, 또는 마지막 매개변수와 닫는 괄호 사이에 공백을 사용하지 않는다. </li>
+          <li>매개변수를 구분하는 쉼표 뒤에는 공백을 하나 추가한다. </li>
+        </ul>
+      </p>
+    </li>
+  </ul>
+  <p>출처: <a href="https://www.w3schools.com/js/js_conventions.asp">https://www.w3schools.com/js/js_conventions.asp</a>
+    <h2 id="html-">html 코딩 규칙</h2>
+    <ul>
+      <li>문서 유형 선언으로 시작한다.
+  <pre>
+    <code>  예)
+      <span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+    </code>
+  </pre>
+      </li>
+      <li>소문자를 사용한다 <ul>
+          <li>태그 </li>
+          <li>속성 </li>
+        </ul>
+      </li>
+      <li>모든 태그는 열기과 닫기가 존재해야 한다. </li>
+      <li>속성값은 따옴표로 묶어서 사용한다. </li>
+      <li>이미지 태그는 항상 alt, width, height를 지정한다. </li>
+      <li>불필요한 공백을 제거 한다. </li>
+      <li>html, head, title, body를 생략하지 않는다. </li>
+    </ul>
+    <p>출처: <a href="https://www.w3schools.com/html/html5_syntax.asp">https://www.w3schools.com/html/html5_syntax.asp</a>
+    </p>
+    <h1 id="css-">css 코딩 규칙</h1>
+    <ul>
+      <li>긴 css 규칙은 여러줄에 걸쳐 작성한다. </li>
+      <li>선택자와 같은 줄에 괄호를 놓는다. </li>
+      <li>여는 괄호 앞에 공백하나를 추가한다. </li>
+      <li>들여쓰기에는 공백 2개를 사용한다. </li>
+      <li>속성-값 쌍 뒤에는 세미콜론을 사용한다. </li>
+      <li>닫는 괄호는 공백없이 새줄에 놓는다. </li>
+    </ul>
+    <p>출처: <a href="https://www.w3schools.com/html/html5_syntax.asp">https://www.w3schools.com/html/html5_syntax.asp</a>
+    </p>
+    <h2 id="css-bem-">css 클래스 네이밍 규칙(BEM)</h2>
+    <ul>
+      <li>
+        <p>Block : </p>
+        <ul>
+          <li>독립된 컴포넌트 </li>
+          <li>공백이 필요한경우 하이픈을(-) 사용 </li>
+          <li>
+            <p>Block 내부에 block이 존재할 수 있음 </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <ul>
+      <li>
+        <p>Element: </p>
+        <ul>
+          <li>Block 내의 하위 요소들 </li>
+          <li>공백이 필요한경우 하이픈을(-) 사용 </li>
+          <li>
+            <p>Block__element의 형식으로 작성 (under bar 2개) ``` 예) HTML에서 </p>
+            <header class="header">
+              <div. class="header__title">
+                </div>
+                <div. class="header__icon">
+                  </div>
+            </header>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <p>Modifier: </p>
+        <ul>
+          <li>block이나 element의 상태를 나타내는 이름을 사용 </li>
+          <li>
+            <p>두개의 하이픈을 사용(--) </p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>출처: <a href="https://getbem.com/naming/">https://getbem.com/naming/</a>
+  </body>
+</html>
