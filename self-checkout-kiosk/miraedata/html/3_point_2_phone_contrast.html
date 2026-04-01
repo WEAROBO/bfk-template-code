@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>3_포인트 사용_2_전화번호 입력</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">   
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__top">
+              <div class="header__top-item header__top-item--store">
+                <span class="header__top-icon header__top-icon--marker" aria-hidden="true"></span>
+                <span class="header__top-text">아이스미래성수사거리점</span>                
+              </div>
+              <div class="header__top-item header__top-item--contact">
+                <span class="header__top-icon header__top-icon--call" aria-hidden="true"></span>
+                <span class="header__top-text">문의 000-0000-0000</span>                
+              </div>
+            </div>
+            <div class="header__banner">
+              <div class="header__banner-item header__banner-item--thumb"></div>
+              <div class="header__banner-item header__banner-item--content"></div>
+            </div>
+            <div class="header__nav">
+              <button type="button" class="header__nav-button" aria-label="처음으로">
+                <span class="header__nav-icon header__nav-icon--home" aria-hidden="true"></span>
+                <span class="header__nav-button-text">처음으로</span>
+              </button> 
+              <button type="button" class="header__event-button" aria-label="이벤트 보기">
+                <span class="header__event-icon header__event-icon--fireworks" aria-hidden="true"></span>
+                <span class="header__event-button-text">이벤트 보기</span>
+              </button>             
+            </div>                     
+          </div>
+
+          <main class="main">  
+            <div class="cart" role="region" aria-label="바코드 스캔중">
+              <div class="cart__header">
+                <div>상품명</div>
+                <div style="text-align:center">수량</div>
+                <div style="text-align:center">가격</div>
+              </div>
+              <div class="cart__content">
+                <div class="cart__list">
+                  <div class="cart__items">
+                    <div class="cart-item">
+                      <div class="cart-item__name"><span class="cart-item__index">1</span>메로나</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소"><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">5</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        3,000원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"><span class="cart-item__index">2</span>누가바</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소" disabled><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">1</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        600원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"><span class="cart-item__index">3</span>크런키바</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소" disabled><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">1</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        600원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>
+                    </div>
+                    <div class="cart-item">
+                      <div class="cart-item__name"><span class="cart-item__index">4</span>망고바</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소" disabled><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">1</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        600원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>
+                    </div>                    
+                    <div class="cart-item cart-item--active">
+                      <div class="cart-item__name"><span class="cart-item__index">5</span>샤인머스캣바</div>
+                      <div class="cart-item__quantity">
+                        <button class="cart-item__btn" aria-label="수량 감소"><span class="cart-item__icon--minus"></span></button>
+                        <span class="cart-item__count">2</span>
+                        <button class="cart-item__btn" aria-label="수량 증가"><span class="cart-item__icon--plus"></span></button>
+                      </div>
+                      <div class="cart-item__price">
+                        1,200원
+                        <button class="cart-item__delete" aria-label="삭제"><span class="cart-item__icon--delete"></span></button>
+                      </div>                    
+                    </div>
+                  </div>
+                </div>
+                <!-- Scroll -->
+                <div class="cart-scroll__wrap">
+                  <div class="cart-scroll">
+                    <button class="cart-scroll__btn" aria-label="이전 페이지" disabled>
+                      <span class="scroll-icon-up"></span>
+                    </button>
+                    <span class="cart-scroll__page"><strong>1</strong> / 1</span>
+                    <button class="cart-scroll__btn" aria-label="다음 페이지" disabled>
+                      <span class="scroll-icon-down"></span>
+                    </button>
+                  </div>   
+                </div>
+              </div>
+              <!-- Shortcut -->
+              <div class="cart-shortcut">
+                <button class="cart-shortcut__item">지구젤리<br><strong>500원</strong></button>
+                <button class="cart-shortcut__item">맥주사탕<br><strong>500원</strong></button>
+                <button class="cart-shortcut__item">발바닥사탕<br><strong>500원</strong></button>
+                <button class="cart-shortcut__item">비닐봉투(소)<br><strong>100원</strong></button>
+                <button class="cart-shortcut__item cart-shortcut__item--more">
+                  더보기
+                 <span class="cart-shortcut__item-icon--more" aria-hidden="true"></span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Cart Bottom -->
+            <div class="cart__bottom">
+              <div class="cart__point">
+                <div class="cart__point-image" aria-hidden="true">
+                  <img src="../resources/img/ui/cart_point.png" alt="">
+                </div>                      
+                <button class="cart__point-button" aria-label="포인트 조회 · 적립">
+                  포인트 조회 · 적립
+                </button>
+              </div>              
+              <div class="cart__payment">
+                <div class="cart__summary">
+                  <div class="cart__summary-row">
+                    <span class="cart__summary-label">합계</span>
+                    <span class="cart__summary-price">6,000원</span>
+                  </div>
+                  <div class="cart__summary-row">
+                    <span class="cart__summary-label">할인</span>
+                    <span class="cart__summary-discount"><strong class="cart__summary-accent">0</strong>원</span>
+                  </div>
+                  <div class="cart__summary-row">
+                    <span class="cart__summary-label">포인트 할인</span>
+                    <span class="cart__summary-discount"><strong class="cart__summary-accent">0</strong>원</span>
+                  </div>
+                </div>
+                <div class="cart__pay">                
+                  <button type="button" class="cart__pay-button">
+                    <span class="cart__pay-amount">6,000원</span>                    
+                    <span class="cart__pay-text">결제하기</span>                    
+                  </button>
+                </div>
+              </div>
+            </div>            
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast accessibility__button--active">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">낮은화면</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">돋보기</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">3</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+          
+          <div class="backdrop">
+            <div class="modal__wrap">
+              <div class="modal">
+                <div class="modal__title">포인트 조회를 위해 <br class="full-screen">전화번호를 입력하세요.</div>           
+                <div class="modal__body">
+                  <div class="modal__content">
+                    <div class="keyboard">
+                      <div class="phone-input__area">
+                        <input type="text" id="phoneInput" class="phone-input__field" value="010 - 1234 - 1234" readonly>
+                        <img src="../resources/img/svg/icon_visible-on_contrast.svg" id="toggleEye" class="phone-input__toggle" alt="보이기 토글">
+                      </div>
+
+                      <div class="phone-keypad">
+                        <button class="phone-keypad__button">1</button>
+                        <button class="phone-keypad__button">2</button>
+                        <button class="phone-keypad__button">3</button>
+                        <button class="phone-keypad__button">4</button>
+                        <button class="phone-keypad__button">5</button>
+                        <button class="phone-keypad__button">6</button>
+                        <button class="phone-keypad__button">7</button>
+                        <button class="phone-keypad__button">8</button>
+                        <button class="phone-keypad__button">9</button>
+                        <button class="phone-keypad__button type2" data-action="delete">
+                          <span class="keyboard__button__icon--delete" aria-hidden="true"></span>
+                          지우기
+                        </button>
+                        <button class="phone-keypad__button">0</button>
+                        <button class="phone-keypad__button type2" data-action="clear">
+                          모두<br>지우기
+                        </button>
+                      </div>
+                    </div>       
+                  </div>
+                </div>
+                <div class="modal__footer">         
+                  <button class="button modal__button modal__button--secondary" aria-label="취소">
+                    <span class="modal__icon modal__icon--close" aria-hidden="true"></span>
+                    <span class="modal__button-text">취소</span>
+                  </button>
+                  <button class="button modal__button modal__button--primary" aria-label="확인">
+                    <span class="modal__icon modal__icon--next" aria-hidden="true"></span>
+                    <span class="modal__button-text">확인</span>
+                  </button>
+                </div>   
+              </div>
+            </div>      
+          </div>            
+
+        </div>
+      </div>
+    </div> 
+
+    <script>
+      const input = document.getElementById("phoneInput");
+      const buttons = document.querySelectorAll(".phone-keypad__button");
+      const toggleEye = document.getElementById("toggleEye");
+      let phoneValue = "01012345678";
+
+      function formatPhone(num) {
+        num = num.replace(/[^0-9]/g, "");
+        if (num.length < 4) return num;
+        if (num.length < 8) return num.replace(/(\d{3})(\d{1,4})/, "$1-$2");
+        return num.replace(/(\d{3})(\d{4})(\d{1,4})/, "$1-$2-$3");
+      }
+
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const action = btn.dataset.action;
+          const val = btn.textContent.trim().replace(/[^0-9]/g, ''); 
+
+          if (action === "delete") {
+            phoneValue = phoneValue.slice(0, -1);
+          } else if (action === "clear") {
+            phoneValue = "";
+          } else if (val) {
+            if (phoneValue.length < 11) {
+              phoneValue += val;
+            }
+          }
+          input.value = formatPhone(phoneValue);
+        });
+      });
+
+      let isHidden = false; 
+      toggleEye.addEventListener("click", () => {
+        isHidden = !isHidden;
+        
+        input.type = isHidden ? "password" : "text"; 
+        
+        toggleEye.src = isHidden
+          ? "../resources/img/svg/icon_visible-off_contrast.svg"
+          : "../resources/img/svg/icon_visible-on_contrast.svg";
+          
+        toggleEye.alt = isHidden ? "전화번호 보이기" : "전화번호 숨기기"; 
+      });
+    </script>
+
+  </body>
+</html>

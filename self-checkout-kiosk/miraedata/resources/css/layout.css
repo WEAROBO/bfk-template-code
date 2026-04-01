@@ -1,0 +1,197 @@
+.container-wrap {
+  width: var(--container-width);
+  height: var(--container-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(-50%);
+  top: 50%;  
+}
+.container {
+  display: flex;
+  flex-direction: column;  
+  height: 100%;
+  width:100%;
+  background: var(--container-bg-color);
+	margin:0 auto;
+  overflow: auto;
+}
+@media (max-height: 1920px) {
+  .container-wrap {
+    transform: translateY(0);
+    top: 0;
+  }
+}
+.lower-screen .container-wrap {
+  justify-content: center;  
+}
+.lower-screen .container {
+  background: var(--lower-screen-container-bg);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.lower-screen .container::before {
+  width: 660px;
+  height: 180px;
+  content: "낮은화면 모드 사용중";    
+  position: absolute;    
+  top:calc((100% - 1000px) / 2);
+  left: 50%;    
+  transform: translate(-50%, -50%);    
+  white-space: nowrap;
+  text-align: center;
+  padding-top: 96px;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.4; 
+  color: var(--lower-screen-container-color);
+  background-image: var(--lower-screen-logo);
+  background-repeat: no-repeat;
+  background-size: 660px 66px;
+  background-position: center 0px;
+}
+.container-body {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  transform-origin: left top;
+  width: 100%;
+  height: 100%;  
+}
+.lower-screen .container-body {
+  height: 1050px;
+  background: var(--container-body-bg);
+}
+.header {
+  width: var(--header-width);
+  height: var(--header-height);
+  background: var(--header-bg);
+  padding: 0px;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  
+  justify-content: space-between;
+  gap: 0px;
+}
+.lower-screen .header {
+  position: relative;
+  height: 200px;
+}
+.header.header--no-bg {
+  background: var(--header-bg--no_bg);
+}
+.header__top {
+  width: 100%;
+  height: 80px;
+  padding: 0 40px;
+  background: var(--header-top-bg);
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: space-between;
+  margin:0;  
+}
+.lower-screen .header__top {
+  z-index: 777777;
+}
+.header__banner {
+  width: 100%;
+  height: 170px;  
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  column-gap: 10px;
+  padding: 10px 30px;
+  margin:0;
+}
+.lower-screen .header__banner {
+  position: absolute;
+  top: -170px;
+  z-index: 777777;
+}  
+.header__event {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;  
+  align-items: center;  
+  justify-content: center;  
+  padding: 10px 30px 20px 30px;
+  margin:0;
+  gap: 45px;
+}
+.lower-screen .header__event {
+  position: absolute;
+  height: 120px;  
+  padding: 20px 30px 20px 30px;  
+  top: 80px;
+}
+.header__nav {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;  
+  justify-content: space-between; 
+  padding: 10px 30px 20px 30px;
+  margin:0;  
+}
+.lower-screen .header__nav {
+  height: 120px;
+  padding: 20px 30px 20px 30px;  
+}
+.header__left,
+.header__center,
+.header__right {
+  display: flex;
+  flex: 1;
+  height: 100%;
+}
+.header__center {
+  justify-content: center;
+}
+.header__right {
+  justify-content: flex-end;
+}
+
+.main {
+	position:relative;
+  padding: 0 30px;
+  padding-bottom: 0px;
+  width: var(--main-width);
+  height: var(--main-height);
+	background: var(--main-bg);
+	border-top: var(--main-border-top);
+  transform-origin: left top;  
+}
+.lower-screen .main {
+  height: var(--main-height-lower);
+}
+.main.main--no-border {
+	border-top: 2px solid transparent;
+}
+.main.main--no-bg {
+  background: var(--main-bg--no_bg);
+}
+
+.control-bar {
+  width: var(--control-bar-width);
+  height: var(--control-bar-height);
+	background: var(--control-bar-bg);
+	border-top: var(--control-bar--border-top);
+  padding: 20px 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+	box-sizing: border-box;
+  z-index: 700;
+}
+.control-bar.no-border {
+	border-top: 1px solid transparent;
+}
+.control-bar.control-bar--no-bg {
+  background: var(--control-bar--no_bg);
+}
