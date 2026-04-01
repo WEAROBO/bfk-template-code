@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_물품보관_4_물품 보관자 비밀번호 입력</title>
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <button class="button header__button" aria-label="처음으로">
+            <span class="header__button__icon--home" aria-hidden="true"></span>
+            <span class="button__title">처음으로</span>
+          </button>
+          <div class="header__buttons">     
+            <div class="header__button--text" aria-label="문의 1600-0000">
+              <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+              <span class="button__title">문의 1600-0000</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="progress-steps">
+          <div class="progress-step progress-step--current">
+            <div class="progress-step__index"><span><strong>1</strong></span></div>
+            <div class="progress-step__label">보관자 정보</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>2</strong></span></div>
+            <div class="progress-step__label">찾으실분 정보</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>3</strong></span></div>
+            <div class="progress-step__label">물품 보관</div>
+          </div>
+        </div>
+
+        <main class="main">  
+          <h1 class="main__title main__title--step">물품 보관자의 <br class="full-screen">보관용 비밀번호를 입력하세요.</h1>
+          <div class="keyboard">
+            <div class="phone-input__area">
+            <div class="input-pw-box__input">
+              <div class="input-pw-box__input-inner" id="input-pw-box__input-inner">
+                <div class="star">*</div>
+                <div class="star">*</div>
+                <div class="star">*</div>
+                <div class="star">*</div>
+              </div>
+            </div>
+            </div>
+            <div class="phone-keypad">
+              <button class="phone-keypad__button" onclick="keyclick('1')">1</button>
+              <button class="phone-keypad__button" onclick="keyclick('2')">2</button>
+              <button class="phone-keypad__button" onclick="keyclick('3')">3</button>
+              <button class="phone-keypad__button" onclick="keyclick('4')">4</button>
+              <button class="phone-keypad__button" onclick="keyclick('5')">5</button>
+              <button class="phone-keypad__button" onclick="keyclick('6')">6</button>
+              <button class="phone-keypad__button" onclick="keyclick('7')">7</button>
+              <button class="phone-keypad__button" onclick="keyclick('8')">8</button>
+              <button class="phone-keypad__button" onclick="keyclick('9')">9</button>
+              <button class="phone-keypad__button type2" data-action="delete" onclick="keyclick('delete')">
+                <span class="phone-keypad__icon--del" aria-hidden="true"></span>
+                <small>지우기</small>
+              </button>
+              <button class="phone-keypad__button" onclick="keyclick('0')">0</button>
+              <button class="phone-keypad__button type2" data-action="clear" onclick="keyclick('delete_all')"><small>모두<br>지우기</small></button>
+            </div>
+            </div> 
+          <div class="main__bottom-buttons">
+            <button class="button main__button main-button-secondary" aria-label="이전 단계로 이동">
+              <span class="main__button__icon--prev" aria-hidden="true"></span>
+              <span class="button__title">이전</span>
+            </button>
+            <button class="button main__button main-button-primary" aria-label="확인">
+              <span class="main__button__icon--next" aria-hidden="true"></span>
+              <span class="button__title">확인</span>
+            </button>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">100<small class="unit">%</small></span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+
+    <script>
+      let password = ""
+      function keyclick(value) {
+        console.log("keyclick", value)
+        if (value == "delete_all") {
+          password = ""
+        } else if (value == "delete") {
+          if (password.length > 0) {
+            password = password.slice(0, password.length - 1);
+          }
+
+        } else if (password.length < 4) {
+          password += value
+        }
+        console.log("password", password)
+        const input_layer = document.querySelector("#input-pw-box__input-inner")
+        input_layer.innerHTML = ''
+        for (let i = 0; i < password.length; i++) {
+    // <div class="star">*</div>
+          let div = document.createElement('div');
+          div.innerHTML = '*';
+          div.classList.add('star');
+          input_layer.appendChild(div)
+        }
+
+      }
+    </script>    
+  </body>
+</html>
