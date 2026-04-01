@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>4_물품 찾기(사용자)_5_완료</title>
+  </head>
+  <body>
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body symbol-bg">
+          <div class="header">
+            <div class="header__utils">
+              <div class="header__util-item header__util-item--contact" aria-label="문의 전화 1600-0000">
+                <span class="header__icon header__icon--phone" aria-hidden="true"></span>
+                <span class="header__text">문의 1600-0000</span>
+              </div>
+              <div class="header__util-item header__util-item--time" aria-label="현재 시간">
+                <span class="header__text">12/31 (금) 오후 12:59</span>
+              </div>
+            </div>
+          </div>          
+          <div class="complete-wrap">
+            <div class="complete-box" role="status" aria-live="polite">
+              <span class="complete__img"></span>
+              <h1 class="complete__title">이용해 주셔서 감사합니다.</h1>
+              <p class="complete__desc">
+                <span id="count" class="complete__count--highlight">5</span><span class="complete__count">초 후</span> <br>처음으로 돌아갑니다.
+              </p>
+              <button class="button main__button main__button--primary mt-60" aria-label="처음으로">
+                <span class="main__icon main__icon--home" aria-hidden="true"></span>
+                <span class="button__title">처음으로</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    let seconds = 5;
+    const counter = document.getElementById("count");
+
+    const countdown = setInterval(() => {
+      seconds--;
+      counter.textContent = seconds;
+
+      if (seconds === 0) {
+        clearInterval(countdown);
+        window.location.href = "1_common_1_main.html";
+      }
+    }, 1000);
+    </script>    
+
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_공통 화면_1_메인</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap"> 
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__utils">
+              <div class="header__util-item header__util-item--contact" aria-label="문의 전화 1600-0000">
+                <span class="header__icon header__icon--phone" aria-hidden="true"></span>
+                <span class="header__text">문의 1600-0000</span>
+              </div>
+              <div class="header__util-item header__util-item--time" aria-label="현재 시간">
+                <span class="header__text">12/31 (금) 오후 12:59</span>
+              </div>
+            </div>
+          </div>
+
+          <main class="main main--home symbol-bg">
+            <div class="main__header">
+              <div class="main__security">
+                <span class="main__security-label">
+                  보안 카메라<br>영역
+                </span>
+              </div>
+              <div class="main__brand">
+                <div class="main__logo"></div>
+                <div class="main__location">
+                  <span class="main__location-text">개발테스트점</span>
+                </div>
+              </div>
+              <button class="button header__button" aria-label="다시듣기">
+                <span class="header__icon header__icon--play" aria-hidden="true"></span>
+                <span class="header__button-text">다시듣기</span>
+              </button>              
+            </div>
+            
+            <h1 class="main__title main__title--main">어떤 서비스를 이용하시겠습니까?</h1>
+            <div class="main__grid">
+              <div class="button main__button--service">
+                <span class="main__button--service__icon-in"></span>
+                <span class="service__title">물품 보관</span>
+              </div>
+              <div class="button main__button--service">
+                <span class="main__button--service__icon-out"></span>
+                <span class="service__title">물품 찾기</span>
+              </div>
+            </div>
+            <div class="main__service--available">
+              <span class="available__title">사용가능한 보관함</span>
+              <span class="available__data"><strong class="available__data-accent">20</strong>개</span>
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast accessibility__button--active">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">낮은화면</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">3</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>   
+  </body>
+</html>
