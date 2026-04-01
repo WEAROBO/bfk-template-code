@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>8_포인트 적용_2_내역 확인</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">     
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">로그인</div>
+            </div>
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">서비스 선택</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>4</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main main-progress">  
+            <h1 class="main__title main__title--progress">
+              내역을 확인하세요
+            </h1>
+
+            <div class="payment-info-box">
+              <div class="payment-info-text">
+                <span class="payment-info"><strong class="fc-blue">0000님</strong><br>
+                사용가능한 포인트</span>
+                <span class="payment-info-value">94,000원</strong>
+              </div>
+              <div class="nomal-buttons">
+                
+                <button class="normal-button">사용 취소</button>
+              </div>
+            </div>       
+
+            <div class="payment-box payment-detail">
+              <div class="payment-list__row">                
+                <div class="payment-list">
+                  <div class="payment-row">
+                    <span class="payment-row__label">장비</span>
+                    <span class="payment-row__value">1번 세탁기 20kg</span>
+                  </div>     
+                  <div class="payment-row">
+                    <span class="payment-row__label">코스</span>
+                    <span class="payment-row__value">표준 코스</span>
+                  </div>                         
+                </div>
+                <hr class="payment-list-line">
+                <div class="payment-list">
+                  <div class="payment-row">
+                    <span class="payment-row__label">금액</span>
+                    <span class="payment-row__value">6,500 원</span>
+                  </div>
+                  <div class="payment-row">
+                    <span class="payment-row__label">포인트 사용</span>
+                    <span class="payment-row__value minus">-6,000 원</span>
+                  </div>
+                </div>
+              </div>
+              <div class="payment-total">
+                <div class="payment-total__row">
+                  <span class="payment-total__label">결제 금액</span>
+                  <span class="payment-total__value fc-blue">500 원</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="main__bottom-buttons">
+              <button class="button main__button main-button-secondary" aria-label="이전 단계로 이동">
+                <span class="main__button__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main-button-primary" aria-label="확인">
+                <span class="main__button__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
