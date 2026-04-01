@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_레이아웃_1_금융기관 선택</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">금융기관 선택</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">100<small>%</small></small></span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>            
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="도움기능">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">도움기능</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main pt-30">
+            <h1 class="main-1__title center">원하시는 은행을 선택하세요.</h1>
+            <div class="bank-select">
+              <div class="bank-select__content">      
+                <div class="bank-select__grid">        
+                  <button class="bank-item">
+                    <span class="bank__img-knbank" aria-hidden="true"></span>
+                    <span class="bank-item__name">경남은행</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-kjbank" aria-hidden="true"></span>
+                    <span class="bank-item__name">광주은행</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-kb" aria-hidden="true"></span>
+                    <span class="bank-item__name">KB국민은행</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-ibk" aria-hidden="true"></span>
+                    <span class="bank-item__name">IBK기업은행</span>
+                  </button>
+
+                  <button class="bank-item">
+                    <span class="bank__img-nonghyup" aria-hidden="true"></span>
+                    <span class="bank-item__name">농협은행</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-busan" aria-hidden="true"></span>
+                    <span class="bank-item__name">부산은행</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-forest" aria-hidden="true"></span>
+                    <span class="bank-item__name">산림조합</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-kdb" aria-hidden="true"></span>
+                    <span class="bank-item__name">산업은행</span>
+                  </button>
+
+                  <button class="bank-item">
+                    <span class="bank__img-kfcc" aria-hidden="true"></span>
+                    <span class="bank-item__name">새마을금고</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-suhyup" aria-hidden="true"></span>
+                    <span class="bank-item__name">수협은행</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-shinhan" aria-hidden="true"></span>
+                    <span class="bank-item__name">신한은행</span>
+                  </button>
+                  <button class="bank-item">
+                    <span class="bank__img-cu" aria-hidden="true"></span>
+                    <span class="bank-item__name">신협은행</span>
+                  </button>        
+                </div> 
+                <div class="pagination-controller">
+                  <button class="pagination-controller__button arrow-up" aria-label="이전 페이지">
+                    <img src="../resources/img/svg/icon-arrow-up.svg" alt="">
+                  </button>        
+                  <div class="pagination-controller__info"><strong class="fc-blue">1</strong>/2</div>        
+                  <button class="pagination-controller__button arrow-down" aria-label="다음 페이지">
+                    <img src="../resources/img/svg/icon-arrow-down.svg" alt="">
+                  </button>
+                </div> 
+              </div> 
+            </div> 
+    
+            <div class="main-bottom mt-30">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-img"></span>
+                  <span class="secondary-btn-title">취소</span>
+                </div>
+                <div class="button main-button-primary">
+                  <span class="primary-btn-img"></span>
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

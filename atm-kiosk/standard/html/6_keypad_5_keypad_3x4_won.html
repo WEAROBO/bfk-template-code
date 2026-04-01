@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>6_키패드_5_3*4 키패드_만천원</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">금액입력</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">100<small>%</small></small></span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>            
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="도움기능">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">도움기능</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main pt-30">
+            <div class="input-account">
+              <div class="input-account-box box-style">
+                <div class="input-account-box-top box-top">
+                  <h1 class="box-top-title">보내실 금액을 입력하신 후<br>
+                    <strong class="fc-blue">[확인]</strong>을 누르세요
+                  </h1>
+                  <div class="box-top-middle">
+                    <div class="input-account-box__input mt-40 mb-14">
+                      1234123412341234
+                    </div>
+                  </div>
+                </div>
+                <div class="box-bottom">
+                  <div class="input-account-box__desc box-bottom_desc">
+                    최대 이체 가능한 금액은<br>
+                    100만원 입니다.
+                  </div>
+                </div>
+              </div>    
+              <div class="input-pw-keyboard center">
+                <div class="input-pw-keyboard--grid">
+                  <div class="input-pw-keyboard__item">1</div>
+                  <div class="input-pw-keyboard__item">2</div>
+                  <div class="input-pw-keyboard__item">3</div>
+                  <div class="input-pw-keyboard__item type3">만</div>
+
+                  <div class="input-pw-keyboard__item">4</div>
+                  <div class="input-pw-keyboard__item">5</div>
+                  <div class="input-pw-keyboard__item">6</div>
+                  <div class="input-pw-keyboard__item type3">천</div>
+
+                  <div class="input-pw-keyboard__item">7</div>
+                  <div class="input-pw-keyboard__item">8</div>
+                  <div class="input-pw-keyboard__item">9</div>
+                  <div class="input-pw-keyboard__item type3">원</div>
+                  <div class="input-pw-keyboard__item width-text">
+                    <div class="input-pw-keyboard__item-back-btn">
+                      <span class="input-pw-keyboard__icon-arrow"></span>
+                      <div>지우기</div>
+                    </div>
+                  </div>
+                  <div class="input-pw-keyboard__item">0</div>
+                  <div class="input-pw-keyboard__item width-text" onclick="keyclick('delete_all')">모두<br/>지우기</div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="main-bottom mt-30">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-img"></span>
+                  <span class="secondary-btn-title">취소</span>
+                </div>
+                <div class="button main-button-primary">
+                  <span class="primary-btn-img"></span>
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

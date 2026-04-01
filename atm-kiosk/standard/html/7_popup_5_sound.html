@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>7_팝업_5_음량조절</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+          <div class="header header--no-bg">
+            <div class="header__logo"></div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">100<small>%</small></small></span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>            
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="도움기능">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">도움기능</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="main pt-22">
+            <div class="main-3">
+    
+              <div class="main-left main-3-left">
+                <button class="button main__button">예금출금</button>
+                <button class="button main__button">입금/무통장송금</button>
+                <button class="button main__button">계좌이체</button>
+                <button class="button main__button">통장정리</button>
+                <button class="button main__button">네이버 페이</button>
+              </div>
+      
+              <div class="main-3-center">
+                <div class="main-center__title">
+                  <div class="maiin-center__title-line">
+                    현금만 출금가능
+                  </div>
+                  <div class="main-center__title-line">
+                    현금/수표 입금가능
+                  </div>
+                </div>
+                <div class="main-center__bg">
+                  <img src="../resources/img/ui/main-center.png" alt="베리어프리 키오스크 UIUX 제작지원 사업공고">
+                  <div class="main-center__bg-button button">
+                    <span class="main-center__bg-button-img"></span>
+                  </div>
+                </div>
+      
+                <div class="main-center__button_area">
+                  <div class="main-center__button button">
+                    <span class="button-title">
+                      다른업무
+                    </span>
+                    <span class="main-center__button-img"></span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="main-3-right">
+                <button class="button main__button">예금조회</button>
+                <button class="button main__button">신용카드 업무</button>
+                <button class="button main__button">캐시비</button>
+                <button class="button main__button font-size--smal">
+                  <div class="button-inner">
+                    <div class="button-inner__line">국세/지방세/공과금</div>
+                    <div class="button-inner__line">등록금/법원비용</div>
+                  </div>
+                </button>
+                <button class="button main__button font-size--smal">Foreign Languages</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop">        
+      <div class="modal">
+        <h2 class="modal__title">음량조절</h2>            
+        <div class="modal__body">
+          <div class="volume-display">3</div>        
+          <div class="volume-control">            
+            <button class="volume-control__button volume-control__button--minus" aria-label="음량 줄이기">
+              <span class="volume-control__icon--minus" aria-hidden="true"></span>
+            </button>            
+            <div class="volume-bar" data-max="5" data-current="3">
+              <div class="volume-bar__segment volume-bar__segment--active"></div>
+              <div class="volume-bar__segment volume-bar__segment--active"></div>
+              <div class="volume-bar__segment volume-bar__segment--active"></div>
+              <div class="volume-bar__segment"></div>
+            <div class="volume-bar__segment"></div>
+            </div>            
+            <button class="volume-control__button volume-control__button--plus" aria-label="음량 높이기">
+              <span class="volume-control__icon--plus" aria-hidden="true"></span>
+            </button>
+          </div>         
+
+        </div>
+        <div class="modal__footer center">         
+          <button class="button modal__button modal__button-secondary" aria-label="닫기">
+            <span class="button__title">닫기</span>
+          </button>
+        </div>   
+      </div>        
+    </div>    
+
+    <script>
+      const volumeDisplay = document.querySelector('.volume-display');
+      const volumeBarSegments = document.querySelectorAll('.volume-bar__segment');
+      const btnMinus = document.querySelector('.volume-control__button--minus');
+      const btnPlus = document.querySelector('.volume-control__button--plus');
+      const maxVolume = 5;
+      let currentVolume = 3; 
+
+      function updateVolume(newVolume) {
+        newVolume = Math.min(Math.max(0, newVolume), maxVolume); 
+        currentVolume = newVolume;
+        volumeDisplay.textContent = currentVolume;
+
+        volumeBarSegments.forEach((segment, index) => {
+          if (index < currentVolume) {
+              segment.classList.add('volume-bar__segment--active');
+          } else {
+              segment.classList.remove('volume-bar__segment--active');
+          }
+        });
+      }
+
+      btnMinus.addEventListener('click', () => updateVolume(currentVolume - 1));
+      btnPlus.addEventListener('click', () => updateVolume(currentVolume + 1));
+      
+      updateVolume(currentVolume);
+    </script>
+
+  </body>
+</html>

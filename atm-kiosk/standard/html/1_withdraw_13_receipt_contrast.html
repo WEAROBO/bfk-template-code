@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_출금_13_명세표 출력 선택</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">명세표 출력 선택</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">100<small>%</small></small></span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>            
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="도움기능">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">도움기능</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main pt-30">
+            <div class="receive-box">
+              <h1 class="receive-box__title center">명세표를 출력하시겠습니까?</h1>
+              <div class="main-1__input-area">
+                <div class="main-1__input-list">
+                  <div class="main-1__input-item">
+                    <div class="input-label ls-10">거래금액</div>
+                    <div class="input">110,000</div>
+                    <div class="input-unit">원</div>
+                  </div>
+                  <div class="main-1__input-item">
+                    <div class="input-label">거래 후 잔액</div>
+                    <div class="input">111,000</div>
+                    <div class="input-unit">원</div>
+                  </div>
+                  <div class="main-1__input-item">
+                    <div class="input-label">수수료</div>
+                    <div class="input fc-blue">0</div>
+                    <div class="input-unit">원</div>
+                  </div>
+                </div>
+                <div class="main-1__input-btn">
+                  <div class="button main_button__wt">
+                    출력
+                  </div>
+                  <div class="button main_button__wt">
+                    출력 안함
+                  </div>
+                </div>
+              </div>
+            </div>    
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>6_키패드_3_기호</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">정보입력</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">100<small>%</small></small></span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>            
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="도움기능">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">도움기능</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main pt-10">
+            <div class="keyboard pb-30">
+              <h1 class="keyboard__title center">보내시는 분 정보를 입력하세요.</h1>
+              <div class="keyboard__input-valu-area center">
+                <input class="keyboard__input-value center" placeholder="최대 7자까지 입력 가능"></input>
+              </div>
+              <div class="empty-55"></div>
+              <div class="keyboard_buttons" id="keyboardarea">
+                <div class="keyboard_buttons-line">
+                  <div class="keyboard__button">1</div>
+                  <div class="keyboard__button">2</div>
+                  <div class="keyboard__button">3</div>
+                  <div class="keyboard__button">4</div>
+                  <div class="keyboard__button">5</div>
+                  <div class="keyboard__button">6</div>
+                  <div class="keyboard__button">7</div>
+                  <div class="keyboard__button">8</div>
+                  <div class="keyboard__button">9</div>
+                  <div class="keyboard__button">0</div>
+                  <div class="keyboard__button type2 w-160 ml-10">
+                    <span class="keyboard__button__icon--delete" aria-hidden="true"></span>
+                    <span>지우기</span>
+                  </div>
+                </div>
+                <div class="keyboard_buttons-line">
+                  <div class="keyboard__button">+</div>
+                  <div class="keyboard__button">x</div>
+                  <div class="keyboard__button">÷</div>
+                  <div class="keyboard__button">=</div>
+                  <div class="keyboard__button">/</div>
+                  <div class="keyboard__button">_</div>
+                  <div class="keyboard__button"><</div>
+                  <div class="keyboard__button">></div>
+                  <div class="keyboard__button">[</div>
+                  <div class="keyboard__button">]</div>
+                  <div class="keyboard__button type2 w-74 ml-10">기호</div>
+                  <div class="keyboard__button type2 w-74">한/영</div>
+                </div>
+                <div class="keyboard_buttons-line keyboard_buttons-line--right">
+                  <div class="keyboard__button">*</div>
+                  <div class="keyboard__button">#</div>
+                  <div class="keyboard__button">∼</div>
+                  <div class="keyboard__button">%</div>
+                  <div class="keyboard__button">^</div>
+                  <div class="keyboard__button">&</div>
+                  <div class="keyboard__button">(</div>
+                  <div class="keyboard__button">)</div>
+                  <div class="keyboard__button">!</div>
+                  <div class="keyboard__button">-</div>
+                  <div class="keyboard__button type2 w-160 ml-10">
+                    <span class="keyboard__button__icon--double" aria-hidden="true"></span>
+                    <span>쌍자음</span>
+                  </div>
+                </div>
+                <div class="keyboard_buttons-line">                
+                  <div class="keyboard__button">'</div>
+                  <div class="keyboard__button">"</div>
+                  <div class="keyboard__button">;</div>
+                  <div class="keyboard__button">:</div>
+                  <div class="keyboard__button">$</div>
+                  <div class="keyboard__button">＼</div>
+                  <div class="keyboard__button">@</div>
+                  <div class="keyboard__button">,</div>
+                  <div class="keyboard__button">.</div>
+                  <div class="keyboard__button">?</div>
+                  <div class="keyboard__button type2 w-160 ml-10">한칸 띄우기</div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="main-bottom mt-30">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-img"></span>
+                  <span class="secondary-btn-title">취소</span>
+                </div>
+                <div class="button main-button-primary">
+                  <span class="primary-btn-img"></span>
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_레이아웃_2_대출안내</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">간편신청</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">100<small>%</small></small></span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>            
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="도움기능">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">도움기능</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main pt-30">            
+            <div class="agreement-content__box">
+              <h1 class="agreement-content__title">안내사항을 확인하신 후 동의하시면 <strong class="fc-blue">[확인]</strong>을 누르세요.</h1>
+              <div class="agreement-content">
+                <div class="agreement-content__wrapper">
+                  <div class="agreement-content__pages" id="pagesContainer">                    
+                    <div class="agreement-content__page" data-page-index="1">
+                      <ul class="agreement-content__list">
+                        <li class="agreement-content__item" data-list-num="1">
+                          이자율 및 연체요율은 금융시장 등의 변화로 변경될 수 있습니다.
+                        </li>
+                        <li class="agreement-content__item" data-list-num="2">
+                          이자상환을 1개월 이상 연체시 대출금 전액을 즉시 변제하여야합니다.
+                        </li>
+                        <li class="agreement-content__item" data-list-num="3">
+                          연체이자는 결제일(납부일)에 상환해야 할 금액(이자포함)에 대하여 계산되며, 대출당일 상환시 1일 이자계산을 합니다.
+                        </li>
+                      </ul>
+                    </div>                
+                    <div class="agreement-content__page" data-page-index="2">
+                      <ul class="agreement-content__list">
+                        <li class="agreement-content__item" data-list-num="4">
+                          마이너스론은 별도 청구서가 발송되지 않으며, 대출금은 한도약정 후 본인이 직접 인출하여야 합니다.
+                        </li>
+                        <li class="agreement-content__item" data-list-num="5">
+                          대출약정시 대출정보를 은행연합회 등에 집중하는데 동의합니다.
+                        </li>                        
+                      </ul>
+                    </div>                    
+                  </div>
+                </div>                
+                <div class="pagination-controller">                
+                  <button class="pagination-controller__button arrow-up" id="prevBtn" disabled aria-label="이전 페이지">
+                    <img src="../resources/img/svg/icon-arrow-up.svg" alt="">
+                  </button>                
+                  <div class="pagination-controller__info">
+                    <strong class="fc-blue" id="currentPage">1</strong>/<span id="totalPages">3</span>
+                  </div>                
+                  <button class="pagination-controller__button arrow-down" id="nextBtn" aria-label="다음 페이지">
+                    <img src="../resources/img/svg/icon-arrow-down.svg" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="main-bottom mt-16">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-img"></span>
+                  <span class="secondary-btn-title">취소</span>
+                </div>
+                <div class="button main-button-primary">
+                  <span class="primary-btn-img"></span>
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<script>
+    const pages = document.querySelectorAll('.agreement-content__page');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const confirmBtn = document.querySelector('.main-button-primary'); 
+    const currentPageSpan = document.getElementById('currentPage');
+    
+    const totalPages = pages.length;
+    let currentPage = 1;
+    document.getElementById('totalPages').textContent = totalPages; 
+
+    function goToPage(pageNumber) {
+        if (pageNumber < 1 || pageNumber > totalPages) {
+            return;
+        }
+
+        const activePage = document.querySelector('.agreement-content__page--active');
+        if (activePage) {
+            activePage.classList.remove('agreement-content__page--active');
+        }
+
+        currentPage = pageNumber;
+        
+        const nextPage = document.querySelector(`[data-page-index="${currentPage}"]`);
+        if (nextPage) {
+            nextPage.classList.add('agreement-content__page--active');
+        }
+
+        currentPageSpan.textContent = currentPage;
+        updateButtonState();
+    }
+
+    function updateButtonState() {
+        prevBtn.disabled = currentPage === 1;
+        nextBtn.disabled = currentPage === totalPages;
+        
+        if (confirmBtn) {
+            confirmBtn.classList.toggle('disabled', currentPage !== totalPages);
+        }
+    }
+
+    prevBtn.addEventListener('click', () => {
+        goToPage(currentPage - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        goToPage(currentPage + 1);
+    });
+    
+    window.onload = () => {
+        goToPage(1);
+    };
+
+</script>
+  </body>
+</html>

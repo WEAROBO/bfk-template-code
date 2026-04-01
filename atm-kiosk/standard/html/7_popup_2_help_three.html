@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>7_팝업_2_도움기능 팝업(3열)</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+          <div class="header header--no-bg">
+            <div class="header__logo"></div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">100<small>%</small></small></span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>            
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="도움기능">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">도움기능</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="main pt-22">
+            <div class="main-3">
+    
+              <div class="main-left main-3-left">
+                <button class="button main__button">예금출금</button>
+                <button class="button main__button">입금/무통장송금</button>
+                <button class="button main__button">계좌이체</button>
+                <button class="button main__button">통장정리</button>
+                <button class="button main__button">네이버 페이</button>
+              </div>
+      
+              <div class="main-3-center">
+                <div class="main-center__title">
+                  <div class="maiin-center__title-line">
+                    현금만 출금가능
+                  </div>
+                  <div class="main-center__title-line">
+                    현금/수표 입금가능
+                  </div>
+                </div>
+                <div class="main-center__bg">
+                  <img src="../resources/img/ui/main-center.png" alt="베리어프리 키오스크 UIUX 제작지원 사업공고">
+                  <div class="main-center__bg-button button">
+                    <span class="main-center__bg-button-img"></span>
+                  </div>
+                </div>
+      
+                <div class="main-center__button_area">
+                  <div class="main-center__button button">
+                    <span class="button-title">
+                      다른업무
+                    </span>
+                    <span class="main-center__button-img"></span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="main-3-right">
+                <button class="button main__button">예금조회</button>
+                <button class="button main__button">신용카드 업무</button>
+                <button class="button main__button">캐시비</button>
+                <button class="button main__button font-size--smal">
+                  <div class="button-inner">
+                    <div class="button-inner__line">국세/지방세/공과금</div>
+                    <div class="button-inner__line">등록금/법원비용</div>
+                  </div>
+                </button>
+                <button class="button main__button font-size--smal">Foreign Languages</button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop">        
+      <div class="modal">
+        <h2 class="modal__title">도움기능</h2>            
+        <div class="modal__body">
+          <div class="option-group">              
+            <button class="option-group__btn option-group__btn--active" aria-pressed="true" data-option="contrast">
+              <span class="option-group__icon">
+                <span class="option-group__icon--contrast"></span>
+              </span>
+              고대비
+            </button>            
+            <button class="option-group__btn option-group__btn" aria-pressed="false" data-option="zoom">
+              <span class="option-group__icon">
+                <span class="option-group__icon--zoom"></span>
+              </span>
+              화면 확대
+            </button>      
+            <button class="option-group__btn option-group__btn" aria-pressed="false" data-option="zoom">
+              <span class="option-group__icon">
+                <span class="option-group__icon--call"></span>
+              </span>
+              직원호출
+            </button>                      
+          </div>
+
+        </div>
+        <div class="modal__footer center">         
+          <button class="button modal__button modal__button-secondary" aria-label="닫기">
+            <span class="button__title">닫기</span>
+          </button>
+        </div>   
+      </div>        
+    </div>    
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const optionButtons = document.querySelectorAll('.option-group__btn');
+
+        optionButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            const wasActive = this.classList.contains('option-group__btn--active');
+
+            optionButtons.forEach(btn => {
+              btn.classList.remove('option-group__btn--active');
+              btn.setAttribute('aria-pressed', 'false');
+            });
+
+            if (!wasActive) {
+              this.classList.add('option-group__btn--active');
+              this.setAttribute('aria-pressed', 'true');
+            }
+          });
+        });
+      });
+    </script>
+
+  </body>
+</html>
