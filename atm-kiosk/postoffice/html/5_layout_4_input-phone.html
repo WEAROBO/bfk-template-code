@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_레이아웃_4_일반대출 간편안내</title>
+  </head>
+  <body>
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">일반대출 간편안내</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기">
+                  <span class="header__sound-icon--minus"></span>
+                </button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">3</span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기">
+                  <span class="header__sound-icon--plus"></span>
+                </button>
+              </div>            
+              <button class="button header__button" aria-label="다시듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">다시듣기</span>
+              </button>
+              <button class="button header__button" aria-label="접근성">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">접근성</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main">
+            <div class="input-account">
+              <div class="input-account-box box-style">
+                <div class="input-account-box-top box-top">
+                  <h1 class="box-top-title">
+                    문자받을 전화번호를 입력 후<br>
+                    <span class="fc-accent">[확인]</span>을 누르세요.
+                  </h1>
+
+                  <div class="phone-input__area">
+                    <input type="text" id="phoneInput" class="phone-input__field" readonly>
+                    <img src="../resources/img/svg/icon_visible-off.svg"
+                         id="toggleEye"
+                         class="phone-input__toggle phone-input__toggle--off"
+                         alt="보이기 토글">
+                  </div>
+                </div>
+
+                <div class="box-bottom">               
+                  <div class="input-account-box__desc sms_box__desc">
+                    <div class="sms-agree" id="smsAgree">
+                      <div class="sms-agree__checkbox"></div>
+                      개인정보 수집 및 이용 동의
+                    </div>                       
+
+                    <div class="sms-agree__btm">
+                      <span>개인정보 수집 · 일반대출 약관</span> 
+                      <button class="button sms__button" aria-label="보기">                        
+                        <span class="button__title">보기</span>
+                        <span class="sms__button__icon--arrow" aria-hidden="true"></span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>    
+
+              <div class="input-account-keyboard center">
+                <div class="input-account-keyboard--grid" id="keypad">
+                  <div class="input-pw-keyboard__item" data-key="1">1</div>
+                  <div class="input-pw-keyboard__item" data-key="2">2</div>
+                  <div class="input-pw-keyboard__item" data-key="3">3</div>
+                  <div class="input-pw-keyboard__item" data-key="4">4</div>
+                  <div class="input-pw-keyboard__item" data-key="5">5</div>
+                  <div class="input-pw-keyboard__item" data-key="6">6</div>
+                  <div class="input-pw-keyboard__item" data-key="7">7</div>
+                  <div class="input-pw-keyboard__item" data-key="8">8</div>
+                  <div class="input-pw-keyboard__item" data-key="9">9</div>                  
+                  <div class="input-pw-keyboard__item width-text" data-action="delete">
+                    <div class="input-account-keyboard__item-back-btn">
+                      <span class="input-pw-keyboard__icon-arrow"></span>
+                      <div>지우기</div>
+                    </div>
+                  </div>                  
+                  <div class="input-pw-keyboard__item" data-key="0">0</div>                  
+                  <div class="input-pw-keyboard__item width-text" data-action="clear">
+                    모두<br/>지우기
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div class="main-bottom">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-img"></span>
+                  <span class="secondary-btn-title">취소</span>
+                </div>
+                <div class="button main-button-primary main-button-disabled">
+                  <span class="primary-btn-img"></span>
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const input = document.getElementById("phoneInput");
+      const keypad = document.getElementById("keypad");
+      const toggleEye = document.getElementById("toggleEye");
+      const smsAgree = document.getElementById("smsAgree");
+
+      const PHONE_LENGTH = 11;
+
+      let rawPhoneValue = "01012341234";
+
+      let isHidden = true;
+
+      function formatAndMaskPhone(rawNum, mask = false) {
+        if (!rawNum) return '';
+        const num = rawNum.replace(/[^0-9]/g, "");
+
+        let formatted = num;
+
+        if (num.length > 3) {
+          formatted = num.substring(0, 3) + ' - ' + num.substring(3, 7);
+        }
+        if (num.length > 7) {
+          formatted += ' - ' + num.substring(7, 11);
+        }
+
+        if (mask && num.length >= 7) {
+          formatted = formatted.replace(
+            /(\d{3} - )(\d{4})( - \d{4})/,
+            '$1****$3'
+          );
+        }
+
+        return formatted;
+      }
+
+      input.value = formatAndMaskPhone(rawPhoneValue, isHidden);
+
+      keypad.addEventListener('click', (event) => {
+        const item = event.target.closest('.input-pw-keyboard__item');
+        if (!item) return;
+
+        const key = item.getAttribute('data-key');
+        const action = item.getAttribute('data-action');
+
+        if (key && rawPhoneValue.length < PHONE_LENGTH) {
+          rawPhoneValue += key;
+        } else if (action === 'delete') {
+          rawPhoneValue = rawPhoneValue.slice(0, -1);
+        } else if (action === 'clear') {
+          rawPhoneValue = '';
+        }
+
+        input.value = formatAndMaskPhone(rawPhoneValue, isHidden);
+      });
+
+      toggleEye.addEventListener("click", () => {
+        isHidden = !isHidden;
+
+        input.value = formatAndMaskPhone(rawPhoneValue, isHidden);
+
+        toggleEye.classList.toggle("phone-input__toggle--on", !isHidden);
+        toggleEye.classList.toggle("phone-input__toggle--off", isHidden);
+
+        toggleEye.src = isHidden
+          ? "../resources/img/svg/icon_visible-off.svg"
+          : "../resources/img/svg/icon_visible-on.svg";
+      });
+
+      smsAgree.addEventListener("click", () => {
+        smsAgree.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
