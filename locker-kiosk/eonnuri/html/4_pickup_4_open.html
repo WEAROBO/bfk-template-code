@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>4_물품 찾기(사용자)_4_보관함 열림</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+        
+          <div class="header">
+            <div class="header__utils">
+              <div class="header__util-item header__util-item--contact" aria-label="문의 전화 1600-0000">
+                <span class="header__icon header__icon--phone" aria-hidden="true"></span>
+                <span class="header__text">문의 1600-0000</span>
+              </div>
+              <div class="header__util-item header__util-item--time" aria-label="현재 시간">
+                <span class="header__text">12/31 (금) 오후 12:59</span>
+              </div>
+            </div>
+            <div class="header__content">
+              <button class="button header__button" aria-label="처음으로">
+                <span class="header__icon header__icon--home" aria-hidden="true"></span>
+                <span class="header__button-text">처음으로</span>
+              </button>
+              <div class="header__logo"></div>
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__icon header__icon--help" aria-hidden="true"></span>
+                <span class="header__button-text">안내듣기</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">보관함 선택</div>
+            </div>
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">비밀번호 입력</div>
+            </div>
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span><strong>4</strong></span></div>
+              <div class="progress-step__label">물품 찾기</div>
+            </div>
+          </div>          
+
+          <main class="main main--no-border">  
+            <h1 class="main__title main__title--step">
+              <span><span class="fc-accent">8번 보관함</span>이 열렸습니다<br>물품을 꺼내신 후 문을 닫아주세요</span>
+            </h1>
+
+            <div class="locker__list">
+              <div class="locker">
+                <div class="locker__item disabled">1</div>
+                <div class="locker__item disabled">6</div>
+                <div class="locker__item disabled">12</div>
+                <div class="locker__item locker__item--disabled disabled">17
+                  <div class="locker__icon locker__icon--open"></div>
+                  <div class="line line--lt-rb"></div>
+                  <div class="line line--rt-lb"></div>
+                </div>
+
+                <div class="locker__item locker__item--locker-body disabled">
+                  <span class="locker__screen"></span>
+                </div>
+                <div class="locker__item locker__item--md disabled">7</div>
+                <div class="locker__item locker__item--md disabled">13</div>
+                <div class="locker__item locker__item--md locker__item--disabled-md disabled">18
+                  <div class="line line--lt-rb"></div>
+                  <div class="line line--rt-lb"></div>                 
+                </div>
+
+                <div class="locker__item">8
+                </div>
+                <div class="locker__item disabled">14</div>
+                <div class="locker__item locker__item--disabled disabled">19
+                  <div class="locker__icon locker__icon--open"></div>
+                  <div class="line line--lt-rb"></div>
+                  <div class="line line--rt-lb"></div>              
+                </div>
+
+                <div class="locker__item disabled">9</div>
+                <div class="locker__item disabled">15</div>
+                <div class="locker__item disabled">20</div>
+
+                <div class="locker__item disabled">4
+                  <div class="locker__icon locker__icon--wheelchair"></div>
+                </div>
+                <div class="locker__item disabled">10
+                  <div class="locker__icon locker__icon--wheelchair"></div>
+                </div>
+                <div class="locker__item locker__item--lg disabled">16
+                  <div class="locker__icon locker__icon--wheelchair"></div>
+                </div>
+                <div class="locker__item locker__item--lg locker__item--disabled-lg disabled">21
+                  <div class="locker__icon locker__icon--wheelchair"></div>
+                  <div class="locker__icon locker__icon--open"></div>
+                  <div class="line line--lt-rb"></div>
+                  <div class="line line--rt-lb"></div>                
+                </div>
+
+                <div class="locker__item locker__item--md disabled">5
+                  <div class="locker__icon locker__icon--wheelchair"></div>
+                </div>
+                <div class="locker__item locker__item--md disabled">11
+                  <div class="locker__icon locker__icon--wheelchair"></div>
+                </div>
+              </div>
+            </div>        
+
+            <div class="main__buttons center mt-90">
+              <button class="button main__button main__button--secondary" aria-label="보관 취소">
+                <span class="button__title">보관 취소</span>
+              </button>
+            </div>
+          </main>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: unset;
+      height: 100%;
+    }
+
+    .menu {
+      padding: 10px;
+      /* overflow-y: auto; Remove this to prevent whole menu scroll */
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      min-width: 250px;
+      /* Optional: ensure minimum width */
+    }
+
+    .container {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      /* Prevent body scroll */
+    }
+
+    .content {
+      flex-grow: 1;
+    }
+
+    .iframe_container {
+      width: 100%;
+      height: 100%;
+      border: unset;
+      overflow: hidden;
+      background: #c4c4c4;
+      padding: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: unset;
+    }
+
+    iframe.hide {
+      opacity: 0;
+    }
+
+    .info_area {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+
+    .info_area .buttons {
+      display: flex;
+      gap: 5px;
+    }
+
+    .info_area button {
+      height: 25px;
+    }
+
+    .title1 {
+      background: #fff;
+      font-size: 20px;
+      font-weight: 900;
+      height: 30px;
+    }
+
+    .title2 {
+      background: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      height: 45px;
+    }
+
+    #list_ul {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      flex: 1;
+      /* Take remaining height */
+      overflow-y: auto;
+      /* Scroll only this part */
+      padding-right: 5px;
+      /* Optional: space for scrollbar */
+    }
+
+    /* Custom Scrollbar */
+    #list_ul::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    #list_ul::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    #list_ul::-webkit-scrollbar-thumb {
+      background: #c1c1c1;
+      border-radius: 3px;
+    }
+
+    #list_ul::-webkit-scrollbar-thumb:hover {
+      background: #a8a8a8;
+    }
+
+    /* Navigation Buttons */
+    .nav_buttons {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .nav_buttons button {
+      flex: 1;
+      height: 30px;
+      cursor: pointer;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .nav_buttons button:hover {
+      background-color: #f0f0f0;
+    }
+
+    .nav_buttons button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      background-color: #e0e0e0;
+    }
+
+    #list_ul .main {
+      background: #c4c4c4;
+    }
+
+    .main_type {
+      position: relative;
+      padding: 10px;
+    }
+
+    .main_type .main_line {
+      background: #87CEEB;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 20px;
+      z-index: -1;
+    }
+
+    .main_type.normal .main_line {
+      background: #87CEEB;
+    }
+
+    .main_type.contrast .main_line {
+      background: #c1c1c1;
+    }
+
+    .main_type.lower .main_line {
+      background: #cdde67;
+    }
+
+    .main_type.zoom .main_line {
+      background: #fdee64;
+    }    
+
+    #list_ul .sub {
+      /* background: #f1f1f1; */
+      /* padding-left: 15px; */
+      height: 40px;
+      line-height: 40px;
+    }
+
+    #list_ul .item {
+      font-size: 12px;
+      padding: 3px 0;
+      padding-left: 20px;
+      cursor: pointer;
+      /* Added cursor pointer */
+    }
+
+    #list_ul .item.active::before {
+      background: red !important;
+    }
+
+    #list_ul .item::before {
+      content: "\A";
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #87CEEB;
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 3px;
+    }
+
+    #list_ul .main_type.normal .item::before {
+      background: #87CEEB;
+    }
+
+    #list_ul .main_type.contrast .item::before {
+      background: #c1c1c1;
+    }
+
+    #list_ul .main_type.lower .item::before {
+      background: #cdde67;
+    }
+
+    #list_ul .main_type.zoom .item::before {
+      background: #fdee64;
+    }      
+    
+  </style>
+  <script src="./list.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="menu">
+      <div class="title1">무인택배함</div>
+      <div class="title2">이온누리</div>
+      <div class="nav_buttons">
+        <button id="btn_prev">이전</button>
+        <button id="btn_next">다음</button>
+      </div>
+      <div id="list_ul">
+      </div>
+    </div>
+    <div class="content">
+      <div class="iframe_container">
+        <iframe id="iframe" src="" title="content"></iframe>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

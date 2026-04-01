@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>3_물품 보관 추가 옵션_1-1_현금 보관 팝업</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__utils">
+              <div class="header__util-item header__util-item--contact" aria-label="문의 전화 1600-0000">
+                <span class="header__icon header__icon--phone" aria-hidden="true"></span>
+                <span class="header__text">문의 1600-0000</span>
+              </div>
+              <div class="header__util-item header__util-item--time" aria-label="현재 시간">
+                <span class="header__text">12/31 (금) 오후 12:59</span>
+              </div>
+            </div>
+            <div class="header__content">
+              <button class="button header__button" aria-label="처음으로">
+                <span class="header__icon header__icon--home" aria-hidden="true"></span>
+                <span class="header__button-text">처음으로</span>
+              </button>
+              <div class="header__logo"></div>
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__icon header__icon--help" aria-hidden="true"></span>
+                <span class="header__button-text">안내듣기</span>
+              </button>
+            </div>
+          </div>
+          
+          <main class="main">  
+            <h1 class="main__title main__title--guide">
+              <span class="main__title--emblem-police" role="img" aria-label="emblem-police"></span>
+              공공기관 사칭 보이스피싱 주의
+            </h1>
+            <div class="info-box">
+              <div class="info-box__title">절대 현금을 보관하지 마세요!</div>
+              <p><strong>보이스피싱 사례 예시</strong></p>
+              <ul class="info-list">
+                <li>현금검찰사칭 사건번호를 제시하며 현금을 인출해서 택배함에 보관하라는 경우</li>
+                <li>대포통장에 관련되어 확인 후 돌려주겠다며 택배함에 보관하라는 경우</li>
+                <li>경찰, 검찰, 금감원 직원에게 돈을 맡겨야 한다며 보관하라는 경우</li>
+              </ul>
+              <p><strong>현금보관 전화를 받았다면, 지금 즉시 전화를 끊고<br><span class="fc-red">경찰청(112)</span>로 전화하세요!</strong></p>
+            </div>
+            <div class="main__button--calls">
+              <button class="button main__button--call" aria-label="112 전화하기">
+                <span class="main__button__icon--call" aria-hidden="true"></span>
+                <span class="button__title">112 전화하기</span>
+              </button>
+            </div>
+
+            <div class="main__bottoms">
+              <button class="button main__button main__button--secondary" aria-label="이전">
+                <span class="main__icon main__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main__button--primary" aria-label="확인">
+                <span class="main__icon main__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>              
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">낮은화면</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">3</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop">
+      <div class="modal__wrap">       
+        <div class="modal">   
+          <div class="modal__body">
+            <div class="modal__content">            
+              <div class="modal__question">
+                <span class="main__title--emblem-police"></span>
+                현재 현금을 보관중이며, <br class="full-screen">112로 전화 연결을 합니다
+              </div>
+            </div>
+          </div>
+          <div class="modal__footer center">         
+            <button class="button modal__button modal__button-secondary" aria-label="취소">
+              <span class="button__title">취소</span>
+            </button>
+            <button class="button modal__button modal__button-primary" aria-label="전화 연결">
+              <span class="button__title">전화 연결</span>
+            </button>
+          </div>   
+        </div>
+      </div>      
+    </div>      
+
+  </body>
+</html>
