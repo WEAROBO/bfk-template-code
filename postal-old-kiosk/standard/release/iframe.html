@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="./paging_btns.js"></script>
+  <style>
+    html {
+      height: 100%;
+    }
+
+    body {
+      margin: unset;
+      height: 100%;
+    }
+
+    .iframe_container {
+      width: 100%;
+      height: 100%;
+      border: unset;
+      overflow: hidden;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: unset;
+    }
+
+    .info_area {
+      position: absolute;
+      left: 10px;
+      top: 10px;
+    }
+
+    .info_area .buttons {
+      display: flex;
+      gap: 5px;
+    }
+
+    .info_area button {
+      height: 25px;
+    }
+
+    .title {
+      background: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="info_area">
+    <div class="buttons">
+      <button onclick="gotoIndex()">Index</button>
+      <button onclick="homeclick()">홈</button>
+      <button onclick="clickChangePage(false)">이전</button>
+      <button onclick="clickChangePage(true)">다음</button>
+      <div id="title"></div>
+    </div>
+  </div>
+  <div class="iframe_container">
+    <iframe id="iframe" src="" title="content"></iframe>
+  </div>
+
+  <script>
+    let filename;
+    let isContrast;
+    let fileList
+    let diff = 1
+
+    window.onload = function () {
+      console.log("iframe load")
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+
+      const path = urlParams.get('path'); // 'value1'
+      const iframe = document.getElementById("iframe")
+      iframe.src = "../html/" + path;
+      iframe.onload = () => {
+        console.log("iframe load", iframe)
+        const title = iframe.contentDocument.title;
+        document.getElementById("title").innerHTML = title
+      }
+
+      // filename = path.split(".")[0];
+      filename = path;
+      console.log("filename", filename)
+
+      isContrast = filename.indexOf('contrast') > -1
+      console.log("isContrast", isContrast)
+      fileList = normalList
+      if (isContrast) {
+        fileList = contrastList
+      }
+    }
+
+    function homeclick() {
+      console.log("homeclick")
+      window.location.href = "./index.html";
+    }
+
+    function gotoIndex() {
+      window.location.href = "../../../../index.html";
+    }
+
+    function clickChangePage(value) {
+      console.log("iframe clickChangePage", value)
+      const index = fileList.findIndex(((s) => {
+        return s == filename
+      }))
+      console.log("index", index)
+
+      let nextIndex
+      if (value) {
+        nextIndex = index + diff
+      } else {
+        nextIndex = index - diff
+      }
+      if (nextIndex >= fileList.length) {
+        nextIndex = 0
+      } else if (nextIndex < 0) {
+        nextIndex = fileList.length - 1
+      }
+
+      const nextFile = fileList[nextIndex];
+      if (!nextFile) {
+        diff += 1
+        clickChangePage(value)
+        return
+      }
+      diff = 1
+      const nextPath = nextFile
+      window.location.href = `./iframe.html?path=${nextPath}`;
+    }
+
+  </script>
+</body>
+
+</html>
