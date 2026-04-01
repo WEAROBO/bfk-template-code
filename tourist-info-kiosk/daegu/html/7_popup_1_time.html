@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../resources/css/index.css">
+  <title>7_팝업_1_시간연장</title>
+</head>
+
+<body class="">
+  <div class="container">
+    <div class="container-body">
+
+      <div class="header">
+        <div class="header__left">
+          <div class="header__logo"></div>
+          <div class="weather">
+            <div class="weather__icon"></div>
+            <div class="weather__temp">23℃</div>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="date">(금) 오후</div>
+          <div class="time">12:27</div>
+        </div>
+      </div>
+
+      <main class="main graphic">
+        <div class="slide">
+          <img src="../resources/img/slide/slide1.png" alt="슬라이드" />
+          <div class="slide-info">
+            <div class="slide-info__title">강정고령보 The ARC</div>
+            <div class="slide-info__desc">대구광역시 달성군 다사읍 강정본길 57</div>
+          </div>
+          <div class="slide-cnt">
+            <div class="slide__button pause"></div>
+            <div class="slide__current">1</div>
+            <div class="slide__divider">/</div>
+            <div class="slide__total">10</div>
+          </div>
+        </div>
+
+        <div class="slide--content">
+          <div class="content-title">
+            <div class="content__title">대구시 관광안내 키오스크</div>
+            <div class="content__desc">daegu tourist information kiosk</div>
+          </div>
+          <div class="main__grid">
+            <div class="button main__button">
+              <img class="button-icon" src="../resources/img/icon_tour.png" alt="관광명소" />
+              <div class="button--name">관광명소</div>
+            </div>
+            <div class="button main__button">
+              <img class="button-icon" src="../resources/img/icon_bus.png" alt="시티투어" />
+              <div class="button--name">시티투어</div>
+            </div>
+            <div class="button main__button">
+              <img class="button-icon" src="../resources/img/icon_food.png" alt="음식" />
+              <div class="button--name">음식</div>
+            </div>
+            <div class="button main__button">
+              <img class="button-icon" src="../resources/img/icon_hotel.png" alt="숙박" />
+              <div class="button--name">숙박</div>
+            </div>
+            <div class="button main__button">
+              <img class="button-icon" src="../resources/img/icon_train.png" alt="주변 교통" />
+              <div class="button--name">주변 교통</div>
+            </div>
+            <div class="button main__button">
+              <img class="button-icon" src="../resources/img/icon_service.png" alt="편의시설" />
+              <div class="button--name">편의시설</div>
+            </div>
+          </div>
+          <div class="banner">
+            <div class="banner__button banner-guide">
+              <img src="../resources/img/banner_1330.png" alt="관광안내" />
+              <div class="banner-info">
+                <div class="banner__title">국내 여행 정보는</div>
+                <div class="banner__desc">관광안내 1330</div>
+              </div>
+            </div>
+            <div class="banner__button banner-stay">
+              <img src="../resources/img/banner_qr.png" alt="티켓안내" />
+              <div class="banner-info">
+                <div class="banner__title">항공부터 숙박까지</div>
+                <div class="banner__desc">대구갈땐? 대구트립!</div>
+              </div>
+            </div>
+          </div>
+          <div class="language">
+            <div class="language-content">
+              <div class="button language--button active">한국어</div>
+              <div class="button language--button">ENG</div>
+              <div class="button language--button">日本語</div>
+              <div class="button language--button">简体</div>
+              <div class="button language--button">繁体</div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="control-bar">
+        <div class="button call-employee btn-img-text">
+          <div class="text">직원호출</div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="button btn-lower-screen btn-img-text">
+          <div class="text">낮은화면</div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="control-bar__sound">
+          <button class="button control-bar__sound-button" aria-label="음량 줄이기">
+            <span class="control-bar__sound-icon--minus"></span>
+          </button>
+          <div class="control-bar__sound-status">
+            <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+            <span class="control-bar__sound-level" aria-live="polite">3</span>
+          </div>
+          <button class="button control-bar__sound-button" aria-label="음량 키우기"><span
+              class="control-bar__sound-icon--plus"></span></button>
+        </div>
+      </footer>
+
+    </div>
+
+    <div class="popup position-center">
+      <div class="popup-bg"></div>
+      <div class="timer__popup">
+        <div class="title position-center">시간 연장</div>
+        <div class="popup-body">
+          <div class="desc">사용종료까지 남은시간</div>
+          <div class="time_value">30초</div>
+          <div class="question">연장 하시겠습니까?</div>
+        </div>
+        <div class="button_area">
+          <div class="button cancel-btn">끝내기</div>
+          <div class="button confirm-btn">연장하기</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

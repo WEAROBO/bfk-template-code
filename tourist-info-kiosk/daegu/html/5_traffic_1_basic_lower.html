@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../resources/css/index.css">
+  <title>5_주변 교통_1_기본</title>
+</head>
+
+<body class="lower-screen">
+  <div class="container">
+    <div class="container-body">
+
+      <div class="header">
+        <div class="header__left">
+          <div class="header__logo"></div>
+          <div class="weather">
+            <div class="weather__icon"></div>
+            <div class="weather__temp">23℃</div>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="time__comp">
+            <div class="icon-watch"></div>
+            <div class="time__hour">01</div>
+            <div class="time__divider">:</div>
+            <div class="time__min">00</div>
+          </div>
+          <div class="date">(금) 오후</div>
+          <div class="time">12:27</div>
+        </div>
+      </div>
+
+      <main class="main">
+
+        <div class="main__title">
+          <div class="main-title">주변 교통</div>
+          <div class="main-desc">
+            도시철도, 기차, 공항까지 연결된 교통의 요충지
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="category-row">
+            <div class="button btn-category2 btn-img-text active">
+              <div class="text">주변 교통</div>
+            </div>
+            <div class="button btn-category2 btn-img-text">
+              <div class="text">도시철도</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-divider"></div>
+
+        <div class="trafic-main">
+          <div class="traffic-desc position-center">
+            <img src="../resources/img/icon_arrow-bottom.png" alt="아래" />
+            버스, 택시 아이콘을 누르면 주변 교통 정보를 알려줍니다.
+          </div>
+          <div class="tranfic-bg-img-area">
+            <div class="tranfic-bg-img">
+              <img src="../resources/img/traffic/daegu_station-lower.png" alt="대구역" />
+
+              <!-- 만약 선택되었다면 class에 checked를 추가한다. -->
+              <img class="station_guide" src="../resources/img/traffic/station_guide-wh.png" alt="" />
+            </div>
+            <div class="arrow-btn__area">
+              <div class="button btn-up disabled"></div>
+              <div class="button btn-down"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="button btn_go_back"></div>
+      </main>
+
+      <footer class="control-bar">
+        <div class="button call-employee btn-img-text">
+          <div class="text">직원호출</div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="button btn-lower-screen btn-img-text active">
+          <div class="text">낮은화면</div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="control-bar__sound">
+          <button class="button control-bar__sound-button" aria-label="음량 줄이기">
+            <span class="control-bar__sound-icon--minus"></span>
+          </button>
+          <div class="control-bar__sound-status">
+            <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+            <span class="control-bar__sound-level" aria-live="polite">3</span>
+          </div>
+          <button class="button control-bar__sound-button" aria-label="음량 키우기"><span
+              class="control-bar__sound-icon--plus"></span></button>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</body>
+
+</html>

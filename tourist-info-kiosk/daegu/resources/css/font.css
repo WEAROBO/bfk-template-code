@@ -1,0 +1,49 @@
+/* cdn import */
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+/* 폰트 적용 */
+
+@font-face {
+    font-family: 'Asta Sans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asta Sans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asta Sans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asta Sans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asta Sans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Asta Sans';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/AstaSans-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-display: swap;
+}
+
+body {
+    font-family: var(--font-family-default);
+}
