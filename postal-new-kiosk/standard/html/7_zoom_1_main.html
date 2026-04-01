@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>7_화면확대_1_메인</title>
+    <style> 
+      .container-body {
+        scale: 1.37;      
+      }
+    </style>      
+  </head>
+  <body>
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <div class="header__logo"></div>
+            <div class="header__buttons">
+              <div class="header__button--text" aria-label="문의 1600-0000">
+                <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+                <span class="button__title">문의 1600-0000</span>
+              </div>
+            </div>
+          </div>
+          
+          <main class="main main--no-border main--no-bg">
+            <span class="main__location">점포명</span>
+            <h1 class="main__title main__title--main">어떤 서비스를 <br class="full-screen">이용하시겠습니까?</h1>
+            <div class="main__grid">
+              <div class="button main__button--service">
+                <span class="service__title">우편 접수</span>
+                <span class="service__title-desc">편지 및 서류 접수</span>
+              </div>
+              <div class="button main__button--service">
+                <span class="service__title">소포 접수</span>
+                <span class="service__title-desc">등기 및 착불 접수</span>
+              </div>
+            </div>
+            <div class="main__grid-sub">
+              <div class="button main__button--service-sub">국제우편</div>
+              <div class="button main__button--service-sub">간편사전접수</div>
+              <div class="button main__button--service-sub">선납 우편물</div>
+              <div class="button main__button--service-sub">소포상자 구매</div>
+            </div>
+            <div class="lang-area" role="group" aria-label="언어 선택">
+              <button class="lang" lang="ko" aria-label="한국어">
+                <img src="../resources/img/svg/flag_of_korea.svg" alt="">
+                <span>한국어</span>
+              </button>
+              <button class="lang" lang="en" aria-label="영어">
+                <img src="../resources/img/svg/flag_of_globe.svg" alt="">
+                <span>English</span>
+              </button>
+            </div>
+          </main>
+
+          <footer class="control-bar">
+            <div class="control-bar__buttons">
+              <button class="button accessibility__button accessibility-high-contrast active">
+                <span class="button__title">고대비</span>
+              </button>
+              <button class="button accessibility__button accessibility-lower-screen">
+                <span class="button__title">낮은화면</span>
+              </button>
+              <button class="button accessibility__button accessibility-full-screen">
+                <span class="button__title">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">3</span>
+              </div>
+              <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+            </div>
+          </footer>
+        </div> 
+
+        <div class="zoom-control-wrap">
+          <div class="zoom-control">
+            <div class="zoom-control__arrows">
+              <button class="arrow-button arrow-button--up" aria-label="화면 위로 이동">
+                <span class="arrow-button--up-img"></span>
+              </button>
+              <button class="arrow-button arrow-button--left" aria-label="화면 왼쪽으로 이동">
+                <span class="arrow-button--left-img"></span>
+              </button>
+              <button class="arrow-button arrow-button--right" aria-label="화면 오른쪽으로 이동">
+                <span class="arrow-button--right-img"></span>
+              </button>
+              <button class="arrow-button arrow-button--down" aria-label="화면 아래로 이동">
+                <span class="arrow-button--down-img"></span>
+              </button>
+            </div>      
+            <button class="zoom-control__close" aria-label="확대 기능 끄기">
+              <span class="zoom-control__close__icon" aria-hidden="true"></span>
+              확대 끄기
+            </button>
+          </div>
+        </div>   
+        
+      </div>
+    </div>
+  </body>
+</html>
