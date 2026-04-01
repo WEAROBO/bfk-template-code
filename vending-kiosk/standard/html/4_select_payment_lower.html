@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../resources/css/index.css">
+  <title>4_결제 방법 선택</title>
+</head>
+
+<body class="lower-screen">
+  <div class="container-wrap">
+    <div class="container">
+      <div class="container-before">
+        <div class="container-before__title">NIA 한국지능정보사회진흥원</div>
+        <div class="container-before__desc">화면 내리기 사용중</div>
+        <div class="container-before__guide">결제 방법을 선택하세요</div>
+      </div>
+      <div class="container-body">
+
+        <div class="header">
+          <div class="header--main">
+            <div class="button icon-btn h-80 w-240">
+              <div class="icon home-icon"></div>
+              <div class="text">처음으로</div>
+            </div>
+            <div class="header__actions">
+              <div class="button btn_language">
+              </div>
+              <div class="button btn_call_employee">
+                <div class="icon"></div>
+                <div class="text">직원호출</div>
+              </div>
+            </div>
+          </div>
+          <div class="header-sub">
+            <div class="progress-steps">
+              <div class="progress-step progress-step--completed" aria-current="step">
+                <div class="progress-step__index"><span><strong>1</strong></span></div>
+                <div class="progress-step__label">상품 선택</div>
+              </div>
+              <div class="progress-step progress-step--current">
+                <div class="progress-step__index"><span><strong>2</strong></span></div>
+                <div class="progress-step__label">결제</div>
+              </div>
+              <div class="progress-step">
+                <div class="progress-step__index"><span><strong>3</strong></span></div>
+                <div class="progress-step__label">상품 꺼내기</div>
+              </div>
+              <div class="progress-step">
+                <div class="progress-step__index"><span><strong>4</strong></span></div>
+                <div class="progress-step__label">완료</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <main class="main">
+          <div class="main-inner">
+
+            <div class="main_center">
+              <div class="payment_price_comp mt-80 mb-40">
+                <div class="payment_price_title">결제 금액</div>
+                <div class="payment_price_value">1,000원</div>
+              </div>
+
+              <div class="pay_type-comp">
+                <div class="button pay-type__item">
+                  <div class="pay_icon card"></div>
+                  <div class="pay_value">
+                    신용·체크카드
+                  </div>
+                </div>
+                <div class="button pay-type__item">
+                  <div class="pay_icon money"></div>
+                  <div class="pay_value">
+                    현금(지폐)
+                  </div>
+                </div>
+                <div class="button pay-type__item">
+                  <div class="pay_icon mobile"></div>
+                  <div class="pay_value">
+                    모바일 결제
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-btn-layer">
+              <div class="button btn_go_back button_border_wh w-300 h-110">
+                <div class="icon"></div>
+                <div class="text">이전</div>
+              </div>
+            </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button type="button" class="accessibility__button accessibility__button--high-contrast">
+              <span class="accessibility__text">고대비</span>
+            </button>
+            <button type="button" class="accessibility__button accessibility__button--lower-screen active">
+              <span class="accessibility__text">화면 내리기</span>
+            </button>
+            <button type="button" class="accessibility__button accessibility__button--expand">
+              <span class="accessibility__text">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+              <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+            </button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">5</span>
+            </div>
+            <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+              <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+            </button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
