@@ -1,0 +1,123 @@
+::-webkit-scrollbar-corner {
+  background:var(--scrollbar-corner-color);
+}
+::-webkit-scrollbar {
+  width: 30px;
+  height: 30px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 50px;
+  background-clip: padding-box;
+  border: 12px solid transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+}
+
+/* 세로 스크롤바 트랙에만 왼쪽 선 추가 */
+::-webkit-scrollbar-track:vertical {
+  border-left: 1px solid #fff;
+}
+
+/* 가로 스크롤바 트랙에만 위쪽 선 추가 (필요한 경우 구분) */
+::-webkit-scrollbar-track:horizontal {
+  border-top: 1px solid #fff;
+}
+
+.zoom-bar-wrap {
+  position: fixed;
+  width: 1250px; 
+  height: 102px;
+  display:block;
+  bottom: 0px;
+  left: 0px;  
+  z-index:777;
+}
+.zoom-bar {
+  width: 1250px; 
+  height: 102px;
+  background-color: var(--zoom-bar-bg);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  border-top: 1px solid #fff;
+  padding: 14px 18px 14px 30px;
+}
+.zoom-bar-center {
+  width: 1000px; 
+  height: 90px;  
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px 30px 10px 30px;  
+}
+.zoom-bar__arrows {
+  display: flex;
+  gap: 10px;
+}
+.zoom-bar-arrow-button {
+  width: 100px;
+  height: 74px;
+  background-color: var(--zoom-bar-btn-bg);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.1s;
+}
+.zoom-bar-arrow-button:active {
+  background-color: var(--zoom-bar-btn-bg-active);
+}
+.arrow-button--up-img,
+.arrow-button--left-img,
+.arrow-button--right-img,
+.arrow-button--down-img { 
+  width: 32px;
+  height: 32px;
+}
+.arrow-button--up-img { 
+  background: var(--arrow-button-up-img);  
+}
+.arrow-button--left-img { 
+  background: var(--arrow-button-left-img);  
+}
+.arrow-button--right-img { 
+  background: var(--arrow-button-right-img);  
+}
+.arrow-button--down-img { 
+  background: var(--arrow-button-down-img);  
+}
+.zoom-control__close {
+  font-family: var(--font-family-default);  
+  width: 290px;
+  height: 74px;
+  background-color: var(--zoom-control-close-bg); 
+  color: var(--zoom-control-close-color);
+  border: var(--zoom-control-close-border); 
+  box-shadow: var(--zoom-control-close-box-shadow);
+  border-radius: 50px;   
+  font-size: 52px;
+  font-weight: 500;
+  line-height: 1.2;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  box-sizing: border-box;
+}
+.zoom-control__close:active {
+  background-color:var(--zoom-control-close-bg-active); 
+}
+.zoom-control__close__icon {
+  width: 32px;
+  height: 32px;
+  background-image: var(--zoom-control-close-icon);
+}
+.zoom-control__close__text {
+  width: 193px;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_기본화면_3-1_소비자인증</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+     
+          <div class="header">
+            <button class="button header__button header__button-home" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>  
+            <div class="header__buttons">          
+              <button class="button header__button" aria-label="음량">
+                <span class="button__title">음량</span>
+                <span class="button__title fc-accent">2</span>
+              </button>
+              <button class="button header__button-after" aria-label="고대비">
+                <span class="button__title">고대비</span>
+              </button>
+              <button class="button header__button-after header__button-lg" aria-label="화면확대">
+                <span class="button__title">화면확대</span>
+              </button>
+              <button class="button header__button header__button-call" aria-label="직원문의">
+                <span class="button__title">직원문의</span>
+              </button>               
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span>1</span></div>
+              <div class="progress-step__label">개인인증</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>2</span></div>
+              <div class="progress-step__label">바코드스캔</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>3</span></div>
+              <div class="progress-step__label">반환 확인</div>
+            </div>
+          </div>          
+
+          <div class="main main-step-height">
+            <div class="main-sub">
+              <h2 class="main-sub__title">자원순환보증금 앱을 실행하여 바코드를 스캔하세요</h2>      
+              <div class="img__wrap-scan">
+                <img src="../resources/img/svg/img_scan.svg" alt="">
+              </div>
+              <div class="main-home__qrs">
+                <button type="button" class="button main-home__googleplay" aria-label="구글 플레이스토어 이동">
+                  <span class="main-home__icon-qr googleplay"></span>
+                  <span class="main-home__btn-googleplay"></span>
+                </button>
+                <button type="button" class="button main-home__appstore" aria-label="애플 앱스토어 이동">
+                  <span class="main-home__icon-qr appstore"></span>
+                  <span class="main-home__btn-appstore"></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="main__bottoms">
+              <button class="button main__button main__button--secondary" aria-label="이전">
+                <span class="main__icon main__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+            </div>            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
