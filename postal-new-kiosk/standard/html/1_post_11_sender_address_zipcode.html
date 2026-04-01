@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_우편접수_11_발송인_주소선택</title>
+  </head>
+  <body>
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <div class="header__button--text" aria-label="문의 1600-0000">
+                <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+                <span class="button__title">문의 1600-0000</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span>1</span></div>
+              <div class="progress-step__label">우편물 정보</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span>2</span></div>
+              <div class="progress-step__label">접수정보</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>3</span></div>
+              <div class="progress-step__label">요금확인</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>4</span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>5</span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main">  
+            <h1 class="main__title main__title--step main__title--step-compact">
+              보내는 사람의 <br class="full-screen">주소를 선택하세요
+            </h1>
+
+            <div class="address-list__wrapper">
+              <div class="address-list">
+                <div class="address-list__header">
+                  <div>주소</div>
+                </div>
+
+                <div class="address-list__body">
+
+                  <label class="address-item selected">
+                    <div>
+                      <input type="radio" name="address" class="address-item__radio" checked>
+                    </div>
+                    <div class="address-item__text">
+                      부산광역시 강서구 녹산산단382로14번가길 10~29번지(송정동)
+                    </div>
+                  </label>
+
+                  <label class="address-item">
+                    <div>
+                      <input type="radio" name="address" class="address-item__radio">
+                    </div>
+                    <div class="address-item__text">
+                      강원특별자치도 강릉시 강릉대로 33(홍제동)
+                    </div>
+                  </label>
+
+                  <label class="address-item">
+                    <div>
+                      <input type="radio" name="address" class="address-item__radio">
+                    </div>
+                    <div class="address-item__text">
+                      제주특별자치도 제주시 문연로 6 (제1청사)
+                    </div>
+                  </label>
+
+                  <label class="address-item">
+                    <div>
+                      <input type="radio" name="address" class="address-item__radio">
+                    </div>
+                    <div class="address-item__text">
+                      경기도 화성시 동탄광역환승로 73 <br>
+                      (오산동, 동탄역 반도유보라 아이비파크 8.0)
+                    </div>
+                  </label>
+
+                  <label class="address-item">
+                    <div>
+                      <input type="radio" name="address" class="address-item__radio">
+                    </div>
+                    <div class="address-item__text">
+                      서울특별시 중구 세종대로 110
+                    </div>
+                  </label>
+
+                  <label class="address-item">
+                    <div>
+                      <input type="radio" name="address" class="address-item__radio">
+                    </div>
+                    <div class="address-item__text">
+                      전라남도 나주시 중야1길 37 <br>
+                      (빛가람동, 대방엘리움 로얄카운티 1차)
+                    </div>
+                  </label>
+
+                </div>
+              </div>
+
+              <div class="pagination">
+                <button class="pagination__button" aria-label="이전 페이지" disabled>
+                  <span class="pagination-icon-arrow-up"></span>
+                </button>
+                <span class="pagination__page"><strong>1</strong>/3</span>
+                <button class="pagination__button" aria-label="다음 페이지">
+                  <span class="pagination-icon-arrow-down"></span>
+                </button>
+              </div>
+            </div>
+    
+            <div class="main__bottom-buttons">
+              <button class="button main__button main-button-secondary">
+                <span class="main__button__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main-button-primary">
+                <span class="main__button__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button class="button accessibility__button accessibility-high-contrast">
+                <span class="button__title">고대비</span>
+              </button>
+              <button class="button accessibility__button accessibility-lower-screen">
+                <span class="button__title">낮은화면</span>
+              </button>
+              <button class="button accessibility__button accessibility-full-screen">
+                <span class="button__title">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button class="button control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon--minus"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon--volume"></span>
+                <span class="control-bar__sound-level">3</span>
+              </div>
+              <button class="button control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon--plus"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+    <script>
+      const addressItems = document.querySelectorAll(".address-item");
+
+      addressItems.forEach(item => {
+        const radio = item.querySelector('input[type="radio"]');
+
+        item.addEventListener("click", () => {
+          addressItems.forEach(i => i.classList.remove("selected"));
+          radio.checked = true;
+          item.classList.add("selected");
+        });
+      });
+    </script>    
+  </body>
+</html>
