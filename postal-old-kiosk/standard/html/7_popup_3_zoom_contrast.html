@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>7_팝업_3_화면 확대</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <img class="header__logo" src="../resources/img/svg/logo.svg" alt="로고">
+            <div class="header__buttons">
+              <button class="button header__button button-md" aria-label="사운드">
+                <span class="header__button__icon--sound" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button" aria-label="다시듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">다시듣기</span>
+              </button>
+              <button class="button header__button" aria-label="도움기능">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">도움기능</span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--call" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>            
+            </div>
+          </div>
+          
+          <main class="main main--no-border main--no-bg">
+            <h1 class="main__title main__title--main">어떤 서비스를 이용하시겠습니까?</h1>
+            <div class="main__grid">
+              <div class="button main__button--service">
+                <span class="service__title">우편 접수</span>
+                <span class="service__title-desc">편지 및 서류 접수</span>
+              </div>
+              <div class="button main__button--service">
+                <span class="service__title">소포 접수</span>
+                <span class="service__title-desc">등기 및 착불 접수</span>
+              </div>
+            </div>
+            <div class="main__sub-grid"> 
+              <div class="button main__button--service-sub">국제우편</div>
+              <div class="button main__button--service-sub">간편사전접수</div>
+              <div class="button main__button--service-sub">선납 우편물</div>
+            </div>
+            <div class="lang-area" role="group" aria-label="언어 선택">
+              <button class="lang" lang="ko" aria-label="한국어">
+                <img src="../resources/img/svg/flag_of_korea.svg" alt="">
+                <span>한국어</span>
+              </button>
+              <button class="lang" lang="en" aria-label="영어">
+                <img src="../resources/img/svg/flag_of_globe.svg" alt="">
+                <span>English</span>
+              </button>
+            </div>
+          </main>
+
+        </div>
+      </div>
+    </div>
+    
+    <div class="backdrop">        
+      <div class="modal">            
+        <h2 class="modal__title">도움기능</h2>
+        <div class="modal__body">        
+          <div class="option-group">              
+            <button class="option-group__btn option-group__btn" aria-pressed="true" data-option="contrast">
+              <span class="option-group__icon">
+                <span class="option-group__icon--contrast"></span>
+              </span>
+              고대비
+            </button>            
+            <button class="option-group__btn option-group__btn--active" aria-pressed="false" data-option="zoom">
+              <span class="option-group__icon">
+                <span class="option-group__icon--zoom"></span>
+              </span>
+              화면 확대
+            </button>              
+          </div>
+        </div>
+        <div class="modal__footer">         
+          <button class="button main__button main-button-secondary" aria-label="닫기">
+            <span class="button__title">닫기</span>
+          </button>
+          <button class="button main__button main-button-primary" aria-label="적용">
+            <span class="main__button__icon--next" aria-hidden="true"></span>
+            <span class="button__title">적용</span>
+          </button>          
+        </div>   
+      </div>        
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const optionButtons = document.querySelectorAll('.option-group__btn');
+
+        optionButtons.forEach(button => {
+          button.addEventListener('click', function() {
+            const wasActive = this.classList.contains('option-group__btn--active');
+
+            optionButtons.forEach(btn => {
+              btn.classList.remove('option-group__btn--active');
+              btn.setAttribute('aria-pressed', 'false');
+            });
+
+            if (!wasActive) {
+              this.classList.add('option-group__btn--active');
+              this.setAttribute('aria-pressed', 'true');
+            }
+          });
+        });
+      });
+    </script>
+    
+  </body>
+</html>

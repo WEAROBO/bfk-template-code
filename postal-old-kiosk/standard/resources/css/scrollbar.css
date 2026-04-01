@@ -1,0 +1,17 @@
+.simplebar-track.simplebar-vertical {
+  width: 60px !important;
+  background: var(--scrollbar-track-color);
+}
+.simplebar-track.simplebar-horizontal {
+  height: 60px !important;
+  background: var(--scrollbar-track-color);
+  margin-right:60px;
+  padding-right: 60px;
+}
+.simplebar-scrollbar:before {
+  background: var(--scrollbar-thumb-color) !important;
+  opacity: 1 !important; 
+  border-radius: 40px !important;
+  border: 10px solid transparent !important; 
+  background-clip: padding-box !important;
+}

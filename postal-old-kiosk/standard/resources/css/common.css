@@ -1,0 +1,12 @@
+.disabled {
+  cursor: not-allowed !important;
+}
+.fc-red {
+  color: var(--fc-red-color) !important;
+}
+.fc-blue {
+  color: var(--fc-blue-color) !important;
+}
+.fw-700 {
+  font-weight: 700;
+}
