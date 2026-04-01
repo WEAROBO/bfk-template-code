@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_우편접수_18_입력정보확인</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button--icon header__button--icon-home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button button-md" aria-label="사운드">
+                <span class="header__button--icon header__button--icon-sound" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button--icon header__button--icon-play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="접근성">
+                <span class="header__button--icon header__button--icon-help" aria-hidden="true"></span>
+                <span class="button__title">접근성</span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button--icon header__button--icon-call" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>           
+            </div>
+          </div>  
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span>1</span></div>
+              <div class="progress-step__label">우편물 정보</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span>2</span></div>
+              <div class="progress-step__label">접수정보</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>3</span></div>
+              <div class="progress-step__label">요금확인</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>4</span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>5</span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main">  
+            <h1 class="main__title main__title--step main__title--small">입력하신 정보를 확인하세요</h1>
+
+            <div class="address-info-tab">
+              <button class="address-info-tab__button active" id="senderTab">보내는 사람</button>
+              <button class="address-info-tab__button" id="receiverTab">받는 사람</button>
+            </div>
+
+            <div class="address-info-box" id="senderBox">
+              <button class="address-info-box__edit">수정하기</button>
+              <div class="address-info-box__item">
+                <div class="address-info-box__label">이름</div>
+                <div class="address-info-box__value">홍길동</div>
+              </div>
+              <div class="address-info-box__item">
+                <div class="address-info-box__label">전화번호</div>
+                <div class="address-info-box__value">010-1234-1234</div>
+              </div>
+              <div class="address-info-box__item">
+                <div class="address-info-box__label">우편번호</div>
+                <div class="address-info-box__value">01387</div>
+              </div>
+              <div class="address-info-box__item">
+                <div class="address-info-box__label">주소</div>
+                <div class="address-info-box__value">
+                  강원특별자치도 철원군 갈말읍 삼부연로 51 1층 105호
+                </div>
+              </div>
+            </div>
+
+            <div class="address-info-box" id="receiverBox" style="display:none;">
+              <button class="address-info-box__edit">수정하기</button>
+              <div class="address-info-box__item">
+                <div class="address-info-box__label">이름</div>
+                <div class="address-info-box__value">이길동</div>
+              </div>
+              <div class="address-info-box__item">
+                <div class="address-info-box__label">전화번호</div>
+                <div class="address-info-box__value">010-5678-7777</div>
+              </div>
+              <div class="address-info-box__item">
+                <div class="address-info-box__label">우편번호</div>
+                <div class="address-info-box__value">06336</div>
+              </div>
+              <div class="address-info-box__item">
+                <div class="address-info-box__label">주소</div>
+                <div class="address-info-box__value">
+                  서울특별시 강남구 개포로 619 2층 서울강남우체국
+                </div>
+              </div>
+            </div>
+
+    
+            <div class="main__bottom-buttons">
+              <button class="button main__button main-button-secondary" aria-label="이전">
+                <span class="main__button__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main-button-primary" aria-label="확인">
+                <span class="main__button__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>
+            </div>
+          </main>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+    const senderTab = document.getElementById("senderTab");
+    const receiverTab = document.getElementById("receiverTab");
+    const senderBox = document.getElementById("senderBox");
+    const receiverBox = document.getElementById("receiverBox");
+
+    senderTab.addEventListener("click", () => {
+      senderTab.classList.add("active");
+      receiverTab.classList.remove("active");
+      senderBox.style.display = "block";
+      receiverBox.style.display = "none";
+    });
+
+    receiverTab.addEventListener("click", () => {
+      receiverTab.classList.add("active");
+      senderTab.classList.remove("active");
+      senderBox.style.display = "none";
+      receiverBox.style.display = "block";
+    });
+    </script>
+  </body>
+</html>

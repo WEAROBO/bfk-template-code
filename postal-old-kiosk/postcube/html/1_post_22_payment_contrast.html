@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_우편접수_22_결제금액확인</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button--icon header__button--icon-home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button button-md" aria-label="사운드">
+                <span class="header__button--icon header__button--icon-sound" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button--icon header__button--icon-play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="접근성">
+                <span class="header__button--icon header__button--icon-help" aria-hidden="true"></span>
+                <span class="button__title">접근성</span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button--icon header__button--icon-call" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>           
+            </div>
+          </div>  
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span>1</span></div>
+              <div class="progress-step__label">우편물 정보</div>
+            </div>
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span>2</span></div>
+              <div class="progress-step__label">접수정보</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span>3</span></div>
+              <div class="progress-step__label">요금확인</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>4</span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>5</span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main">  
+            <h1 class="main__title main__title--step">
+              결제 금액을 확인하세요.
+            </h1>
+
+            <div class="payment-box">
+              <div class="payment-list">
+                <div class="payment-row">
+                  <span class="payment-row__label">우편 요금</span>
+                  <span class="payment-row__value">0원</span>
+                </div>
+                <div class="payment-row">
+                  <span class="payment-row__label">부가서비스</span>
+                  <span class="payment-row__value">0원</span>
+                </div>
+              </div>
+              <div class="payment-total">
+                <span class="payment-total__label">총 결제금액</span>
+                <span class="payment-total__value">2,270원</span>
+              </div>
+            </div>
+
+            <div class="main__bottom-buttons">
+              <button class="button main__button main-button-secondary" aria-label="이전">
+                <span class="main__button__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main-button-primary" aria-label="확인">
+                <span class="main__button__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>
+            </div>
+          </main>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
