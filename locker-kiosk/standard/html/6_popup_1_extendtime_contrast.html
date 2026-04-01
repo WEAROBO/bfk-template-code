@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>6_기타 화면_1_시간 연장(팝업)</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <div class="header__logo"></div>
+          <div class="header__buttons">     
+            <div class="header__button--text" aria-label="문의 1600-0000">
+              <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+              <span class="button__title">문의 1600-0000</span>
+            </div>
+          </div>
+        </div>
+        
+        <main class="main main--no-border main--no-bg">
+          <span class="main__location">점포명</span>
+          <h1 class="main__title main__title--main">어떤 서비스를 <br class="full-screen">이용하시겠습니까?</h1>
+          <div class="main__grid">
+            <div class="button main__button--service">
+              <span class="main__button--service__icon-in"></span>
+              <span class="service__title">물품 보관</span>
+            </div>
+            <div class="button main__button--service">
+              <span class="main__button--service__icon-out"></span>
+              <span class="service__title">물품 찾기</span>
+            </div>
+          </div>
+          <div class="main__service--available">
+            <span class="available__title">사용가능한 보관함</span>
+            <span class="available__data"><strong class="">20</strong>개</span>
+          </div>
+          <div class="lang-area" role="group" aria-label="언어 선택">
+            <button class="lang" lang="ko" aria-label="한국어">
+              <img src="../resources/img/svg/flag_of_korea.svg" alt="">
+              <span>한국어</span>
+            </button>
+            <button class="lang" lang="en" aria-label="영어">
+              <img src="../resources/img/svg/flag_of_globe.svg" alt="">
+              <span>English</span>
+            </button>
+          </div>
+        </main>
+
+        <footer class="control-bar">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">100<small class="unit">%</small></span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <div class="backdrop">
+      <div class="modal__wrap">
+        <div class="modal">            
+          <div class="modal__body">
+            <div class="modal__content">
+              <div class="modal__timer-question">시간을 연장하시겠습니까?</div>
+              <div class="modal__timer">
+                <span class="modal__timer-icon" aria-hidden="true"></span>
+                <div class="modal__timer-time">
+                  <span class="modal__timer-countdown">20</span>초
+                </div>
+              </div>
+              <div class="modal__timer-message">처음으로 이동합니다.</div>
+            </div>
+          </div>
+          <div class="modal__footer center">         
+            <button class="button modal__button modal__button-secondary" aria-label="아니오">
+              <span class="button__title">아니오</span>
+            </button>
+            <button class="button modal__button modal__button-primary" aria-label="네">
+              <span class="button__title">시간연장</span>
+            </button>
+          </div>   
+        </div>
+      </div>      
+    </div>  
+
+  </body>
+</html>
