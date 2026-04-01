@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>3_포인트 충전(카드 결제)_6_충전 금액 확인</title>
+  </head>
+  <body class="">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <div class="header__left">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+          </div>
+          <div class="header__center">
+            <div class="header__logo"></div>
+          </div>
+          <div class="header__right">
+            <div class="header__buttons">     
+              <div class="header__button--text" aria-label="문의 1600-5136">
+                <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+                <span class="button__title">문의 1600-5136</span>
+              </div>
+            </div>
+          </div>
+        </div>        
+
+        <main class="main">  
+          <h1 class="main__title main__title--guide">
+            <div class="charge__step">
+              <span class="charge__step--current">3</span> / 3
+            </div>            
+            <div class="charge__title">충전이 완료 되었습니다.<br>보유 잔액을 확인하세요.</div>
+          </h1>
+
+          <div class="payment-box payment-detail mb-40">
+            <div class="payment-list">
+              <div class="payment-row">
+                <span class="payment-row__label">회원번호</span>
+                <span class="payment-row__value">010-****-1234</span>
+              </div>
+            </div>
+            <hr class="payment-list-line">
+            <div class="payment-list">
+              <div class="payment-row">
+                <span class="payment-row__label">현금 잔액</span>
+                <span class="payment-row__value">47,000원</span>
+              </div>
+              <div class="payment-row">
+                <span class="payment-row__label">포인트 잔액</span>
+                <span class="payment-row__value">27,200원</span>
+              </div>
+            </div>
+
+            <div class="payment-total">
+              <span class="payment-total__label">총 결제금액</span>
+              <span class="payment-total__value">74,000원</span>
+            </div>
+          </div>
+
+          <div class="guide__actions center">
+            <button class="guide__button" type="button">
+              계속 <br class="full-screen">이용하기
+            </button>
+          </div>          
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">5</span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </body>
+</html>

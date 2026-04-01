@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>3_포인트 충전(카드 결제)_1_충전방법 선택</title>
+  </head>
+  <body class="lower-screen">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <div class="header__left">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+          </div>
+          <div class="header__center">
+            <div class="header__logo"></div>
+          </div>
+          <div class="header__right">
+            <div class="header__buttons">     
+              <div class="header__button--text" aria-label="문의 1600-5136">
+                <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+                <span class="button__title">문의 1600-5136</span>
+              </div>
+            </div>
+          </div>
+        </div>        
+
+        <main class="main">  
+          <h1 class="main__title main__title--guide">
+            <div class="charge__step">
+                <span class="charge__step--current">1</span> / 3
+            </div>            
+            <div class="charge__title">충전방법을 선택하세요.</div>
+          </h1>
+
+          <div class="payment-box payment-method">
+            <div class="payment-method__wrap">
+              <button class="payment-method__button active">
+                <img src="../resources/img/svg/icon_card.svg" alt="신용카드" class="payment-method__icon">
+                <span class="payment-method__label">신용카드</span>
+              </button>
+              <button class="payment-method__button">
+                <img src="../resources/img/svg/icon_cash.svg" alt="현금" class="payment-method__icon">
+                <span class="payment-method__label">현금</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="main__bottom-buttons">
+            <button class="button main__button main-button-secondary" aria-label="이전 단계로 이동">
+              <span class="main__button__icon--prev" aria-hidden="true"></span>
+              <span class="button__title">이전</span>
+            </button>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">5</span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </body>
+</html>

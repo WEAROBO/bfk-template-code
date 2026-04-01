@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_세탁기_6_세탁기 코스선택</title>
+  </head>
+  <body class="lower-screen">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <div class="header__left">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+          </div>
+          <div class="header__center">
+            <div class="header__logo"></div>
+          </div>
+          <div class="header__right">
+            <div class="header__buttons">     
+              <div class="header__button--text" aria-label="문의 1600-5136">
+                <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+                <span class="button__title">문의 1600-5136</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="progress-steps">
+          <div class="progress-step progress-step--completed">
+            <div class="progress-step__index"><span><strong>1</strong></span></div>
+            <div class="progress-step__label">로그인</div>
+          </div>
+          <div class="progress-step progress-step--current">
+            <div class="progress-step__index"><span><strong>2</strong></span></div>
+            <div class="progress-step__label">서비스 선택</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>3</strong></span></div>
+            <div class="progress-step__label">내역확인</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>4</strong></span></div>
+            <div class="progress-step__label">결제</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>5</strong></span></div>
+            <div class="progress-step__label">완료</div>
+          </div>
+        </div>
+
+        <main class="main">  
+          <h1 class="main__title main__title--guide mb-20">
+            세탁 코스를 선택하세요.
+            <span class="course-grid__title">세탁기 <strong class="course-grid__title-accent">1번</strong></span>
+          </h1>
+
+          <div class="course-grid">            
+            <div class="course-grid__row">
+              <button class="course-grid__item">
+                <span class="course-grid__name">쾌속 코스</span>
+                <span class="course-grid__price">6,000원</span>
+                <span class="course-grid__desc">세탁 1회 헹굼 2회</span>
+              </button>
+              <button class="course-grid__item">
+                <span class="course-grid__name">표준 코스</span>
+                <span class="course-grid__price">6,500원</span>
+                <span class="course-grid__desc">세탁 1회 헹굼 3회</span>
+              </button>
+              <button class="course-grid__item">
+                <span class="course-grid__name">청정 코스</span>
+                <span class="course-grid__price">7,000원</span>
+                <span class="course-grid__desc">세탁 1회 헹굼 4회</span>
+              </button>
+              <button class="course-grid__item">
+                <span class="course-grid__name">불림 코스</span>
+                <span class="course-grid__price">7,500원</span>
+                <span class="course-grid__desc">불림세탁 1회 헹굼 4회</span>
+              </button>
+              <button class="course-grid__item">
+                <span class="course-grid__name">이불케어 코스</span>
+                <span class="course-grid__price">8,000원</span>
+                <span class="course-grid__desc">강력세탁 1회 헹굼 4회</span>
+              </button>
+              <button class="course-grid__item">
+                <span class="course-grid__name">헹굼 코스</span>
+                <span class="course-grid__price">1,000원</span>
+                <span class="course-grid__desc">세탁 후 사용</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="pagination pagination--horizontal">
+            <button class="pagination__button" aria-label="이전 페이지" disabled>
+              <span class="pagination-icon-arrow-prev"></span>
+            </button>
+            <span class="pagination__page"><strong>1</strong> / 2</span>
+            <button class="pagination__button" aria-label="다음 페이지">
+              <span class="pagination-icon-arrow-next"></span>
+            </button>
+          </div>
+
+          <div class="main__bottom-buttons">
+            <button class="button main__button main-button-secondary" aria-label="이전 단계로 이동">
+              <span class="main__button__icon--prev" aria-hidden="true"></span>
+              <span class="button__title">이전</span>
+            </button>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen active">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">5</span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+  </body>
+</html>
