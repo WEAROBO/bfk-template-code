@@ -1,0 +1,238 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--modal-backdrop);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+.modal {
+  font-family: var(--font-family-default);
+  background-color: var(--modal-bg);
+  border-radius: 20px;
+  border: var(--modal-border);
+  box-shadow: var(--modal-box-shadow);
+  width: 900px; 
+  height: 700px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 101;
+  position:relative;
+}
+.modal-lg {
+  width: 1180px; 
+  height: 700px;
+}
+.modal__title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0px;
+  color: var(--fc-title-color);
+}
+.modal__body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;  
+}
+.modal__footer {
+  position:absolute;
+  bottom:0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  height: 180px;
+  padding: 30px auto 40px auto;
+  margin:0;
+}
+.modal__button {
+  font-family: var(--font-family-default);
+  width: 310px;
+  height: 110px;
+  border-radius: 100px;
+  padding: 10px 30px;
+  border: 0; 
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 1.2;
+  letter-spacing: 0;
+  text-align: center;
+  vertical-align: middle;
+}
+.modal__button-primary {
+  color: var(--modal-button-primary--color);
+  background: var(--modal-button-primary--bg);
+  box-shadow: var(--modal-button-primary--box-shadow);
+  font-family: var(--font-family-default);
+}
+.modal__button-primary:active {
+  background: var(--modal-button-primary--bg-active);
+  box-shadow: var(--modal-button-primary--box-shadow-active);
+}
+.modal__button-secondary {
+  font-family: var(--font-family-default);
+  color: var(--modal-button-secondary--color);
+  background: var(--modal-button-secondary--bg);
+  border: var(--modal-button-secondary--border);
+  box-shadow: var(--modal-button-secondary--box-shadow);  
+}
+.modal__button-secondary:active {
+  background: var(--modal-button-secondary--bg-active);
+  box-shadow: var(--modal-button-secondary--box-shadow-active);  
+}
+.modal__button .button__title {
+  min-width: 120px;
+  text-align: center;
+  display: inline-block;
+}
+.modal__confirm-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 45px 0;
+  gap: 30px;
+}
+.modal__button-text {
+  width: 190px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.modal__confirm-icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  background: var(--modal-icon-alert);
+  display: block;
+}
+.modal__confirm-text {
+  height: 345px;
+  font-size: 56px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--fc-title-color);
+  text-align: center;
+  display: flex;
+  flex-direction: column;  
+  align-items: center;
+  justify-content: center;  
+}
+.section {
+  padding: 60px 40px;
+  border-radius: 30px;
+  text-align: center;
+}
+.section__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0px;
+  height: 67px;
+}
+.section__icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;  
+}
+.icon-clock {
+  background: var(--icon-clock);
+}
+.icon-bell {
+  width: 70px;
+  height: 70px;  
+  background: var(--icon-bell);
+}
+.section__title {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--modal-color);
+}
+.section__content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  white-space: nowrap;
+}
+
+.section__message {
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--modal-color);
+  line-height: 1.2;
+  white-space: nowrap;
+  word-break: keep-all;
+  margin: 0 0 10px 0;
+}
+
+.section__message--highlight {
+  font-weight: 600;  
+  font-size: 60px;
+  line-height: 1.5;  
+  color: var(--fc-blue-color);
+}
+
+.modal__close-btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: 2px solid var(--color-text-dark);
+  background-color: var(--color-modal-bg);
+  font-family: var(--font-family-default);
+  font-size: var(--font-size-md);
+  font-weight: 700;
+  color: var(--color-text-dark);
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.help-contact {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: var(--help-contact-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.help-contact__icon {
+  width: 32px;
+  height: 32px;
+  background: var(--help-contact-icon);
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.help-contact__number {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  color: #000;
+  margin-left: 10px;
+}

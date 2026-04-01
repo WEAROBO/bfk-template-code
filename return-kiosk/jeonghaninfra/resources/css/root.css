@@ -1,0 +1,296 @@
+:root {
+  --container-bg-color: #FFFFFF;
+  --body-bg-color: #FFFFFF;
+
+  --container-width: 1280px;
+  --container-height: 800px;
+
+	--font-family-default: "Pretendard", sans-serif;  
+  --fc-red-color: #B72D1E;
+  --fc-blue-color: #2B54CA;
+  --fc-accent-color: #1976B0;
+
+  --header-width: 1280px;
+  --header-height: 120px;
+  --header-bg: #FFFFFF;
+  --header-bg--no_bg: #FFFFFF;
+
+  --main-width: 1280px;
+  --main-height: 680px;
+  --main-step-height: 580px;
+  --main-bg: #FFFFFF;
+
+	--header-logo-img: url("../img/svg/logo.svg");
+  --header-btn-home-img: url("../img/svg/icon_home.svg");
+	--header-btn-bg: #FFFFFF;
+  --header-btn-border: 2px solid #3D3D3D;
+	--header-btn-text: #000000;
+  --header-btn-home-text: #3D3D3D; 
+  --header-btn-home-bg-active: #D1D1D1;   
+	--header-btn-box-shadow: 0px -6px 0px 0px #00000040 inset, 0px 1px 2px 0px #00000033;
+	--header-btn-bg-active: #B0B0B0;
+	--header-btn-box-shadow-active: 0px -6px 0px 0px #00000040 inset, 0px 1px 2px 0px #00000033;
+  --header-btn-call-border: 2px solid #3D3D3D;
+  --header-btn-call-bg: #E3F0FB;
+	--header-btn-call-box-shadow: 0px -6px 0px 0px #00000040 inset, 0px 1px 2px 0px #00000033;
+  --header-btn-call-color: #155E8F;
+  --header-btn-call-bg-active: #9BC5F5;
+	--header-btn-call-box-shadow-active: 0px 1px 2px 0px #00000033;
+  --header-btn-call-color-active: #243B7C;
+  --header-btn-active-after: #FFFFFF;
+
+  --main-home-btn-border: 4px solid #FFFFFF;
+  --main-home-btn-bg: linear-gradient(106.48deg, #BEDE78 2.24%, #74D4CD 41.91%, #4EADE2 98.43%);
+  --main-home-btn-box-shadow: 0px 10px 20px 0px #00000040;
+  --main-home-btn-img: url("../img/svg/main_home_btn_img.svg");
+  --main-home-btn-color: #174363;
+  --main-home-btn-bg-active: linear-gradient(106.48deg, #4EADE2 2.24%, #4EADE2 41.91%, #4EADE2 98.43%);
+  --main-title-color: #000000;
+  --icon-qr-googleplay: url("../img/svg/icon-qr-googleplay.svg");
+  --icon-qr-appstore: url("../img/svg/icon-qr-appstore.svg");
+  --btn-go-googleplay: url("../img/svg/btn-googleplay.svg");
+  --btn-go-appstore: url("../img/svg/btn-appstore.svg");  
+
+  --return-process-card-border: 2px solid #1976B0;
+  --return-process-card-bg: #FFFFFF; 
+  --return-process-arrow-bg: #1976B0 url("../img/svg/icon_return_arrow.svg") no-repeat center center;
+
+	--progress-steps-bg: #FFFFFF;
+	--progress-step-line: #6F6F6F;
+	--progress-step-line-current: #1976B0;
+	--progress-step-text-default: #6F6F6F;
+	--progress-step-text-current: #3D3D3D;
+	--progress-step-text-completed: #3D3D3D;
+	--progress-step-index-border: 2px solid #ffffff;
+	--progress-step-index-span-border: 2px solid #6F6F6F;	
+	--progress-step-border-current: #1976B0;
+	--progress-step-bg-current: #1976B0;
+	--progress-step-color-current: #FFFFFF;
+	--progress-step-border-completed: #FFFFFF;
+  --progress-step-border-completed-span: #1976B0;
+  --progress-step-bg-completed-span: #1976B0;
+	--progress-step-bg-completed: #FFFFFF;
+	--progress-step-img-completed: url("../img/svg/icon_check.svg");
+  --progress-step-index-current-border: 2px solid #1976B0;
+  --progress-step-index-current-bg: #DEEAFB;
+
+	--main-btn-prev-img: url("../img/svg/icon_prev.svg");
+  --main-btn-next-img: url("../img/svg/icon_confirm.svg");
+  --main-btn-next-img-disabled: url("../img/svg/icon_next_disabled.svg");	
+ 	--main-btn-home-img: url("../img/svg/icon_home_white.svg");	
+  --main-btn-primary-color: #FFFFFF;
+  --main-btn-primary-bg: #1976B0;
+  --main-btn-primary-box-shadow: 0px -10px 0px 0px #155E8F inset;
+  --main-btn-primary-bg-active: #155E8F;
+  --main-btn-primary-box-shadow-active: 0px 0px 0px 0px #155E8F inset;
+
+  --main-btn-secondary-bg: #FFFFFF;
+  --main-btn-secondary-color: #3D3D3D;
+  --main-btn-secondary-box-shadow: 0px -6px 0px 0px #00000040 inset;
+  --main-btn-secondary-border: 3px solid #3D3D3D;
+  --main-btn-secondary-bg-active: #E7E7E7;
+  --main-btn-secondary-box-shadow-active: 0px 0px 0px 0px #00000040 inset;
+
+	--complete-img: url("../img/svg/img_complete.svg");
+	--complete-title-color: #262626;
+	--complete-desc-color: #3D3D3D;
+  --scan-complete-bg: #FFF1F1;
+  --scan-complete-color: #3D3D3D;
+	--icon-warning: url("../img/svg/icon_warning.svg");
+  --icon-clock: url("../img/svg/icon_clock.svg");
+  --icon-bell: url("../img/svg/icon_bell.svg");  
+  --result-bg: #E3F0FB;
+  --result-label-color: #174363;
+  --result-value-color: #000000;
+  --icon-phone: url("../img/svg/icon_phone.svg") no-repeat;
+  --error-notice-color: #000000;
+  --guide-bg: #E7E7E7;
+
+  --scrollbar-corner-color: #000000;
+  --scrollbar-track-color: #000000;
+  --scrollbar-thumb-color: #B0B0B0;
+
+  --pagination-btn-border: 2px solid #3D3D3D;
+  --pagination-btn-bg: #ffffff;
+  --pagination-btn-box-shadow: 0px -4px 0px 0px #00000040 inset, 0px 2px 3px 0px #00000066;
+  --pagination-info-color: #4F4F4F;
+  --pagination-btn-bg-active: #E7E7E7;
+  --pagination-btn-box-shadow-active: 0px 2px 3px 0px #00000066;
+  --pagination-btn-bg-disabled: #ffffff;
+  --pagination-btn-border-disabled: 2px solid #B0B0B0;
+  --pagination-btn-box-shadow-disabled: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000066;
+  --pagination-arrow-color: #3D3D3D;
+  --pagination-arrow-color-disabled: #B0B0B0;
+
+	--modal-backdrop: rgba(0, 0, 0, 0.5); 	
+	--modal-box-shadow: 0px 0px 20px 0px #00000040;
+	--modal-border: 2px solid #262626;	
+	--modal-bg: #fff;
+  --modal-color: #000000;
+  --modal-icon-alert: url("../img/svg/icon_alert.svg") no-repeat;
+  --modal-button-primary--color: #FFFFFF;
+  --modal-button-primary--bg: #1976B0;
+  --modal-button-primary--box-shadow: 0px -10px 0px 0px #155E8F inset;
+  --modal-button-primary--bg-active: #155E8F;
+  --modal-button-primary--box-shadow-active: 0px 0px 0px 0px #155E8F inset;
+  --modal-button-secondary--bg: #FFFFFF;
+  --modal-button-secondary--color: #3d3d3d;
+  --modal-button-secondary--border: 3px solid #3D3D3D;
+  --modal-button-secondary--box-shadow: 0px -6px 0px 0px #26262640 inset;
+  --modal-button-secondary--bg-active: #E7E7E7;
+  --modal-button-secondary--box-shadow-active: 0px 0px 0px 0px #26262640 inset;
+
+  --zoom-bar-bg: #000000; 
+  --zoom-bar-btn-bg : #FFFFFF; 
+  --zoom-bar-btn-bg-active : #B0B0B0; 
+  --arrow-button-bg: #FFFFFF;  
+  --arrow-button-bg-active : #E7E7E7;
+  --arrow-button-up-img: url("../img/svg/arrow-button-up.svg") no-repeat center center ;
+  --arrow-button-left-img: url("../img/svg/arrow-button-left.svg") no-repeat center center ;
+  --arrow-button-right-img: url("../img/svg/arrow-button-right.svg") no-repeat center center ;
+  --arrow-button-down-img: url("../img/svg/arrow-button-down.svg") no-repeat center center ;
+  --zoom-control-close-bg: #000000; 
+  --zoom-control-close-border: 3px solid #FFFFFF;
+  --zoom-control-close-color: #FFFFFF;
+  --zoom-control-close-box-shadow: 0px 4px 10px 0px #0000004D;
+  --zoom-control-close-bg-active: #3D3D3D;
+  --zoom-control-close-icon: url("../img/svg/zoom-control-close.svg");
+
+}
+
+body.high-contrast {
+  --container-bg-color: #000000;
+  --text-black: #FFFFFF;
+
+  --header-bg: #000000;
+  --main-bg: #000000;
+  
+  --header-btn-bg: #000000;
+  --header-btn-border: #FFFFFF;
+  --header-btn-color: #ffffff;
+
+  --fc-red-color: #F8DA29;
+  --fc-blue-color: #F8DA29;
+  --fc-title-color: #FFFFFF; 
+  --fc-accent-color: #F8DA29;
+
+	--header-logo-img: url("../img/svg/logo_contrast.svg");
+  --header-btn-home-img: url("../img/svg/icon_home_contrast.svg");
+	--header-btn-bg: #000000;
+  --header-btn-border: 1px solid #FFFFFF;
+	--header-btn-text: #FFFFFF;
+  --header-btn-home-text: #FFFFFF;
+  --header-btn-home-bg-active: #3D3D3D;
+	--header-btn-text-active: #000000;
+	--header-btn-bg-active: #FFFFFF; 
+	--header-btn-box-shadow: 0px -3px 0px 0px #00000040 inset, 0px 1px 2px 0px #00000033;
+	--header-btn-box-shadow-active: 0px 1px 2px 0px #00000033;
+  --header-btn-call-border: 2px solid #FFFFFF;
+  --header-btn-call-bg: #3D3D3D;
+	--header-btn-call-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000033;
+  --header-btn-call-color: #F8DA29;
+  --header-btn-call-bg-active: #262626;
+	--header-btn-call-box-shadow-active: 0px 0px 0px 0px #00000033;
+  --header-btn-call-color-active: #E7BE0B;
+  --header-btn-active-after: #000000;
+
+  --main-home-btn-border: 4px solid #FFFFFF;
+  --main-home-btn-bg: linear-gradient(106.48deg, #F8DA29 2.24%, #F8DA29 41.91%, #F8DA29 98.43%);
+  --main-home-btn-box-shadow: 0px 10px 20px 0px #00000040;
+  --main-home-btn-img: url("../img/svg/main_home_btn_img_contrast.svg");
+  --main-home-btn-color: #000000;
+  --main-home-btn-bg-active: linear-gradient(106.48deg, #9F6A09 2.24%, #9F6A09 41.91%, #9F6A09 98.43%);
+  --main-title-color: #FFFFFF;
+  --icon-qr-googleplay: url("../img/svg/icon-qr-googleplay.svg");
+  --icon-qr-appstore: url("../img/svg/icon-qr-appstore.svg");
+  --btn-go-googleplay: url("../img/svg/btn-googleplay.svg");
+  --btn-go-appstore: url("../img/svg/btn-appstore.svg");  
+
+  --return-process-card-border: 2px solid #FFFFFF;
+  --return-process-card-bg: #000000; 
+  --return-process-arrow-bg: #FFFFFF url("../img/svg/icon_return_arrow_contrast.svg") no-repeat center center;
+
+	--progress-steps-bg: #000000;
+	--progress-step-line: #B0B0B0;
+	--progress-step-line-current: #F8DA29;
+	--progress-step-text-default: #B0B0B0;
+	--progress-step-text-current: #F8DA29;
+	--progress-step-text-completed: #F8DA29;
+	--progress-step-index-border: 2px solid #000000;
+	--progress-step-index-span-border: 2px solid #B0B0B0;	
+	--progress-step-border-current: #F8DA29;
+	--progress-step-bg-current: #F8DA29;
+	--progress-step-color-current: #000000;
+	--progress-step-border-completed: #FFFFFF;
+  --progress-step-border-completed-span: #F8DA29;
+  --progress-step-bg-completed-span: #F8DA29;
+	--progress-step-bg-completed: #000000;
+	--progress-step-img-completed: url("../img/svg/icon_check_contrast.svg");
+  --progress-step-index-current-border: 2px solid #F8DA29;
+  --progress-step-index-current-bg: #3D3D3D;
+
+	--main-btn-prev-img: url("../img/svg/icon_prev_contrast.svg");
+  --main-btn-next-img: url("../img/svg/icon_confirm_contrast.svg");
+  --main-btn-next-img-disabled: url("../img/svg/icon_next_disabled.svg");	
+ 	--main-btn-home-img: url("../img/svg/icon_home_white.svg");	
+  --main-btn-primary-color: #000000; 
+  --main-btn-primary-bg: #F8DA29;
+  --main-btn-primary-box-shadow: 0px 0px 0px 0px #F8DA29 inset;
+  --main-btn-primary-bg-active: #9F6A09;
+  --main-btn-primary-box-shadow-active: 0px 0px 0px 0px #9F6A09 inset;
+
+  --main-btn-secondary-bg: #000000;
+  --main-btn-secondary-color: #FFFFFF;
+  --main-btn-secondary-box-shadow: 0px 0px 0px 0px #00000040 inset;
+  --main-btn-secondary-border: 3px solid #FFFFFF;
+  --main-btn-secondary-bg-active: #3D3D3D;
+  --main-btn-secondary-box-shadow-active: 0px 0px 0px 0px #00000040 inset;
+
+	--complete-img: url("../img/svg/img_complete_contrast.svg");
+	--complete-title-color: #FFFFFF;
+	--complete-desc-color: #FFFFFF;
+  --scan-complete-bg: #3D3D3D;
+  --scan-complete-color: #FFFFFF;
+	--icon-warning: url("../img/svg/icon_warning_contrast.svg");
+  --icon-clock: url("../img/svg/icon_clock_contrast.svg");
+  --icon-bell: url("../img/svg/icon_bell_contrast.svg");  
+  --result-bg: #3D3D3D;
+  --result-label-color: #F8DA29;
+  --result-value-color: #F8DA29;
+  --icon-phone: url("../img/svg/icon_phone_contrast.svg") no-repeat;
+  --error-notice-color: #FFFFFF;
+  --guide-bg: #3D3D3D;
+
+  --pagination-btn-border: 0px solid #3D3D3D;
+  --pagination-btn-bg: #FFFFFF;
+  --pagination-btn-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000066;
+  --pagination-info-color: #ffffff;
+  --pagination-btn-bg-active: #B0B0B0;
+  --pagination-btn-box-shadow-active: 0px 2px 3px 0px #00000066;
+  --pagination-btn-bg-disabled: #000000;
+  --pagination-btn-border-disabled: 2px solid #5D5D5D;
+  --pagination-btn-box-shadow-disabled: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000066; 
+  --pagination-arrow-color: #000000;
+  --pagination-arrow-color-disabled: #5D5D5D;
+
+  --modal-backdrop: rgba(0, 0, 0, 0.5);
+	--modal-box-shadow: 0px 0px 20px 0px #00000040;
+	--modal-border: 2px solid #B0B0B0;	
+	--modal-bg: #000000;
+  --modal-icon-alert: url("../img/svg/icon_alert_contrast.svg") no-repeat;
+  --modal-color: #FFFFFF;
+
+  --modal-button-primary--color: #000000;
+  --modal-button-primary--bg: #F8DA29;
+  --modal-button-primary--box-shadow: 0px -0px 0px 0px #2846A5 inset;
+  --modal-button-primary--bg-active:  #9F6A09;
+  --modal-button-primary--box-shadow-active: 0px 0px 0px 0px #2B54CA inset;
+  --modal-button-secondary--bg: #000000;
+  --modal-button-secondary--color: #FFFFFF;
+  --modal-button-secondary--border: 3px solid #FFFFFF;
+  --modal-button-secondary--box-shadow: 0px 0px 0px 0px #26262640 inset;
+  --modal-button-secondary--bg-active: #3D3D3D;
+  --modal-button-secondary--box-shadow-active: 0px 0px 0px 0px #26262640 inset;
+
+}
+

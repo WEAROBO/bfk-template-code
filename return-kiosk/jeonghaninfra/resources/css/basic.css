@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;  
+  min-height: 100%;  
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  touch-action: manipulation;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+}
+@media (min-height: 768px) {
+  html {
+    min-height: 768px;
+    height: 100%; 
+  }
+}
+body {
+  background: var(--body-bg-color);
+  margin: 0;
+  height: 100%;
+  width:100%;  
+}
+.container-wrap {
+  width: var(--container-width);
+  height: var(--container-height);
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(-50%);
+  top: 50%;  
+}
+@media (max-height: 768px) {
+  .container-wrap {
+    transform: translateY(0);
+    top: 0;
+  }
+}
+.container {
+  overflow: auto;  
+  background: var(--container-bg-color);
+  display: flex;
+  flex-direction: column;  
+  width: var(--container-width);
+  height: var(--container-height);
+  position: relative;  
+}
+.container-body {
+  position: relative;  
+  display: flex;
+  flex-direction: column;
+  transform-origin: left top;
+  position: relative;  
+}
+.header {
+  width: var(--header-width);
+  height: var(--header-height);
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--header-bg);
+}
+.header.header--no-bg {
+  background: var(--header-bg--no_bg);
+}
+.header__title {
+  font-family: var(--font-family-default);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.4;
+  letter-spacing: -1px;
+  vertical-align: middle;
+  color: var(--header-title-color);
+}
+.header__logo {
+  width: 230px;
+  height: 80px;
+  background: var(--header-logo-img);
+}
+.header__buttons {
+  height: 80px;
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;  
+  padding: 0px;
+}
+.header--no-bg .header__buttons {
+  background: var(--header-bg--no_bg);
+}
+.control-bar__buttons {
+  display: flex;
+  gap: 18px;
+}
