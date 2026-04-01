@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_자판기 상품 구매_1_메인</title>
+  </head>
+  <body class="lower-screen high-contrast">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__logo"></div>
+            <span class="header__location">성수역 3번출구</span>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <main class="main main--no-border">
+            <span class="main__location">성수역 3번출구</span>
+            <h1 class="main__title main__title--main">이용하실 서비스를 선택하세요</h1>
+            <div class="main__grid">
+              <div class="button main__button--service">
+                <span class="main__button--service__icon main__button--service__icon-member"></span>
+                <span class="service__text">
+                  <span class="service__title">기존 고객</span>
+                  <span class="service__desc">(회원)</span>
+                </span>
+              </div>
+              <div class="button main__button--service">
+                <span class="main__button--service__icon main__button--service__icon-guest"></span>
+                <span class="service__text">
+                  <span class="service__title">신규 고객</span>
+                  <span class="service__desc">(회원 가입)</span>
+                </span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-card__header">
+                <h2 class="info-card__title">빨래방 이용시간</h2>
+              </div>
+              <div class="info-card__content">
+                <dl class="info-card__list">
+                  <div class="info-card__item">
+                    <dt class="info-card__label">평일</dt>
+                    <dd class="info-card__value">06:00 ~ 22:00</dd>
+                  </div>
+                  <div class="info-card__item">
+                    <dt class="info-card__label">주말, 공휴일</dt>
+                    <dd class="info-card__value">06:00 ~ 24:00</dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast accessibility__button--active">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen accessibility__button--active">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

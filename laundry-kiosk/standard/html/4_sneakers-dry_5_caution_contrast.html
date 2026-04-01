@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>4_운동화 건조_5_운동화 건조 시 주의사항</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">     
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">로그인</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">서비스 선택</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>4</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main main-progress">  
+            <h1 class="main__title main__title--progress">운동화 건조 시 주의사항</h1>
+
+            <div class="info-box">
+              <ul class="info-list">
+                <li>적정건조시간은 60분 입니다. (최대 연속운전 100분)</li>
+                <li>반드시 운동화세탁기에서 탈수된 운동화만 건조하세요.</li>
+                <li>열풍건조를 통해 손상될 수 있는 고가의 운동화는 건조하지 마세요.</li>
+                <li>열풍건조가 불가능한 가죽, 세무, 털소재, 특수소재의 운동화는 건조하지 마세요.</li>
+                <li>운동화 이외 구두, 장화, 부츠, 등산화, 특수화 등은 건조하지 마세요.</li>
+                <li>세무, 가죽 등 특수섬유 건조 시 손상, 수축 위험이 있습니다.</li>
+                <li class="info-accent">건조기 내부에 인화성물질(라이터 등)은 절대 넣지 마세요.</li>
+                <li class="info-accent">건조 중에는 내통온도가 높으므로 건조가 완전 종료된 후에 운동화를 꺼내주세요.</li>
+                <li class="info-accent">건조기 가동 시 어린이들이 주위에 가지 않도록 각별히 주의하세요.</li>
+              </ul>
+            </div>
+
+            <div class="main__bottom-buttons">
+              <button class="button main__button main-button-secondary" aria-label="이전 단계로 이동">
+                <span class="main__button__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>     
+              <button class="button main__button main-button-primary" aria-label="확인">
+                <span class="main__button__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>                      
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast accessibility__button--active">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+    <script>
+      let password = ""
+      function keyclick(value) {
+        console.log("keyclick", value)
+        if (value == "delete_all") {
+          password = ""
+        } else if (value == "delete") {
+          if (password.length > 0) {
+            password = password.slice(0, password.length - 1);
+          }
+
+        } else if (password.length < 4) {
+          password += value
+        }
+        console.log("password", password)
+        const input_layer = document.querySelector("#input-pw-box__input-inner")
+        input_layer.innerHTML = ''
+        for (let i = 0; i < password.length; i++) {
+    // <div class="star">*</div>
+          let div = document.createElement('div');
+          div.innerHTML = '*';
+          div.classList.add('star');
+          input_layer.appendChild(div)
+        }
+
+      }
+    </script>  
+
+  </body>
+</html>

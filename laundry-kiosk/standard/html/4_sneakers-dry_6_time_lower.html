@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>4_운동화 건조_6_운동화 건조기 시간설정</title>
+  </head>
+  <body class="lower-screen">
+    <div class="container-wrap"> 
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">로그인</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">서비스 선택</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>4</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main main-progress">  
+            <h1 class="main__title main__title--guide">
+              건조 시간을 설정하세요
+            </h1>
+            <div class="course-grid__header">            
+              <span class="course-grid__title dryer">운동화 건조기</span>
+            </div>            
+
+            <div class="dry-time" aria-label="총 건조 시간 안내">
+              <h1 class="dry-time__title">총 건조 시간</h1>
+
+              <div class="dry-time__panel">
+                <div class="dry-time__summary">
+                  <p class="dry-time__minutes">50분</p>
+                  <p class="dry-time__price">(5,000원)</p>
+                </div>
+
+                <div class="dry-time__controls" aria-label="시간 조절 버튼">
+                  <div class="dry-time__button" role="button" aria-label="5분 연장" tabindex="0">
+                    <svg class="dry-time__icon" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28.7372 21.4484C29.5227 20.8076 30.6816 20.8538 31.4139 21.5861L45.4139 35.5861C46.195 36.3671 46.195 37.6331 45.4139 38.4142C44.6329 39.1952 43.3668 39.1952 42.5858 38.4142L29.9998 25.8282L17.4139 38.4142C16.6329 39.1952 15.3668 39.1952 14.5858 38.4142C13.8047 37.6331 13.8047 36.3671 14.5858 35.5861L28.5858 21.5861L28.7372 21.4484Z" 
+                      fill="currentColor"/>
+                    </svg>
+                    <span>5분 연장</span>
+                  </div>
+
+                  <div class="dry-time__button dry-time__button--disabled" role="button" aria-label="5분 감소" tabindex="0" aria-disabled="true">                    
+                    <svg class="dry-time__icon" width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28.7372 38.5516C29.5227 39.1924 30.6816 39.1462 31.4139 38.4139L45.4139 24.4139C46.195 23.6329 46.195 22.3669 45.4139 21.5858C44.6329 20.8048 43.3668 20.8048 42.5858 21.5858L29.9998 34.1718L17.4139 21.5858C16.6329 20.8048 15.3668 20.8048 14.5858 21.5858C13.8047 22.3669 13.8047 23.6329 14.5858 24.4139L28.5858 38.4139L28.7372 38.5516Z" 
+                      fill="currentColor"/>
+                    </svg>
+                    <span>5분 감소</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dry-time__guide">
+              <h2 class="dry-time__guide-title">이용 요금 안내</h2>
+              <div class="dry-time__guide-list">
+                <p class="dry-time__guide-item">기본 요금&nbsp;&nbsp;:&nbsp;&nbsp;<span class="dry-time__guide-emphasis">32분 4,000원</span></p>
+                <p class="dry-time__guide-item">추가 요금&nbsp;&nbsp;:&nbsp;&nbsp;<span class="dry-time__guide-emphasis">5분당 500원</span></p>
+              </div>
+            </div>      
+
+            <div class="main__bottom-buttons">
+              <button class="button main__button main-button-secondary" aria-label="이전 단계로 이동">
+                <span class="main__button__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main-button-primary" aria-label="확인">
+                <span class="main__button__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>            
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen accessibility__button--active">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
