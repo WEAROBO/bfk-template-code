@@ -1,0 +1,143 @@
+.spinner-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spinner-wrapper {
+  display: flex;
+  align-items: center; 
+  gap: 13px; 
+  height: 200px; 
+  margin-bottom: 33px;         
+}
+.spinner {
+  text-align: center;
+}
+.lower-screen .spinner {
+  margin-top: -62px;
+}
+/* Circle */
+.spinner__circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--spinner-circle-bg);
+}
+
+/* Wave common */
+.spinner__wave {
+  position: absolute;
+  left: 0x;
+  bottom: -70%;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat-x;
+  background-position: bottom left;
+  background-size: cover;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+/* Light wave */
+.spinner__wave--light {
+  background: var(--spinner-wave-light);
+  animation: wave-rise-light 3.5s ease-in-out infinite;
+  opacity: 0.7;
+}
+
+/* Dark wave */
+.spinner__wave--dark {
+  background: var(--spinner-wave-dark);
+  animation: wave-rise-dark 3.4s ease-in-out infinite;
+}
+
+.spinner-title {
+  font-family: var(--font-family-default);
+  color: var(--spinner-title--color);
+  font-weight: 700;
+	font-size: 60px;
+  line-height: 1.6;
+	letter-spacing: -1px;
+  text-align: center;
+}
+
+/* =========================
+    Animation (Water Filling)
+========================= */
+@keyframes wave-rise-light {
+  0% {
+    bottom: -50%;
+  }
+  10% {
+    bottom: -40%;
+  }
+  20% {
+    bottom: -30%;
+  }
+  30% {
+    bottom: -20%;
+  }
+  40% {
+    bottom: -10%;
+  }
+  50% {
+    bottom: -5%;
+  } 
+  60% {
+    bottom: -10%;
+  } 
+  70% {
+    bottom: -20%;
+  } 
+  80% {
+    bottom: -30%;
+  }    
+  90% {
+    bottom: -40%;
+  }    
+  100% {
+    bottom: -50%;
+  }  
+}
+
+@keyframes wave-rise-dark {
+  0% {
+    bottom: -52%;
+  }
+  10% {
+    bottom: -42%;
+  }
+  20% {
+    bottom: -32%;
+  }
+  30% {
+    bottom: -22%;
+  }
+  40% {
+    bottom: -12%;
+  }
+  50% {
+    bottom: -5%;
+  } 
+  60% {
+    bottom: -12%;
+  } 
+  70% {
+    bottom: -22%;
+  } 
+  80% {
+    bottom: -32%;
+  }    
+  90% {
+    bottom: -42%;
+  }    
+  100% {
+    bottom: -52%;
+  }       
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_기타화면_3_과거 거래명세 조회</title>
+  </head>
+  <body class="lower-screen">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <div class="header__left">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+          </div>
+          <div class="header__center">
+            <div class="header__logo"></div>
+          </div>
+          <div class="header__right">
+            <div class="header__buttons">     
+              <div class="header__button--text" aria-label="문의 1600-5136">
+                <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+                <span class="button__title">문의 1600-5136</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <main class="main"> 
+          
+          <div class="receipt-detail-wrap">
+            <div class="user-card">
+              <div class="user-card__member">
+                <span class="user-card__label">회원번호</span>
+                <span class="user-card__id">010-****-1234</span>
+              </div>
+              <div class="user-card__balances">
+                <div class="user-card__item">
+                  <span class="user-card__item-label">사용가능한 잔액</span>
+                  <span class="user-card__item-value accent">500,000,000원</span>
+                </div>
+                <div class="user-card__item">
+                  <span class="user-card__item-label">현금 잔액</span>
+                  <span class="user-card__item-value">500,000,000원</span>
+                </div>
+                <div class="user-card__item">
+                  <span class="user-card__item-label">포인트 잔액</span>
+                  <span class="user-card__item-value">500,000,000원</span>
+                </div>
+              </div>
+            </div>
+            <div class="receipt-detail">
+              <h1 id="receipt-title" class="receipt__title">과거 거래명세 조회</h1>
+              <div class="data-card">
+                <time class="data-card__date">2025-12-28</time>                      
+                <table class="detail-table">
+                  <thead>
+                    <tr>
+                      <th class="detail-table__th">이용시간</th>
+                      <th class="detail-table__th">서비스</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="detail-table__td">00 : 00 : 00</td>
+                      <td class="detail-table__td">금액 적립</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th class="detail-table__th">현금적립</th>
+                      <th class="detail-table__th">현금사용</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="detail-table__td">0</td>
+                      <td class="detail-table__td">0</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th class="detail-table__th">포인트 부여</th>
+                      <th class="detail-table__th">포인트 사용</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="detail-table__td">0</td>
+                      <td class="detail-table__td">0</td>
+                    </tr>
+                  </tbody>
+                  <thead>
+                    <tr>
+                      <th class="detail-table__th">현금잔액</th>
+                      <th class="detail-table__th">포인트 잔액</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="detail-table__td">0</td>
+                      <td class="detail-table__td">0</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="pagination pagination--horizontal mt-30">
+                <button class="pagination__button" aria-label="이전 페이지" disabled>
+                  <span class="pagination-icon-double-prev"></span>&nbsp;5
+                </button>              
+                <button class="pagination__button" aria-label="이전 페이지" disabled>
+                  <span class="pagination-icon-arrow-prev"></span>
+                </button>
+                <span class="pagination__page"><strong>1</strong> / 2</span>
+                <button class="pagination__button" aria-label="다음 페이지">
+                  <span class="pagination-icon-arrow-next"></span>
+                </button>
+                <button class="pagination__button" aria-label="다음 페이지">
+                  5&nbsp;<span class="pagination-icon-double-next"></span>
+                </button>              
+              </div>
+            </div>
+          </div>
+          <div class="main__bottom-buttons center lower-left">
+            <button class="button main-button-confirm">확인</button>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">5</span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+
+  </body>
+</html>

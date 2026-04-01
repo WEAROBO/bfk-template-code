@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_기타화면_2_영수증</title>
+  </head>
+  <body class="lower-screen">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <div class="header__left">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+          </div>
+          <div class="header__center">
+            <div class="header__logo"></div>
+          </div>
+          <div class="header__right">
+            <div class="header__buttons">     
+              <div class="header__button--text" aria-label="문의 1600-5136">
+                <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+                <span class="button__title">문의 1600-5136</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="progress-steps">
+          <div class="progress-step progress-step--completed">
+            <div class="progress-step__index"><span><strong>1</strong></span></div>
+            <div class="progress-step__label">로그인</div>
+          </div>
+          <div class="progress-step progress-step--completed">
+            <div class="progress-step__index"><span><strong>2</strong></span></div>
+            <div class="progress-step__label">서비스 선택</div>
+          </div>
+          <div class="progress-step progress-step--current">
+            <div class="progress-step__index"><span><strong>3</strong></span></div>
+            <div class="progress-step__label">내역확인</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>4</strong></span></div>
+            <div class="progress-step__label">결제</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span><strong>5</strong></span></div>
+            <div class="progress-step__label">완료</div>
+          </div>
+        </div>
+
+        <main class="main">  
+          <h1 id="receipt-title" class="receipt__title">영수증 상세</h1>
+
+          <div class="receipt__card" id="receipt-content">
+            <div class="receipt__header">
+              <div class="receipt__store">림스솔루션 림스점</div>
+              <div class="receipt__datetime">2025-12-28&nbsp;&nbsp;00:00:00</div>
+            </div>
+
+            <div class="receipt__amount">
+              <div class="receipt__amount-value">10,000원</div>
+            </div>
+
+            <div class="receipt__method">
+              <span class="receipt__logo"></span>
+              <div class="receipt__method-type">우리BC체크(0000)</div>
+            </div>
+
+            <div class="receipt__divider"></div>
+
+            <div class="receipt__row">
+              <div class="receipt__row-label">카드번호</div>
+              <div class="receipt__row-value">0000-0000-0000-0000</div>
+            </div>
+            <div class="receipt__row">
+              <div class="receipt__row-label">승인일시</div>
+              <div class="receipt__row-value">2025-12-28&nbsp;00:00:00</div>
+            </div>
+            <div class="receipt__row">
+              <div class="receipt__row-label">승인번호</div>
+              <div class="receipt__row-value">75891272</div>
+            </div>
+            <div class="receipt__row">
+              <div class="receipt__row-label">거래번호</div>
+              <div class="receipt__row-value"></div>
+            </div>
+            <div class="receipt__row receipt__row--spaced">
+              <div class="receipt__row-label">거래금액</div>
+              <div class="receipt__row-value">9,636원</div>
+            </div>
+            <div class="receipt__row">
+              <div class="receipt__row-label">부가세액</div>
+              <div class="receipt__row-value">364원</div>
+            </div>
+
+            <div class="receipt__row receipt__row--spaced">
+              <div class="receipt__row-label">매장명</div>
+              <div class="receipt__row-value">림스솔루션 림스점</div>
+            </div>
+            <div class="receipt__row">
+              <div class="receipt__row-label">대표자명</div>
+              <div class="receipt__row-value">대표자명</div>
+            </div>
+            <div class="receipt__row">
+              <div class="receipt__row-label">사업자번호</div>
+              <div class="receipt__row-value">123-45-6789</div>
+            </div>
+            <div class="receipt__row">
+              <div class="receipt__row-label">전화번호</div>
+              <div class="receipt__row-value">1899-0353</div>
+            </div>
+          </div>
+          <div class="pagination pagination--horizontal mt-30">
+            <button class="pagination__button" aria-label="이전 페이지" disabled>
+              <span class="pagination-icon-arrow-prev"></span>
+            </button>
+            <span class="pagination__page"><strong>1</strong> / 2</span>
+            <button class="pagination__button" aria-label="다음 페이지">
+              <span class="pagination-icon-arrow-next"></span>
+            </button>
+          </div>          
+
+          <div class="main__bottom-buttons center lower-left">
+            <button class="button main-button-confirm">확인</button>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen active">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">5</span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+
+    <script>
+      const receipt = document.getElementById('receipt-content')
+      const prevBtn = document.querySelector('.pagination__button[aria-label="이전 페이지"]')
+      const nextBtn = document.querySelector('.pagination__button[aria-label="다음 페이지"]')
+      const pageText = document.querySelector('.pagination__page strong')
+
+      let currentPage = 1
+
+      function getTotalPages() {
+        return Math.max(
+          1,
+          Math.ceil(receipt.scrollHeight / receipt.clientHeight)
+        )
+      }
+
+      function updateButtons() {
+        const totalPages = getTotalPages()
+        prevBtn.disabled = currentPage <= 1
+        nextBtn.disabled = currentPage >= totalPages
+        pageText.textContent = currentPage
+      }
+
+      function scrollToPage(page) {
+        receipt.scrollTo({
+          top: receipt.clientHeight * (page - 1),
+          behavior: 'smooth'
+        })
+        currentPage = page
+        updateButtons()
+      }
+
+      prevBtn.addEventListener('click', () => {
+        if (currentPage > 1) {
+          scrollToPage(currentPage - 1)
+        }
+      })
+
+      nextBtn.addEventListener('click', () => {
+        const totalPages = getTotalPages()
+        if (currentPage < totalPages) {
+          scrollToPage(currentPage + 1)
+        }
+      })
+
+      receipt.addEventListener('scroll', () => {
+        currentPage = Math.round(receipt.scrollTop / receipt.clientHeight) + 1
+        updateButtons()
+      })
+
+      updateButtons()
+    </script>
+
+  </body>
+</html>
