@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_셀프계산 카드결제_8_완료</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+          <div class="complete-wrap">
+            <div class="complete-box" role="status" aria-live="polite">
+              <span class="complete__img"></span>
+              <h1 class="complete__title">이용해 주셔서 감사합니다.</h1>
+              <p class="complete__desc">
+                <span id="count" class="complete__count--highlight">5</span><span class="complete__count">초 후</span> 처음으로 돌아갑니다.
+              </p>
+              <button class="button main__button main-button-dark mt-120" aria-label="처음으로">
+                <span class="main__icon main__icon--home" aria-hidden="true"></span>
+                <span class="button__title">처음으로</span>
+              </button>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+    let seconds = 5;
+    const counter = document.getElementById("count");
+
+    const countdown = setInterval(() => {
+      seconds--;
+      counter.textContent = seconds;
+
+      if (seconds === 0) {
+        clearInterval(countdown);
+        window.location.href = "1_card_1_main_contrast.html";
+      }
+    }, 1000);
+    </script> 
+  </body>
+</html>
