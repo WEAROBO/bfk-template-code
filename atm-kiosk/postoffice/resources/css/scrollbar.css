@@ -1,0 +1,26 @@
+::-webkit-scrollbar-corner {
+  background:var(--scrollbar-corner-color);
+}
+::-webkit-scrollbar {
+  width: 24px;
+  height: 24px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb-color);
+  border-radius: 50px;
+  background-clip: padding-box;
+  border: 7px solid transparent;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--scrollbar-track-color);
+}
+
+/* 세로 스크롤바 트랙에만 왼쪽 선 추가 */
+::-webkit-scrollbar-track:vertical {
+  border-left: 1px solid #fff;
+}
+
+/* 가로 스크롤바 트랙에만 위쪽 선 추가 (필요한 경우 구분) */
+::-webkit-scrollbar-track:horizontal {
+  border-top: 1px solid #fff;
+}

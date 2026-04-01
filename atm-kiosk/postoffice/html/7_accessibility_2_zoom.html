@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>7_접근성_화면확대_2_화면확대</title>
+    <style> 
+      .container-body {
+        scale: 1.7;
+        padding-right: 24px;
+        padding-bottom: 40px !important;
+
+      }
+      .main {
+        
+      }
+    </style>     
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+     
+          <div class="header header--no-bg">
+            <div class="header__logo"></div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">3</span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>            
+              <button class="button header__button" aria-label="다시듣기">
+                <span class="header__button__icon--play" aria-hidden="true"></span>
+                <span class="button__title">다시듣기</span>
+              </button>
+              <button class="button header__button" aria-label="접근성">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">접근성</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="main">
+            <div class="main-3 main-home">
+    
+              <div class="main-left main-3-left">
+                <button class="button main__button">예금출금</button>
+                <button class="button main__button">입금/무통장송금</button>
+                <button class="button main__button">계좌이체</button>
+                <button class="button main__button">통장정리</button>
+                <button class="button main__button">네이버페이</button>
+              </div>
+      
+              <div class="main-3-center">
+                <div class="main-center__title">
+                  <div class="maiin-center__title-line">
+                    현금만 출금가능
+                  </div>
+                  <div class="main-center__title-line">
+                    현금/수표 입금가능
+                  </div>
+                </div>
+                <div class="main-center__bg">
+                  <img src="../resources/img/ui/main-center.png" alt="베리어프리 키오스크 UIUX 제작지원 사업공고">
+                  <div class="main-center__bg-button button">
+                    <span class="main-center__bg-button-img"></span>
+                  </div>
+                </div>
+      
+                <div class="main-center__button_area">
+                  <div class="main-center__button button">
+                    <span class="button-title">
+                      다른 업무
+                    </span>
+                    <span class="main-center__button-img"></span>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="main-3-right">
+                <button class="button main__button">예금조회</button>
+                <button class="button main__button">신용카드 업무</button>
+                <button class="button main__button">캐시비</button>
+                <button class="button main__button font-size--smal">
+                  <div class="button-inner">
+                    <div class="button-inner__line">국세/지방세/공과금</div>
+                    <div class="button-inner__line">등록금/법원비용</div>
+                  </div>
+                </button>
+                <button class="button main__button">Foreign<br>Languages</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="zoom-bar-wrap">
+          <div class="zoom-bar">
+            <button class="zoom-control__close" aria-label="확대 기능 끄기">
+              <span class="zoom-control__close__icon" aria-hidden="true"></span>
+              <span class="zoom-control__close__text">확대 끄기</span>
+            </button>                    
+            <div class="zoom-bar__arrows">
+              <button class="zoom-bar-arrow-button" aria-label="화면 위로 이동"><span class="arrow-button--up-img"></span></button>
+              <button class="zoom-bar-arrow-button" aria-label="화면 아래로 이동"><span class="arrow-button--down-img"></span></button>
+              <button class="zoom-bar-arrow-button" aria-label="화면 왼쪽으로 이동"><span class="arrow-button--left-img"></span></button>
+              <button class="zoom-bar-arrow-button" aria-label="화면 오른쪽으로 이동"><span class="arrow-button--right-img"></span></button>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+    </div>
+
+    <script>
+      const containerBody = document.querySelector('.container-body');
+      const zoomBarWrap = document.querySelector('.zoom-bar-wrap');
+
+      if (containerBody && zoomBarWrap) {
+        const computedStyle = window.getComputedStyle(containerBody);        
+        const scaleValue = parseFloat(computedStyle.getPropertyValue('scale')) || 1;
+        if (scaleValue > 1) {
+          zoomBarWrap.style.bottom = '24px';           
+          zoomBarWrap.style.paddingRight = '24px'; 
+        }
+      }
+    </script>  
+
+  </body>
+</html>
