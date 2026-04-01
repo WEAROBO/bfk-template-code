@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>2_건조기_5_건조기 시간설정</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap"> 
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <div class="header__left">
+              <button class="button header__button" aria-label="처음으로">
+                <span class="header__button__icon--home" aria-hidden="true"></span>
+                <span class="button__title">처음으로</span>
+              </button>
+            </div>
+            <div class="header__right">
+              <div class="header__buttons">     
+                <div class="header__button--text" aria-label="문의 1600-0000">
+                  <span class="header__button__icon--call-bk" aria-hidden="true"></span>
+                  <span class="button__title">문의 1600-0000</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">로그인</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">서비스선택</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">내역확인</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>4</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>5</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main">
+            <h1 class="main__title main__title--guide mb-20">
+              건조기 시간을 설정하세요
+              <span class="course-grid__title dryer">건조기 <strong class="course-grid__title-accent dryer">1번</strong></span>
+            </h1>
+            <div class="dryer__time-card">
+              <button class="dryer__adjust-btn" type="button" aria-label="시간 감소" disabled>
+                <span class="dryer__adjust-icon-minus"></span>
+                <span class="dryer__adjust-sub">-6분</span>
+              </button>
+
+              <div class="dryer__time-info">
+                <div class="dryer__time">48분</div>
+                <div class="dryer__price">4,000원</div>
+              </div>
+
+              <button class="dryer__adjust-btn" type="button" aria-label="시간 증가">
+                <span class="dryer__adjust-icon-plus"></span>
+                <span class="dryer__adjust-sub">+6분</span>
+              </button>
+            </div>          
+
+            <div class="payment-guide">
+              <h6>건조기 이용요금 안내</h6>
+              <ul class="info-list">
+                <li>기본요금은 4,000원이며 32분 동안 가동됩니다.</li>
+                <li>추가요금은 500원당 가동 시간 6분이 추가됩니다.</li>
+                <li>결제 후 시작버튼을 누르지 않으면 10분 후 결제 내역이 초기화 됩니다.</li>
+              </ul>
+            </div>
+
+            <div class="main__bottom-buttons">
+              <button class="button main__button main-button-secondary" aria-label="이전 단계로 이동">
+                <span class="main__button__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main-button-primary" aria-label="확인">
+                <span class="main__button__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>            
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast accessibility__button--active">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">낮은화면</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">3</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
