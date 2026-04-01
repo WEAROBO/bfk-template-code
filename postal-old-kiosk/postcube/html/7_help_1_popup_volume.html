@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>7_도움기능_1_음량조절 팝업</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <div class="header__logo"></div>
+            <div class="header__buttons">
+              <button class="button header__button button-md" aria-label="사운드">
+                <span class="header__button--icon header__button--icon-sound" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button" aria-label="안내듣기">
+                <span class="header__button--icon header__button--icon-play" aria-hidden="true"></span>
+                <span class="button__title">안내듣기</span>
+              </button>
+              <button class="button header__button" aria-label="접근성">
+                <span class="header__button--icon header__button--icon-help" aria-hidden="true"></span>
+                <span class="button__title">접근성</span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button--icon header__button--icon-call" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>           
+            </div>
+          </div>
+          
+          <main class="main main--no-border main--no-bg">
+            <h1 class="main__title main__title--main">어떤 서비스를 이용하시겠습니까?</h1>
+            <div class="main__grid">
+              <div class="button main__button--service">
+                <span class="service__title">우편 접수</span>
+                <span class="service__title-desc">편지 및 서류 접수</span>
+              </div>
+              <div class="button main__button--service">
+                <span class="service__title">소포 접수</span>
+                <span class="service__title-desc">등기 및 착불 접수</span>
+              </div>
+            </div>
+            <div class="main__sub-grid"> 
+              <div class="button main__button--service-sub">국제우편</div>
+              <div class="button main__button--service-sub">간편사전접수</div>
+              <div class="button main__button--service-sub">선납 우편물</div>
+            </div>
+            <div class="lang-area" role="group" aria-label="언어 선택">
+              <button class="lang" lang="ko" aria-label="한국어">
+                <img src="../resources/img/svg/flag_of_korea.svg" alt="">
+                <span>한국어</span>
+              </button>
+              <button class="lang" lang="en" aria-label="영어">
+                <img src="../resources/img/svg/flag_of_globe.svg" alt="">
+                <span>English</span>
+              </button>
+            </div>
+          </main>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop">        
+      <div class="modal">            
+        <h2 class="modal__title">음량 조절</h2>
+        <div class="modal__body">        
+          <div class="volume-display">3</div>        
+          <div class="volume-control">            
+            <button class="volume-control__button volume-control__button--minus" aria-label="음량 줄이기">
+              <span class="volume-control__icon--minus" aria-hidden="true"></span>
+            </button>            
+            <div class="volume-bar" data-max="5" data-current="3">
+              <div class="volume-bar__segment volume-bar__segment--active"></div>
+              <div class="volume-bar__segment volume-bar__segment--active"></div>
+              <div class="volume-bar__segment volume-bar__segment--active"></div>
+              <div class="volume-bar__segment"></div>
+              <div class="volume-bar__segment"></div>
+            </div>            
+            <button class="volume-control__button volume-control__button--plus" aria-label="음량 높이기">
+              <span class="volume-control__icon--plus" aria-hidden="true"></span>
+            </button>
+          </div>   
+          <button class="modal__mute-btn" aria-label="음소거">
+            <span class="modal__button__icon--mute" aria-hidden="true"></span>
+            <span class="button__title">음소거</span>          
+          </button>
+        </div>
+        <div class="modal__footer center">         
+          <button class="button main__button main-button-secondary" aria-label="닫기">
+            <span class="button__title">닫기</span>
+          </button>
+        </div>   
+      </div>        
+    </div>
+
+    <script>
+      const volumeDisplay = document.querySelector('.volume-display');
+      const volumeBarSegments = document.querySelectorAll('.volume-bar__segment');
+      const btnMinus = document.querySelector('.volume-control__button--minus');
+      const btnPlus = document.querySelector('.volume-control__button--plus');
+      const btnMute = document.querySelector('.modal__mute-btn');
+      const maxVolume = 5;
+      let currentVolume = 3; 
+
+      function updateVolume(newVolume) {
+          newVolume = Math.min(Math.max(0, newVolume), maxVolume); // 0~5 제한
+          currentVolume = newVolume;
+          volumeDisplay.textContent = currentVolume;
+
+          volumeBarSegments.forEach((segment, index) => {
+              if (index < currentVolume) {
+                  segment.classList.add('volume-bar__segment--active');
+              } else {
+                  segment.classList.remove('volume-bar__segment--active');
+              }
+          });
+          btnMute.classList.remove('modal__mute-btn--active');
+      }
+
+      btnMinus.addEventListener('click', () => updateVolume(currentVolume - 1));
+      btnPlus.addEventListener('click', () => updateVolume(currentVolume + 1));
+      
+      btnMute.addEventListener('click', () => {
+          btnMute.classList.toggle('modal__mute-btn--active');
+          // 실제 음소거 로직은 여기에 구현
+      });
+
+      // 초기 로드 시 반영
+      updateVolume(currentVolume);
+    </script>
+    
+  </body>
+</html>
