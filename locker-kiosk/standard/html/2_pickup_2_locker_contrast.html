@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>2_물품 찾기_2_사물함 선택</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">     
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--no-bg">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">사물함 선택</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">비밀번호 입력</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>4</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>            
+          </div>
+
+          <main class="main main-progress">  
+            <h1 class="main__title main__title--progress">
+              보관할 사물함을 선택하세요
+            </h1>
+
+            <div class="locker-wrap">
+              <div class="locker__list">
+                <div class="gradient-box"></div>
+                <div class="locker">
+                  <div class="locker__item">1</div>
+                  <div class="locker__item">6</div>
+                  <div class="locker__item">12</div>
+                  <div class="locker__item locker__item--disabled">17
+                    <div class="line line--lt-rb"></div>
+                    <div class="line line--rt-lb"></div>
+                  </div>
+
+                  <div class="locker__item locker__item--locker-body rowspan4">
+                    <span class="locker__screen"></span>
+                  </div>
+                  <div class="locker__item locker__item--md">7</div>
+                  <div class="locker__item locker__item--md">13</div>
+                  <div class="locker__item locker__item--md locker__item--disabled-md">18
+                    <div class="line line--lt-rb"></div>
+                    <div class="line line--rt-lb"></div>                 
+                  </div>
+
+                  <div class="locker__item">8</div>
+                  <div class="locker__item">14</div>
+                  <div class="locker__item locker__item--disabled">19
+                    <div class="line line--lt-rb"></div>
+                    <div class="line line--rt-lb"></div>              
+                  </div>
+
+                  <div class="locker__item">9</div>
+                  <div class="locker__item">15</div>
+                  <div class="locker__item">20</div>
+
+                  <div class="locker__item">4
+                    <div class="locker__icon"></div>
+                  </div>
+                  <div class="locker__item">10
+                    <div class="locker__icon"></div>
+                  </div>
+                  <div class="locker__item locker__item--lg">16
+                    <div class="locker__icon"></div>
+                  </div>
+                  <div class="locker__item locker__item--lg locker__item--disabled-lg">21
+                    <div class="locker__icon"></div>
+                    <div class="line line--lt-rb"></div>
+                    <div class="line line--rt-lb"></div>                
+                  </div>
+
+                  <div class="locker__item locker__item--md">5
+                    <div class="locker__icon"></div>
+                  </div>
+                  <div class="locker__item locker__item--md">11
+                    <div class="locker__icon"></div>
+                  </div>
+                </div>            
+              </div>
+              <aside class="scroll-control" aria-label="낮은화면에서 택배함 스크롤 제어">
+                <button type="button" class="scroll-control__btn scroll-control__btn--top">
+                  <img src="../resources/img/svg/icon_scroll_up.svg" alt="">
+                  <span class="scroll-control__btn-label">상단</span>
+                </button>
+                <button type="button" class="scroll-control__btn scroll-control__btn--bottom">
+                  <span class="scroll-control__btn-label">하단</span>
+                  <img src="../resources/img/svg/icon_scroll_down.svg" alt="">
+                </button>
+              </aside>              
+            </div>
+
+            <div class="main__bottoms">
+              <button class="button main__button main__button--secondary" aria-label="이전">
+                <span class="main__icon main__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast accessibility__button--active">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

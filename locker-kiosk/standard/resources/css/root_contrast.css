@@ -1,0 +1,407 @@
+body.high-contrast {
+	--body-bg: #000000;	
+  --container-bg: #000000;
+  --container-width: 1080px;
+  --container-height: 1920px;
+
+	--font-family-default: "Pretendard", sans-serif;
+	--fc-title-color: #FFFFFF;
+	--fc-base-color: #FFFFFF;
+	--fc-sub-color:  #FFFFFF;
+  --fc-blue-color: #F8DA29;
+	--fc-green-color: #1AFF40; 
+  --fc-red-color: #FFA0A0;
+	--fc-white-color: #FFFFFF;
+	--fc-accent-color: #F8DA29;
+	--bg-white: #FFFFFF;
+	--bg-accent: #FCE9D8;
+	--bg-transparent: transparent;
+
+  --header-bg: #000000;
+	--header-bg--no_bg: #000000;
+
+	--header-logo-img: url("../img/svg/logo_contrast.svg");
+  --header-btn-home-img: url("../img/svg/icon_home_contrast.svg");
+  --header-btn-play-img: url("../img/svg/icon_play_contrast.svg");
+  --header-btn-help-img: url("../img/svg/icon_help_contrast.svg");
+	--header-btn-call-bk-img: url("../img/svg/icon_call_bk_contrast.svg");
+	--header-btn-bg: #000000;
+	--header-btn-bg-active: #3D3D3D;
+  --header-btn-border: 2px solid #FFFFFF;
+	--header-btn-text: #FFFFFF;
+	--header-btn-call-text: #F8DA29;
+	--header-btn-call-bg: #262626;	
+	--header-btn-call-bg-active: #3D3D3D;
+	--header-btn-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000033;
+	--header-btn-box-shadow-active: 0px 0px 0px 0px #00000033;
+
+	--btn-disabled-border: #3D3D3D;
+	--btn-disabled-bg: #3D3D3D;
+	--btn-disabled-color: #5D5D5D;
+	--btn-disabled-box-shadow: 0px 0px 0px 0px #E7E7E7 inset;	
+
+	--main-bg: #000000;
+	--main-bg-white: #000000;
+	--main-bg--no_bg: #000000;
+	--main-location-bg: #262626 url("../img/svg/icon_marker_contrast.svg") no-repeat 30px 10px / 60px;
+	--main-border-top: 2px solid #B0B0B0;
+	--container-water-bg: #000000 none;
+	--lower-container-water-bg: #000000 none;
+
+	--main__title-color: #FFFFFF;
+	--main__title-desc-color: #D1D1D1;
+  --main__title--alert-icon: url("../img/svg/icon_alert_contrast.svg");
+  --main__button--service-bg: #F8DA29;
+	--main__button--service-bg-active: #C89406;
+  --main__button--service-right-bg: #FBE949;
+;	--main__button--service-right-bg-active: #F8DA29;	
+	--main__button--service-box-shadow: 0px 0px 0px 0px #00000000 inset, 0px 0px 0px 0px #00000000;
+	--main__button--service-text-color: #000000;
+	--main__button--service-text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.25);
+	--main__lang-color: #FFFFFF;
+  --main__button--service-member-img: url("../img/svg/icon_service_member_contrast.svg");
+  --main__button--service-guest-img: url("../img/svg/icon_service_guest_contrast.svg");
+  --main-service-signup-border: 0px solid #497BBD;
+  --main-service-signup-box-shadow: 0px 6px 15px 0px #0000004D;
+	--main-service-signup-bg: #FFFFFF;
+	--main-service-signup-bg-active: #E7E7E7;
+  --main-service-signup-box-shadow-active: 0px 0px 0px 0px #00000033;
+	--main-info-desc: #FFFFFF;
+
+  --main__button--service-in-img: url("../img/svg/icon_service_in_contrast.svg");
+  --main__button--service-out-img: url("../img/svg/icon_service_out_contrast.svg");
+  --main-service-available-border: 2px solid #3D3D3D;
+	--main-service-available-bg: #262626;
+
+  --control-bar-bg: #000000;
+	--control-bar--no_bg: #000000;
+  --control-bar--border-top: 1px solid #E7E7E7;
+	--control-bar-sound-bg: #262626;	
+  --control-bar-sound-button-border: 0px solid #FFFFFF;
+  --control-bar-sound-button-box-shadow: 0px 0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;
+	--control-bar-sound-button-bg: #FFFFFF;
+  --control-bar-sound-button-box-shadow-active: 0px 0px 0px 0px #00000066;
+	--control-bar-sound-button-bg-active: #E7E7E7;
+
+	--accessibility-btn-bg: #FFFFFF;
+  --accessibility-btn-border: 0px solid #3D3D3D;
+  --accessibility-btn-color: #FFFFFF;
+	--accessibility-btn-color-active: #000000;
+  --control-bar__sound-icon--minus: url("../img/svg/icon_minus.svg");
+  --control-bar__sound-icon--plus: url("../img/svg/icon_plus.svg");
+	--control-bar__sound-icon--volume: url("../img/svg/icon_volume-contrast.svg");
+	--control-bar__sound-level-color: #FFFFFF;
+
+	--accessibility-high-contrast: url("../img/svg/accessibility-high-contrast-contrast.svg");
+	--accessibility-high-contrast-active: url("../img/svg/accessibility-high-contrast-contrast-active.svg");
+	--accessibility-lower-screen: url("../img/svg/accessibility-lower-screen-contrast.svg");
+	--accessibility-lower-screen-active: url("../img/svg/accessibility-lower-screen-contrast-active.svg");
+	--accessibility-full-screen: url("../img/svg/accessibility-full-screen-contrast.svg");
+	--accessibility-full-screen-active: url("../img/svg/accessibility-full-screen-contrast-active.svg");
+
+	--info-card-bg: #000000;
+  --info-card-border: 2px solid #5D5D5D;
+  --info-card-title-bg: #262626;
+  --info-card-title-color: #FFFFFF;
+  --info-card-label-color: #D1D1D1;	
+  --info-card-value-color: #FFFFFF;	
+
+  --info-box--bg: #000000;
+  --info-box--border: 3px solid #B0B0B0;
+	--info-box--color: #FFFFFF;
+  --info-list-text-color: #E7E7E7;
+	--info-box--header-color: #FFFFFF;
+	--info-list-blt: url("../img/svg/blt_list_contrast.svg");
+	--info-header--icon: url("../img/svg/icon_info_contrast.svg"); 
+	--info-header--divider-line: #E7E7E7;
+	--info-box-title--bg: #FFF1F1;
+	--info-box-accent-color: #FFA8A8;	
+
+	--main-btn-call-bg: #FFFFFF;
+	--main-btn-call-box-shadow: 0px 0px 0px 0px #00195F inset, 0px 0px 0px 0px #00000033;
+	--main-btn-call-color:#000000;
+	--main-btn-call-bg-active: #E7E7E7;	
+	--main-btn-call-box-shadow-active: 0px 0px 0px 0px #00195F inset, 0px 0px 0px 0px #00000033;
+  --main-btn-call-img: url("../img/svg/icon_call_contrast.svg"); 
+
+	
+	--main-btn-prev-img: url("../img/svg/icon_prev_contrast.svg");
+  --main-btn-next-img: url("../img/svg/icon_next_contrast.svg");
+	--main-btn-cancel-img: url("../img/svg/icon_cancel_contrast.svg");
+ 	--main-btn-home-img: url("../img/svg/icon_home_white_contrast.svg");					
+  --main-btn-next-img-disabled: url("../img/svg/icon_next_disabled-contrast.svg");
+  --main-btn-primary-color: #000000;
+  --main-btn-primary-bg: #F8DA29;
+  --main-btn-primary-box-shadow: 0px 0px 0px 0px #B71C1C inset;
+  --main-btn-primary-bg-active: #C89406;	
+  --main-btn-primary-box-shadow-active: 0px 0px 0px 0px #B71C1C inset;	
+
+  --main-btn-secondary-bg: #000000;
+  --main-btn-secondary-color: #FFFFFF;
+  --main-btn-secondary-box-shadow: 0px 0px 0px 0px #00000040 inset;
+  --main-btn-secondary-border: 3px solid #FFFFFF;
+  --main-btn-secondary-bg-active: #3D3D3D;
+  --main-btn-secondary-box-shadow-active: 0px 0px 0px 0px #00000040 inset;
+	--main-btn-dark-bg: #FFFFFF;
+	--main-btn-dark-color: #000000;
+  --main-btn-dark-box-shadow: 0px 0px 0px 0px #3D3D3D inset;
+	--main-btn-dark-bg-active: #E7E7E7;	
+  --main-btn-dark-box-shadow-active: 0px 0px 0px 0px #3D3D3D inset;	
+
+	--normal-button-border: 0px solid #4F4F4F;
+	--normal-button-bg: #FFFFFF;
+	--normal-button-color: #000000; 
+	--normal-button-box-shadow: 0px 0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;
+	--normal-button-bg-active: #E7E7E7;
+	--normal-button-box-shadow-active: 0px 2px 3px 0px #00000066;	
+
+	--progress-steps-bg: #000000;
+	--progress-step-line: #B0B0B0;
+	--progress-step-line-current: #F8DA29;
+	--progress-step-text-default: #D1D1D1;
+	--progress-step-text-current: #FFFFFF;
+	--progress-step-text-completed: #FFFFFF;
+	--progress-step-index-border: 2px solid #000000;
+	--progress-step-index-span-border: 2px solid #D1D1D1;
+	--progress-step-border-current: #F8DA29;
+	--progress-step-bg-current: #F8DA29;
+	--progress-step-color-current: #000000;
+	--progress-step-border-completed: #F8DA29;
+	--progress-step-bg-completed: #F8DA29;
+	--progress-step-img-completed: url("../img/svg/icon_check_contrast.svg");
+  --progress-step-index-current-border: 2px solid #F8DA29;
+  --progress-step-index-current-bg: #3D3D3D;
+
+	--lower-screen-progress-step-line-current: #FFFFFF;
+	--lower-screen-progress-step-text: #D1D1D1;
+	--lower-screen-progress-step-text-current: #FFFFFF;
+	--lower-screen-progress-step-text-completed: #FFFFFF;
+	--lower-screen-progress-step-index-border: 2px solid transparent;
+	--lower-screen-progress-step-border-current: #FFFFFF;
+	--lower-screen-progress-step-bg-current: #FFFFFF;
+	--lower-screen-progress-step-color-current: #000000;
+	--lower-screen-progress-step-index-current-border:2px solid #FFFFFF;
+	--lower-screen-progress-step-index-current-bg: transparent;
+	--lower-screen-progress-step-index-span-border: 2px solid #D1D1D1;
+	--lower-screen-progress-step-img-completed: url("../img/svg/icon_check_bk.svg");
+	--lower-screen-progress-step-border-completed: #FFFFFF; 
+	--lower-screen-progress-step-bg-completed: #FFFFFF;
+
+  --locker-item-bg: #FFFFFF;
+  --locker-item-border: 4px solid #FFFFFF;
+	--locker-item-color: #262626; 
+	--locker-icon: url("../img/svg/icon_wheelchair_contrast.svg");
+	--locker-screen: url("../img/svg/locker_screen_contrast.svg");
+  --locker-item-disabled-color: #5D5D5D; 
+  --locker-item-disabled-border: 2px solid #5D5D5D;	
+	--locker-item-disabled-bg:#000000;
+	--locker-item-disabled-line: #5d5d5d;
+  --locker-item-body-bg: #D1D1D1;
+  --locker-item-body-border: 4px solid #D1D1D1;
+
+	--course-grid-title-bg: #262626;
+	--course-grid-title-color: #FFFFFF;	
+	--course-grid-title-accent: #F8DA29;	
+
+	--modal-backdrop: rgba(0, 0, 0, 0.6);   
+	--modal-border: 2px solid #B0B0B0;	  
+	--modal-bg: #000000;
+  --modal-title-color: #FFFFFF;
+  --modal-btn-bg: #F8DA29;
+  --modal-btn-color: #000000;
+  --modal-btn-bg-active: #E7BE0B;
+  --modal-btn-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000066;  
+  --modal-button-primary--color: #000000;
+  --modal-button-primary--bg: #F8DA29;
+  --modal-button-primary--box-shadow: 0px 0px 0px 0px #243B7C inset;
+  --modal-button-primary--bg-active: #E7BE0B;
+  --modal-button-primary--box-shadow-active: 0px 0px 0px 0px #2B54CA inset;
+  --modal-button-secondary--bg: #000000;
+  --modal-button-secondary--color: #FFFFFF;
+  --modal-button-secondary--border: 3px solid #FFFFFF;
+  --modal-button-secondary--box-shadow: 0px 0px 0px 0px #26262640 inset;
+  --modal-button-secondary--bg-active: #3D3D3D;
+  --modal-button-secondary--box-shadow-active: 0px 0px 0px 0px #26262640 inset;
+  --modal-timer-icon: url("../img/svg/icon_timer_contrast.svg") no-repeat;
+  --modal-timer-icon-red: url("../img/svg/icon_timer_red_contrast.svg") no-repeat;	
+  --modal-timer-color: #FFFFFF;
+  --modal-timer-countdown-color: #FBE949;
+
+	--post-item-bg: #FFFFFF;
+	--post-item-border: 3px solid #000000;
+	--post-item-color: #3D3D3D;
+	--post-item-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000033;
+	--post-item-sub-color: #454545;
+	--post-item-bg-active: #E7E7E7;
+	--post-item-box-shadow-active: 0px 0px 0px 0px #00000080;
+
+	--post-service-bg: #FFFFFF;
+	--post-service-border: 3px solid #000000;
+	--post-service-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000080;
+	--post-service-color: #000000;
+	--post-service-extra-color: #000000;
+	--post-service-bg-active: #E7E7E7;
+	--post-service-box-shadow-active: 0px 0px 0px 0px #00000080;
+
+	--keyboard__input-value--bg: #000000;
+	--keyboard__input-value--border: 2px solid #B0B0B0;
+	--keyboard__input-value--color: #FFFFFF;
+	--keyboard__input-value--bg-active: #262626;
+	--keyboard__input-value--border-active: 6px solid #F8DA29;	
+  --keyboard-btn-color: #262626;
+	--keyboard-btn-bg: #FFFFFF;
+	--keyboard-btn-border: 0px solid #4F4F4F;
+	--keyboard-btn-box-shadow: 0px -0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;
+	--keyboard-btn-bg-active: #E7E7E7;
+	--keyboard-btn-box-shadow-active: 0px 0px 0px 0px #00000066;
+  --keyboard-btn-type2-bg: #FDF58B;
+  --keyboard-btn-type2-box-shadow: 0px 0px 0px 0px #00000066, 0px 0px 0px 0px #00000040 inset;
+  --keyboard-btn-type2-bg-active: #FBE949;
+  --keyboard-btn-type2-box-shadow-active: 0px 0px 0px 0px #00000066;
+	--keyboard-btn-delete-img: url("../img/svg/keyboard_delete_contrast.svg");
+	--keyboard-btn-double-img: url("../img/svg/keyboard_double_contrast.svg");	
+	--pw-help-color: #D1D1D1;
+	--small-btn-color: #4F4F4F;
+	--small-btn-border: 2px solid #3D3D3D;
+	--small-btn-bg: #FFFFFF;
+	--small-btn-box-shadow: 0px 2px 3px 0px #00000066;
+	--small-btn-bg-active: #B0B0B0;
+
+	--info-list-blt-sm: url("../img/svg/blt_list_sm_contrast.svg");
+
+	--phone-keypad-border: 2px solid #4F4F4F;
+	--phone-keypad-color: #262626;
+	--phone-keypad-bg: #FFFFFF;
+	--phone-keypad-box-shadow: 0px 0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;
+	--phone-keypad-bg-active: #E7E7E7;
+	--phone-keypad-box-shadow-active: 0px 0px 0px 0px #00000066;
+	--phone-keypad-type2-bg: #FDF58B;
+	--phone-keypad-type2-box-shadow: 0px 0px 0px 0px #00000066, 0px 0px 0px 0px #00000040 inset;
+	--phone-keypad-type2-bg-active: #FBE949;
+	--phone-keypad-type2-box-shadow-active: 0px 0px 0px 0px #00000066;
+	--phone-keypad-icon-del: url("../img/svg/icon_del_contrast.svg");
+	--sms-agree-border: 4px solid #F8DA29;
+	--sms-agree-bg: #262626;
+	--sms-agree-color: #FFFFFF;
+	--sms-agree-checkbox-bg: #6F6F6F url("../img/svg/icon_sms_check_contrast.svg") no-repeat center / 36px;
+	--sms-agree-checked: #F8DA29 url("../img/svg/icon_sms_checked_contrast.svg") no-repeat center / 36px;
+	--sms-agree-checkbox-border: 2px solid #E7E7E7;
+	--sms-guide-color: #D1D1D1;
+  --input-pw-box__input--color: #FFFFFF;
+  --input-pw-box__input-text--border-bottom: 3px solid #FFFFFF;
+
+	--address-guide-list-color: #D1D1D1;
+	--color-bg: #F8F8F8;
+  --color-text: #222;
+	--address-list-header-color: #FFFFFF;
+	--address-list-header-bg: #3D3D3D;
+	--address-list-border: #B0B0B0;
+	--address-item-color: #FFFFFF;
+	--address-item-bg: #000000;
+	--address-item-selected-bg: #FFFFFF;
+	--address-item-selected-color: #000000;
+  --address-list-radio-accent: #FBE949;
+	--address-list-radio-border: 2px solid #FFFFFF;
+	--address-list-radio-checked-border: 2px solid #000000;
+	--pagination-btn-bg: #FFFFFF;
+	--pagination-btn-border: 2px solid #000000;
+	--pagination-btn-box-shadow: 0px 0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;
+	--pagination-btn-bg-active: #E7E7E7;
+	--pagination-btn-box-shadow-active: 0px 0px 0px 0px #00000066;
+	--pagination-btn-border-disabled: 2px solid #5D5D5D;
+	--pagination-btn-bg-disabled: #000000;
+	--pagination-btn-color-disabled: #5D5D5D;
+	--pagination-btn-box-shadow-disabled: 0px 0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;	
+	--pagination-page-color: #FFFFFF;
+	--pagination-page-accent-color: #F8DA29;
+
+	--address-table-border-color: #B0B0B0;
+	--box-list-header-color: #FFFFFF;
+	--box-list-header-bg: #3D3D3D;
+	--box-list-row-color: #FFFFFF;
+	--box-list-row-bg: #000000;
+	--box-list-border: 3px solid #B0B0B0;
+
+	--payment-method-border: 0px;
+  --payment-method-color: #000000;
+	--payment-method-btn-border: 3px solid #3D3D3D;
+	--payment-method-btn-bg: #FFFFFF;
+	--payment-method-btn-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000080;
+	--payment-method-btn-bg-active: #E7E7E7;
+	--payment-method-btn-box-shadow-active: 0px 0px 0px 0px #00000080;
+	--payment-method-btn-color-disabled: #5D5D5D;		
+	--payment-method-btn-bg-disabled: #000000;	
+	--payment-method-btn-border-disabled: 3px solid #5D5D5D;
+	--payment-method-btn-box-shadow-disabled: 0px 0px 0px 0px #00000080;
+	--payment-box-bg: #000000;
+	--payment-box-border: 2px solid #5D5D5D;
+	--payment-box-color: #FFFFFF;
+	--payment-row-label-color: #E7E7E7;
+	--payment-row-value-color: #FFFFFF;
+	--payment-row-value-minus-color: #FFA0A0;	
+	--payment-total-bg: #262626;
+	--payment-total-label-color: #FFFFFF;
+	--payment-total-value-color: #FFFFFF;
+	--payment-guide-color: #FFFFFF;
+	--payment-guide-bg: #262626;
+	--payment-list-line-border-top: 2px solid #5D5D5D;
+	--payment-detail-bg: #000000;
+	--payment-detail-border: 2px solid #5D5D5D;
+
+  --round-info-border: 3px solid #5D5D5D;
+  --round-info-bg: #000000; 
+  --round-info-color: #F8DA29; 
+	--round-info-bg-active: #B0B0B0;
+
+	--spinner-title--color: #ffffff;	
+	--spinner-circle-bg: #000000;
+	--spinner-wave-light: url("../img/ui/spinner_wave_light_contrast.png"); 
+	--spinner-wave-dark: url("../img/ui/spinner_wave_dark_contrast.png");
+
+	--company-btn-border: 3px  solid #3D3D3D;
+	--company-btn-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000080;
+	--company-btn-bg-active: #E7E7E7;
+	--company-btn-box-shadow-active: 0px 0px 0px 0px #00000080;
+	--quantity-btn-disabled: 2px  solid #D1D1D1;
+  --quantity-btn-minus-disabled-icon: url("../img/svg/icon_minus_disabled.svg");
+
+	--continent-btn-border: 3px  solid #3D3D3D;
+	--continent-btn-box-shadow: 0px 0px 0px 0px #00000040 inset, 0px 0px 0px 0px #00000080;
+	--continent-btn-bg-active: #E7E7E7;
+	--continent-btn-box-shadow-active: 0px 0px 0px 0px #00000080;
+	--quantity-btn-disabled: 0px solid #D1D1D1;
+  --quantity-btn-minus-disabled-icon: url("../img/svg/icon_minus_disabled.svg");
+
+	--package-payment-list-bg: #000000;
+	--package-payment-btn-border: 2px  solid #4F4F4F;
+	--package-payment-btn-bg: #FDF58B;
+	--package-payment-btn-box-shadow: 0px 0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;
+	--package-payment-btn-bg-active: #FBE949;
+	--package-payment-btn-box-shadow-active: 0px 0px 0px 0px #00000066;
+	--package-payment-list-header-bg: #000000;
+	--package-payment-list-header-color: #FFFFFF;
+	--package-payment-list-border: #B0B0B0;
+	--package-payment-row-border-btm: 3px  solid #B0B0B0;
+	--package-payment-row-color:#FFFFFF;
+	--package-payment-total-bg: #262626;
+	--package-payment-total-color: #FFFFFF;
+	--package-payment-total-border-top: 3px  solid #B0B0B0;
+
+	--quantity-control-btn-border: 0px solid #6F6F6F;
+	--quantity-control-btn-bg: #FFFFFF;
+  --quantity-control-btn-box-shadow: 0px 0px 0px 0px #00000033 inset, 0px 0px 0px 0px #00000066;
+  --quantity-control-btn-bg-active: #E7E7E7;
+  --quantity-control-btn-box-shadow-active: 0px 0px 0px 0px #00000066;
+	--quantity-control-value-color: #FFFFFF;
+	--quantity-control-value-color-active: #F8DA29;
+
+	--complete-img: url("../img/svg/img_complete_contrast.svg");  
+	--complete-title-color: #FFFFFF;
+	--complete-desc-color: #FFFFFF;
+	--mail-info-bg: #000000;
+	--mail-info-border: 3px solid #B0B0B0;
+	--mail-info-box-shadow: 0 0px 0px rgba(0,0,0,0.05);
+	--mail-info-label-color: #D1D1D1;
+	--mail-info-value-color: #FFFFFF;
+
+}
