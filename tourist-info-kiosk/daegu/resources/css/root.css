@@ -1,0 +1,67 @@
+:root {
+  /* --body-bg-color: #F6F6F6; */
+  --body-bg-color: #262626;
+  --container-bg-color: #F6F6F6;
+
+  --container-width: 1080px;
+  --container-height: 1920px;
+	--lower-screen-container-bg: #262626;
+	--lower-screen-container-color: #888888;
+	--lower-screen-container-bg: #262626;
+
+	--font-family-default: "Asta Sans", sans-serif;
+	--fc-title-color: #262626;
+	--fc-base-color: #3D3D3D;
+	--fc-sub-color: #5D5D5D;
+  --fc-blue-color: #0E4378;
+	--fc-green-color: #008015;
+  --fc-red-color: #D41515;
+	--fc-white-color: #FFFFFF;
+	--fc-accent-color: #2B54CA;
+	--bg-white: #FFFFFF;
+	--bg-accent: #FCE9D8;
+	--bg-transparent: transparent;
+
+  --header-width: 100%;
+  --header-height: 120px;
+  --header-bg: #00000033;
+
+	--header-bg--no_bg: #FFFFFF;
+	--main-width: 100%;
+	/* --main-height: calc(100% - (var(--header-height) + var(--control-bar-height))); */
+	--main-height: 100%;
+
+	--header-logo-img: url("../img/daegu_logo.png");	
+
+	/* --main-bg: linear-gradient(180deg, #000000 0%, #111522 50%, #122C53 100%); */
+	/* --main-bg: url("../img/main_bg.png"); */
+	--main-bg: linear-gradient(180deg, #000000 0%, #111522 50%, #122C53 100%);
+
+	--main-bg-graphic: url("../img/main_bg_graphic.png");
+	--main-border-top: 2px solid #D1D1D1;
+
+  --control-bar-width: 100%;
+	--control-bar-height: 110px;
+  --control-bar-bg: #000000;
+	--control-bar--no_bg: #FFFFFF;
+  --control-bar--border-top: 1px solid #E7E7E7;
+	--control-bar-sound-bg: #F6F6F6;
+  --control-bar-sound-button-border: 2px solid #ffffff;
+	--control-bar-sound-button-bg: #000000;
+	--control-bar-sound-button-bg-active: #3D3D3D;
+  --control-bar-sound-button-bg-disabled: #000000;
+	--control-bar__sound-level-color: #262626;
+
+  --control-bar__sound-icon--minus: url("../img/icon-minus.png");
+  --control-bar__sound-icon--plus: url("../img/icon_plus.png");
+	--control-bar__sound-icon--volume: url("../img/icon_volume.png");
+
+  --lower-screen-height: 620px;
+
+
+  --scrollbar-corner-color: #000000;
+  --scrollbar-track-color: #000000;
+  --scrollbar-thumb-color: #888888;
+
+} 
+

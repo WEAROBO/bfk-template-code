@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../resources/css/index.css">
+  <title>2_시티투어_3_테마코스</title>
+</head>
+
+<body class="lower-screen">
+  <div class="container">
+    <div class="container-body">
+
+      <div class="header">
+        <div class="header__left">
+          <div class="header__logo"></div>
+          <div class="weather">
+            <div class="weather__icon"></div>
+            <div class="weather__temp">23℃</div>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="time__comp">
+            <div class="icon-watch"></div>
+            <div class="time__hour">01</div>
+            <div class="time__divider">:</div>
+            <div class="time__min">00</div>
+          </div>
+          <div class="date">(금) 오후</div>
+          <div class="time">12:27</div>
+        </div>
+      </div>
+
+      <main class="main">
+        <img class="main-title__bg_img" src="../resources/img/category/bus_top.png" alt="버스" />
+        <div class="main__title">
+          <div class="main-title">대구 시티투어</div>
+          <div class="main-desc">
+            버스로 대구의 도심을 한번에!
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="category-row">
+            <div class="button btn-category btn-img-text">
+              <div class="text">소개</div>
+            </div>
+            <div class="button btn-category btn-img-text">
+              <div class="text">순환코스</div>
+            </div>
+            <div class="button btn-category btn-img-text active">
+              <div class="text">테마코스</div>
+            </div>
+          </div>
+          <div class="category-row">
+            <div class="button btn-category btn-img-text">
+              <div class="text">이용안내</div>
+            </div>
+            <div class="button btn-category btn-img-text">
+              <div class="text">요금안내</div>
+            </div>
+            <div class="button btn-category btn-img-text">
+              <div class="text">유의사항</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-divider"></div>
+
+        <div class="theme-main">
+          <div class="theme-main-inner">
+            <div class="theme-item">
+              <img class="theme-icon" src="../resources/img/tour/palgongsan.png" alt="팔공산" />
+              <div class="theme-info">
+                <div class="theme-title">팔공산 투어</div>
+                <div class="theme-desc">대구의 영산, 팔공산의 주요 사찰과 박물관을 둘러보는 자연·문화 코스</div>
+              </div>
+              <div class="theme-next position-center">
+                <img src="../resources/img/icon_arrow-right.png" alt="자세히" />
+              </div>
+            </div>
+            <div class="theme-item">
+              <img class="theme-icon" src="../resources/img/tour/gunwigun.png" alt="군위군" />
+              <div class="theme-info">
+                <div class="theme-title">군위군 돋보기 투어</div>
+                <div class="theme-desc">대구로 편입된 군위군의 주요 문화재와 명소를
+                  깊이 있게 탐방하는 코스</div>
+              </div>
+              <div class="theme-next position-center">
+                <img src="../resources/img/icon_arrow-right.png" alt="자세히" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="pagination">
+          <div class="pagination-prev">
+            <div class="button prev-button disabled"></div>
+          </div>
+          <div class="pagination__cnt">
+            <div class="pagination__current">1</div>
+            <div class="pagination__divider">/</div>
+            <div class="pagination__total">4</div>
+          </div>
+          <div class="pagination-next">
+            <div class="button next-button"></div>
+          </div>
+
+        </div>
+
+        <div class="button btn_go_back"></div>
+        <div class="button btn_go_home"></div>
+      </main>
+
+      <footer class="control-bar">
+        <div class="button call-employee btn-img-text">
+          <div class="text">직원호출</div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="button btn-lower-screen btn-img-text active">
+          <div class="text">낮은화면</div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="control-bar__sound">
+          <button class="button control-bar__sound-button" aria-label="음량 줄이기">
+            <span class="control-bar__sound-icon--minus"></span>
+          </button>
+          <div class="control-bar__sound-status">
+            <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+            <span class="control-bar__sound-level" aria-live="polite">3</span>
+          </div>
+          <button class="button control-bar__sound-button" aria-label="음량 키우기"><span
+              class="control-bar__sound-icon--plus"></span></button>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</body>
+
+</html>

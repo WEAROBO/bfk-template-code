@@ -1,0 +1,96 @@
+.spinner-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.spinner-wrapper {
+  display: flex;
+  align-items: center; 
+  gap: 13px; 
+  height: 200px; 
+  margin-bottom: 33px;         
+}
+.spinner {
+  text-align: center;
+}
+.lower-screen .spinner {
+  margin-top: -62px;
+}
+
+/* =========================
+    Animation (Water Filling)
+========================= */
+@keyframes wave-rise-light {
+  0% {
+    bottom: -50%;
+  }
+  10% {
+    bottom: -40%;
+  }
+  20% {
+    bottom: -30%;
+  }
+  30% {
+    bottom: -20%;
+  }
+  40% {
+    bottom: -10%;
+  }
+  50% {
+    bottom: -5%;
+  } 
+  60% {
+    bottom: -10%;
+  } 
+  70% {
+    bottom: -20%;
+  } 
+  80% {
+    bottom: -30%;
+  }    
+  90% {
+    bottom: -40%;
+  }    
+  100% {
+    bottom: -50%;
+  }  
+}
+
+@keyframes wave-rise-dark {
+  0% {
+    bottom: -52%;
+  }
+  10% {
+    bottom: -42%;
+  }
+  20% {
+    bottom: -32%;
+  }
+  30% {
+    bottom: -22%;
+  }
+  40% {
+    bottom: -12%;
+  }
+  50% {
+    bottom: -5%;
+  } 
+  60% {
+    bottom: -12%;
+  } 
+  70% {
+    bottom: -22%;
+  } 
+  80% {
+    bottom: -32%;
+  }    
+  90% {
+    bottom: -42%;
+  }    
+  100% {
+    bottom: -52%;
+  }       
+}

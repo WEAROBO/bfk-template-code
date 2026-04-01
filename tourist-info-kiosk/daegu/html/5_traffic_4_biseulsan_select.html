@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../resources/css/index.css">
+  <title>5_주변 교통_4_비슬산 선택</title>
+</head>
+
+<body class="">
+  <div class="container">
+    <div class="container-body">
+
+      <div class="header">
+        <div class="header__left">
+          <div class="header__logo"></div>
+          <div class="weather">
+            <div class="weather__icon"></div>
+            <div class="weather__temp">23℃</div>
+          </div>
+        </div>
+        <div class="header__right">
+          <div class="time__comp">
+            <div class="icon-watch"></div>
+            <div class="time__hour">01</div>
+            <div class="time__divider">:</div>
+            <div class="time__min">00</div>
+          </div>
+          <div class="date">(금) 오후</div>
+          <div class="time">12:27</div>
+        </div>
+      </div>
+
+      <main class="main">
+
+        <div class="main__title">
+          <div class="main-title">주변 교통</div>
+          <div class="main-desc">
+            도시철도, 기차, 공항까지 연결된 교통의 요충지
+          </div>
+        </div>
+
+        <div class="category">
+          <div class="category-row">
+            <div class="button btn-category2 btn-img-text active">
+              <div class="text">주변 교통</div>
+            </div>
+            <div class="button btn-category2 btn-img-text">
+              <div class="text">도시철도</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="main-divider"></div>
+
+        <div class="trafic-main">
+          <div class="traffic-select position-center">
+            <img src="../resources/img/traffic/icon_bus.png" alt="버스" />
+            비슬산휴양림주차장
+          </div>
+          <div class="tranfic-bg-img">
+            <img src="../resources/img/traffic/biseulsan.png" alt="비슬산" />
+            <img class="icon-guide" src="../resources/img/traffic/icon_guide_black.png" alt="비슬산" />
+            <img class="box-office" src="../resources/img/traffic/icon_box-office.png" alt="비슬산" />
+            <img class="bus-far" src="../resources/img/traffic/icon_bus_far.png" alt="비슬산" />
+
+
+            <!-- 만약 선택되었다면 class에 checked를 추가한다. -->
+            <div class="tranfic-content position-center type-bus2 bus11 checked">
+              <div class="icon"></div>
+              <div class="icon-bright"></div>
+              <div class="icon-checked"></div>
+            </div>
+            <div class="tranfic-content position-center type-bus3 bus12">
+              <div class="icon"></div>
+              <div class="icon-bright"></div>
+              <div class="icon-checked"></div>
+            </div>
+
+            <div class="tranfic-content position-center here2">
+              <div class="icon"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="button btn_go_back"></div>
+      </main>
+
+      <footer class="control-bar">
+        <div class="button call-employee btn-img-text">
+          <div class="text">직원호출</div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="button btn-lower-screen btn-img-text">
+          <div class="text">낮은화면</div>
+        </div>
+        <div class="footer-divider"></div>
+        <div class="control-bar__sound">
+          <button class="button control-bar__sound-button" aria-label="음량 줄이기">
+            <span class="control-bar__sound-icon--minus"></span>
+          </button>
+          <div class="control-bar__sound-status">
+            <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+            <span class="control-bar__sound-level" aria-live="polite">3</span>
+          </div>
+          <button class="button control-bar__sound-button" aria-label="음량 키우기"><span
+              class="control-bar__sound-icon--plus"></span></button>
+        </div>
+      </footer>
+
+    </div>
+  </div>
+</body>
+
+</html>
