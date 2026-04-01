@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_우편접수_29_완료</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container">
+      <div class="container-body">
+          <div class="complete-box" role="status" aria-live="polite">
+            <h1 class="complete__title">이용해 주셔서 감사합니다.</h1>
+            <p class="complete__desc">
+              <span id="count" class="complete__count--highlight">5</span><span class="complete__count">초 후</span><br>처음으로 돌아갑니다.
+            </p>
+          </div>
+      </div>
+    </div>
+
+
+    <script>
+    let seconds = 5;
+    const counter = document.getElementById("count");
+
+    const countdown = setInterval(() => {
+      seconds--;
+      counter.textContent = seconds;
+
+      if (seconds === 0) {
+        clearInterval(countdown);
+        window.location.href = "1_우편접수_1_메인.html";
+      }
+    }, 1000);
+    </script>
+  </body>
+</html>

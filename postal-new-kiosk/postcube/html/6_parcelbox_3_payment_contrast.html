@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>6_소포상자구매_3_결제금액확인</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container">
+      <div class="container-body">
+
+        <div class="header header--no-bg">
+          <button class="button header__button" aria-label="처음으로">
+            <span class="header__button__icon--home" aria-hidden="true"></span>
+            <span class="button__title">처음으로</span>
+          </button>
+          <div class="header__buttons">
+            <button class="button header__button" aria-label="음성 다시듣기">
+              <span class="header__button__icon--play" aria-hidden="true"></span>
+              <span class="button__title">다시듣기</span>
+            </button>
+            <button class="button header__button header__button--call" aria-label="직원 호출">
+              <span class="header__button__icon--help" aria-hidden="true"></span>
+              <span class="button__title">직원호출</span>
+            </button>
+          </div>
+        </div>
+        
+        <div class="progress-steps progress-steps--four">
+          <div class="progress-step progress-step--completed">
+            <div class="progress-step__index"><span>1</span></div>
+            <div class="progress-step__label">상자 선택</div>
+          </div>
+          <div class="progress-step progress-step--current">
+            <div class="progress-step__index"><span>2</span></div>
+            <div class="progress-step__label">요금확인</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span>3</span></div>
+            <div class="progress-step__label">결제</div>
+          </div>
+          <div class="progress-step">
+            <div class="progress-step__index"><span>4</span></div>
+            <div class="progress-step__label">완료</div>
+          </div>
+        </div>
+
+        <main class="main">  
+          <h1 class="main__title main__title--step">
+            결제 금액을 확인하세요.
+          </h1>
+
+          <div class="package-payment-list">
+            <div class="package-payment-list__header">
+              <div class="package-payment-list__cell">상품</div>
+              <div class="package-payment-list__cell">수량</div>
+              <div class="package-payment-list__cell">금액</div>
+              <div class="package-payment-list__cell">삭제</div>
+            </div>
+            <div class="package-payment-list__row">
+              <div class="package-payment-list__cell">1호</div>
+              <div class="package-payment-list__cell">
+                <div class="quantity-control">
+                  <button class="quantity-control__btn"><span class="quantity-control-icon--minus"></span></button>
+                  <span class="quantity-control__value">1</span>
+                  <button class="quantity-control__btn"><span class="quantity-control-icon--plus"></span></button>
+                </div>
+              </div>
+              <div class="package-payment-list__cell">700원</div>
+              <div class="package-payment-list__cell">
+                <button class="package-payment-list__delete">삭제</button>
+              </div>
+            </div>
+            <div class="package-payment-list__row">
+              <div class="package-payment-list__cell">4호</div>
+              <div class="package-payment-list__cell">
+                <div class="quantity-control">
+                  <button class="quantity-control__btn"><span class="quantity-control-icon--minus"></span></button>
+                  <span class="quantity-control__value">1</span>
+                  <button class="quantity-control__btn"><span class="quantity-control-icon--plus"></span></button>
+                </div>
+              </div>
+              <div class="package-payment-list__cell">5,100원</div>
+              <div class="package-payment-list__cell">
+                <button class="package-payment-list__delete">삭제</button>
+              </div>
+            </div>
+            <div class="package-payment-list__total">
+              <div class="package-payment-list__cell">총 결제금액</div>
+              <div class="package-payment-list__cell">4</div>
+              <div class="package-payment-list__cell">5,800원</div>
+              <div class="package-payment-list__cell"></div>
+            </div>
+          </div>
+
+          <div class="main__bottom-buttons">
+            <button class="button main__button main-button-secondary" aria-label="이전">
+              <span class="main__button__icon--prev" aria-hidden="true"></span>
+              <span class="button__title">이전</span>
+            </button>
+            <button class="button main__button main-button-primary" aria-label="1개 선택">
+              <span class="main__button__icon--next" aria-hidden="true"></span>
+              <span class="button__title">1개 선택</span>
+            </button>
+          </div>
+        </main>
+
+        <footer class="control-bar control-bar--no-bg">
+          <div class="control-bar__buttons">
+            <button class="button accessibility__button accessibility-high-contrast">
+              <span class="button__title">고대비</span>
+            </button>
+            <button class="button accessibility__button accessibility-lower-screen">
+              <span class="button__title">낮은화면</span>
+            </button>
+            <button class="button accessibility__button accessibility-full-screen">
+              <span class="button__title">화면확대</span>
+            </button>
+          </div>
+          <div class="control-bar__sound">
+            <button class="button control-bar__sound-button" aria-label="음량 줄이기"><span class="control-bar__sound-icon--minus"></span></button>
+            <div class="control-bar__sound-status">
+              <span class="control-bar__sound-icon--volume" aria-hidden="true"></span>
+              <span class="control-bar__sound-level" aria-live="polite">3</span>
+            </div>
+            <button class="button control-bar__sound-button" aria-label="음량 키우기"><span class="control-bar__sound-icon--plus"></span></button>
+          </div>
+        </footer>
+
+      </div>
+    </div>
+  </body>
+</html>
