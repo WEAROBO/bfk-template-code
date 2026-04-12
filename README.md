@@ -38,7 +38,7 @@
 
 
 <div align="center">
-  <img src="./readme/readme2.png">
+  <img src="./readme/readme2.png" width="1000">
 </div>
 
 <br><br>
