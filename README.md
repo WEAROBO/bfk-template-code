@@ -3,7 +3,7 @@
  이를 해결하기 위해 무인정보단말기 접근성 지침을 반영한 디자인 시스템을 구축하고,
  다양한 환경에서도 일관된 접근성과 사용성을 제공할 수 있도록 템플릿 코드를 제공한다.
 
-* [Figma 라이브러리: Barrier-Free Kiosk Design System v1.0.0](https://www.google.com)
+* [Figma 라이브러리: Barrier-Free Kiosk Design System v1.0.0]([https://www.google.com](https://www.figma.com/community/file/1624262985024751540))
 
 <br><br>
 
