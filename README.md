@@ -27,7 +27,7 @@
 이를 반영한 10종의 템플릿을 제작하였다.
 
 <div align="center">
-  <img src="./readme/readme1.png">
+  <img src="./readme/readme1.png" width="1000">
 </div>
 
 <br><br>
