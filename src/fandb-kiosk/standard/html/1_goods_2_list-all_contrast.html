@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_상품 선택형_2_상품 목록(전체)</title>  
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+          <div class="header header--sub">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--current" aria-current="step">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">메뉴 선택</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">내역 확인</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>4</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main main-sub-bg">  
+            <div class="category-nav">
+              <div class="category-nav__list">
+                <button class="category-nav__item category-nav__item--active">전체</button>
+                <button class="category-nav__item">라면</button>
+                <button class="category-nav__item">토핑</button>
+                <button class="category-nav__item">음료</button>                
+                <button class="category-nav__item">기타</button>
+              </div>
+            </div>
+
+            <div class="product-grid">
+              <div class="product-list">
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods01.png" alt="">
+                    <div class="product-card__name">신라면</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods02.png" alt="">
+                    <div class="product-card__name">진라면<br>매운맛</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods03.png" alt="">
+                    <div class="product-card__name">너구리<br>매운맛</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods04.png" alt="">
+                    <div class="product-card__name">열라면</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods05.png" alt="">
+                    <div class="product-card__name">안성탕면</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods06.png" alt="">
+                    <div class="product-card__name">팔도비빔면</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods07.png" alt="">
+                    <div class="product-card__name">불닭볶음면</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods08.png" alt="">
+                    <div class="product-card__name">짜파게티</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+
+                <div class="product-card">
+                  <div class="product-card__image-box">
+                    <img src="../resources/img/ui/goods09.png" alt="">
+                    <div class="product-card__name">오징어짬뽕</div>
+                  </div>
+                  <div class="product-card__info">                    
+                    <div class="product-card__price">4,000원</div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination pagination--horizontal">
+                <button class="pagination__button pagination__button--prev" aria-label="이전 페이지" disabled>
+                  <span class="pagination-icon-arrow-prev"></span>
+                </button>
+                <span class="pagination__page"><strong>1</strong> / 3</span>
+                <button class="pagination__button pagination__button--next" aria-label="다음 페이지">
+                  <span class="pagination-icon-arrow-next"></span>
+                </button>
+              </div>
+            </div>
+
+            <div class="cart" role="region">
+              <div class="cart__header">
+                <div>장바구니</div>
+                <div><button class="cart__header-btn" disabled>전체 삭제</button></div>
+              </div>
+              <div class="cart__content">
+                <div class="cart__list">
+                  <div class="cart__items">
+                    원하시는 메뉴를 담아주세요.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cart__action">
+              <div class="cart__payment">
+                <div class="cart__summary">
+                  <div class="cart__summary-row">
+                    <span class="cart__summary-label">수량</span>
+                    <span class="cart__summary-price">0개</span>
+                  </div>
+                  <div class="cart__summary-row">
+                    <span class="cart__summary-label">금액</span>
+                    <span class="cart__summary-discount"><strong class="cart__summary-accent">0원</strong></span>
+                  </div>
+                </div>
+              </div>              
+              <div class="cart__pay">                
+                <button type="button" class="cart__pay-button cart__pay-button--disabled">
+                  <span class="cart__pay-text">주문하기</span>                    
+                </button>
+              </div> 
+            </div>    
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast accessibility__button--active">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
