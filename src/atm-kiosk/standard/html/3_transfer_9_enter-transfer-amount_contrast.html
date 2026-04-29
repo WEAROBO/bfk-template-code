@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>3_이체_9_이체 금액 입력</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">이체 금액 입력</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">5</span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>             
+              <button class="button header__button" aria-label="다시듣기">
+                <span class="button__title">다시듣기</span>
+              </button>
+              <button class="button header__button header__button--active" aria-label="고대비">
+                <span class="button__title">고대비</span>
+              </button>
+              <button class="button header__button" aria-label="화면확대">
+                <span class="button__title">화면확대</span>
+              </button>
+            </div>            
+          </div>
+        
+          <div class="main">
+            <div class="input-account">
+              <div class="input-account-box box-style">
+                <div class="input-account-box-top box-top">
+                  <h1 class="box-top-title">보내실 금액을 입력하신 후<br>
+                    <strong class="fc-blue">[확인]</strong>을 누르세요
+                  </h1>
+                  <div class="box-top-middle">
+                    <div class="input-account-box__input input-account-box__input-price">
+                      <input type="text" id="amountInput" placeholder="예)100,000" readonly>
+                      <span class="input-account-box__unit">원</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="box-bottom">
+                  <div class="input-account-box__desc box-bottom_desc">
+                    최대 이체 가능한 금액은<br>
+                    100만원 입니다.
+                  </div>
+                </div>
+              </div>    
+
+              <div class="input-pw-keyboard center">
+                <div class="input-pw-keyboard--grid">
+
+                  <!-- 숫자 -->
+                  <div class="input-pw-keyboard__item" onclick="keyclick('1')">1</div>
+                  <div class="input-pw-keyboard__item" onclick="keyclick('2')">2</div>
+                  <div class="input-pw-keyboard__item" onclick="keyclick('3')">3</div>
+                  <div class="input-pw-keyboard__item type3" onclick="keyclick('만')">만</div>
+
+                  <div class="input-pw-keyboard__item" onclick="keyclick('4')">4</div>
+                  <div class="input-pw-keyboard__item" onclick="keyclick('5')">5</div>
+                  <div class="input-pw-keyboard__item" onclick="keyclick('6')">6</div>
+                  <div class="input-pw-keyboard__item type3" onclick="keyclick('천')">천</div>
+
+                  <div class="input-pw-keyboard__item" onclick="keyclick('7')">7</div>
+                  <div class="input-pw-keyboard__item" onclick="keyclick('8')">8</div>
+                  <div class="input-pw-keyboard__item" onclick="keyclick('9')">9</div>
+                  <div class="input-pw-keyboard__item type3" onclick="keyclick('원')">원</div>
+
+                  <!-- 지우기 -->
+                  <div class="input-pw-keyboard__item width-text" onclick="keyclick('delete')">
+                    <div class="input-pw-keyboard__item-back-btn">
+                      <span class="input-pw-keyboard__icon-arrow"></span>
+                      <div>지우기</div>
+                    </div>
+                  </div>
+
+                  <div class="input-pw-keyboard__item" onclick="keyclick('0')">0</div>
+
+                  <!-- 모두 지우기 -->
+                  <div class="input-pw-keyboard__item width-text" onclick="keyclick('delete_all')">
+                    모두<br>지우기
+                  </div>
+
+                </div>
+              </div>
+            </div>
+      
+            <div class="main-bottom">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-img"></span>
+                  <span class="secondary-btn-title">취소</span>
+                </div>
+                <div class="button main-button-primary disabled">
+                  <span class="primary-btn-img"></span>
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let value = '';
+
+      function formatNumber(num) {
+        if (!num) return '';
+        return Number(num).toLocaleString();
+      }
+
+      function updateInput() {
+        document.getElementById('amountInput').value = formatNumber(value);
+
+        // ✅ 확인 버튼 활성/비활성 처리
+        const confirmBtn = document.querySelector('.main-button-primary');
+
+        if (value && Number(value) > 0) {
+          confirmBtn.classList.remove('disabled');
+        } else {
+          confirmBtn.classList.add('disabled');
+        }
+      }
+
+      function keyclick(key) {
+
+        if (key === 'delete') {
+          value = value.slice(0, -1);
+        }
+
+        else if (key === 'delete_all') {
+          value = '';
+        }
+
+        else if (key === '만') {
+          value = String(Number(value || 0) * 10000);
+        }
+
+        else if (key === '천') {
+          value = String(Number(value || 0) * 1000);
+        }
+
+        else if (key === '원') {
+        }
+
+        else {
+          if (value.length < 9) { 
+            value += key;
+          }
+        }
+
+        updateInput();
+      }
+    </script>
+
+  </body>
+</html>

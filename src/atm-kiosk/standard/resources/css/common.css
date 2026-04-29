@@ -1,0 +1,6 @@
+.disabled {
+  cursor: not-allowed !important;
+}
+* {
+    box-sizing: border-box;
+}

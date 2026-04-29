@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>6_키패드_2_영문키보드</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">정보 변경</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">5</span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>             
+              <button class="button header__button" aria-label="다시듣기">
+                <span class="button__title">다시듣기</span>
+              </button>
+              <button class="button header__button header__button--active" aria-label="고대비">
+                <span class="button__title">고대비</span>
+              </button>
+              <button class="button header__button" aria-label="화면확대">
+                <span class="button__title">화면확대</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main">
+            <div class="keyboard">
+              <div class="keyboard__input-wrap">
+                <h1 class="keyboard__title center">입금자명을 입력 후 <span class="fc-blue pl-5">[확인]</span>버튼을 눌러주세요</h1>
+                <div class="keyboard__input-valu-area center">
+                  <input class="keyboard__input-value center" placeholder="Gil Dong Hong" value="Gil Dong Hong"></input>
+                </div>
+              </div>
+              <div class="keyboard_buttons" id="keyboardarea">
+                <div class="keyboard_buttons-line">
+                  <div class="keyboard__button">1</div>
+                  <div class="keyboard__button">2</div>
+                  <div class="keyboard__button">3</div>
+                  <div class="keyboard__button">4</div>
+                  <div class="keyboard__button">5</div>
+                  <div class="keyboard__button">6</div>
+                  <div class="keyboard__button">7</div>
+                  <div class="keyboard__button">8</div>
+                  <div class="keyboard__button">9</div>
+                  <div class="keyboard__button">0</div>
+                  <div class="keyboard__button type2 w-200 ml-10">
+                    <span class="keyboard__button__icon--delete" aria-hidden="true"></span>
+                    <span class="keyboard__button-text">지우기</span>
+                  </div>
+                </div>
+                <div class="keyboard_buttons-line">
+                  <div class="keyboard__button">q</div>
+                  <div class="keyboard__button">w</div>
+                  <div class="keyboard__button">e</div>
+                  <div class="keyboard__button">r</div>
+                  <div class="keyboard__button">t</div>
+                  <div class="keyboard__button">y</div>
+                  <div class="keyboard__button">u</div>
+                  <div class="keyboard__button">i</div>
+                  <div class="keyboard__button">o</div>
+                  <div class="keyboard__button">p</div>
+                  <div class="keyboard__button type2 w-94 ml-10">기호</div>
+                  <div class="keyboard__button type2 w-94">한/영</div>
+                </div>
+                <div class="keyboard_buttons-line keyboard_buttons-line--right">
+                  <div class="keyboard__button">a</div>
+                  <div class="keyboard__button">s</div>
+                  <div class="keyboard__button">d</div>
+                  <div class="keyboard__button">f</div>
+                  <div class="keyboard__button">g</div>
+                  <div class="keyboard__button">h</div>
+                  <div class="keyboard__button">j</div>
+                  <div class="keyboard__button">k</div>
+                  <div class="keyboard__button">l</div>
+                  <div class="keyboard__button">-</div>
+                  <div class="keyboard__button type2 w-200 ml-10">
+                    <span class="keyboard__button__icon--double" aria-hidden="true"></span>
+                    <span class="keyboard__button-text">쌍자음</span>
+                  </div>
+                </div>
+                <div class="keyboard_buttons-line">                
+                  <div class="keyboard__button">z</div>
+                  <div class="keyboard__button">x</div>
+                  <div class="keyboard__button">c</div>
+                  <div class="keyboard__button">v</div>
+                  <div class="keyboard__button">b</div>
+                  <div class="keyboard__button">n</div>
+                  <div class="keyboard__button">m</div>
+                  <div class="keyboard__button">,</div>
+                  <div class="keyboard__button">.</div>
+                  <div class="keyboard__button">?</div>
+                  <div class="keyboard__button type2 w-200 ml-10">
+                   한칸 띄우기
+                  </div>
+                </div>
+              </div>
+            </div>
+    
+            <div class="main-bottom">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-img"></span>
+                  <span class="secondary-btn-title">취소</span>
+                </div>
+                <div class="button main-button-primary">
+                  <span class="primary-btn-img"></span>
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>        
+        </div>
+
+      </div>
+    </div>
+  </body>
+</html>

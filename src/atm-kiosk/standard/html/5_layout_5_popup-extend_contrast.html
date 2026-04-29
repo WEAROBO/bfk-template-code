@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_레이아웃_5_팝업 시간 연장</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">신청 정보 확인</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">5</span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>             
+              <button class="button header__button" aria-label="다시듣기">
+                <span class="button__title">다시듣기</span>
+              </button>
+              <button class="button header__button header__button--active" aria-label="고대비">
+                <span class="button__title">고대비</span>
+              </button>
+              <button class="button header__button" aria-label="화면확대">
+                <span class="button__title">화면확대</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main">            
+            <div class="agreement-content__box">
+              <h1 class="agreement-content__title">아래 정보를 확인 후 맞으면 <strong class="fc-blue">[확인]</strong>을 누르세요</h1>
+              <div class="main-2-wrap">      
+                <div class="main-2-half-left">  
+                  <div class="loan-detail-list">              
+                    <div class="loan-detail-list__label">대출금액</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right value-strong">000,000,000</div>
+                      <span class="loan-detail-list__unit">원</span>
+                    </div>
+                    <div class="loan-detail-list__label">상환방법</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right">원리금균등분할</div>
+                    </div>
+                    <div class="loan-detail-list__label">대출금리</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right value-strong">6.0</div>
+                      <span class="loan-detail-list__unit">%</span>
+                    </div>
+                    <div class="loan-detail-list__label">연체금리</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right">1.0</div>
+                      <span class="loan-detail-list__unit">%</span>
+                    </div>
+                    <div class="loan-detail-list__label">취급수수료</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right">0</div>
+                      <span class="loan-detail-list__unit">원</span>
+                    </div>
+                    <div class="loan-detail-list__label">이용수수료</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right">800</div>
+                      <span class="loan-detail-list__unit">원</span>
+                    </div>          
+                  </div>
+                </div>
+                <div class="main-2-half-right">
+                  <div class="loan-detail-list">     
+                    <div class="loan-detail-list__label">실지급액</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right value-strong">000,000,000</div>
+                      <span class="loan-detail-list__unit">원</span>
+                    </div>               
+                    <div class="loan-detail-list__label">만기일</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right">2026/00/00</div>
+                    </div>
+                    <div class="loan-detail-list__label">결제일</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right">2026/00/00</div>
+                    </div>
+                    <div class="loan-detail-list__label">청구방법</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input"></div>
+                    </div>
+                    <div class="loan-detail-list__label">예금주명</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right">홍길동</div>
+                    </div>
+                    <div class="loan-detail-list__label">입금/결제 계좌</div>
+                    <div class="loan-detail-list__value-group">
+                      <div class="loan-detail-list__input value-align-right">한국은행</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="main-bottom">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-img"></span>
+                  <span class="secondary-btn-title">취소</span>
+                </div>
+                <div class="button main-button-primary">
+                  <span class="primary-btn-img"></span>
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="backdrop">        
+      <div class="modal">            
+        <div class="modal__body">
+        <div class="modal__timer-question">시간을 연장하시겠습니까?</div>        
+          <div class="modal__timer">
+            <span class="modal__timer-icon" aria-hidden="true"></span>
+            <div class="modal__timer-time">
+              <span class="modal__timer-countdown">5</span>초 후
+            </div>
+          </div>
+          <div class="modal__timer-message">처음으로 이동합니다.</div>
+        </div>
+        <div class="modal__footer center">         
+          <button class="button modal__button modal__button-secondary" aria-label="아니요">
+            <span class="button__title">아니요</span>
+          </button>
+          <button class="button modal__button modal__button-primary" aria-label="예(연장)">
+            <span class="button__title">예(연장)</span>
+          </button>
+        </div>   
+      </div>        
+    </div>    
+  </body>
+</html>

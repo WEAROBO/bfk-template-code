@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>5_레이아웃_1_개인정보 동의 안내</title>
+  </head>
+  <body class="high-contrast">
+    <div class="container-wrap">
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header">
+            <div class="header__title">개인정보 동의 안내</div>
+            <div class="header__buttons">
+              <div class="header__sound">
+                <button class="button header__sound-button" aria-label="음량 줄이기"><span class="header__sound-icon--minus"></span></button>
+                <div class="header__sound-status">
+                  <span class="header__sound-icon--volume" aria-hidden="true"></span>
+                  <span class="header__sound-level" aria-live="polite">5</span>
+                </div>
+                <button class="button header__sound-button" aria-label="음량 키우기"><span class="header__sound-icon--plus"></span></button>
+              </div>             
+              <button class="button header__button" aria-label="다시듣기">
+                <span class="button__title">다시듣기</span>
+              </button>
+              <button class="button header__button header__button--active" aria-label="고대비">
+                <span class="button__title">고대비</span>
+              </button>
+              <button class="button header__button" aria-label="화면확대">
+                <span class="button__title">화면확대</span>
+              </button>
+            </div>
+          </div>
+        
+          <div class="main">            
+            <div class="agreement-content__box">
+              <h1 class="agreement-content__title">개인정보 수집 및 이용에 대한 동의</h1>
+              <div class="agreement-content">
+                <div class="agreement-content__wrapper">
+                  <div class="privacy-content__pages" id="pagesContainer">                    
+                    <div class="privacy-content__page" data-page-index="1">
+                      <div class="info-box">
+                        <h3 class="privacy-policy__title">개인정보의 수집 및 이용에 대한 동의</h3>
+                        <div class="privacy-policy__section">
+                          <strong class="privacy-policy__subtitle">가. 수집 및 이용 목적</strong>
+                          <ul class="privacy-policy__list">
+                            <li class="privacy-policy__item">서비스 제공: 회원 가입, 콘텐츠 제공, 문의 응대 등 계약 이행 및 서비스 제공에 따른 요금 정산.</li>
+                            <li class="privacy-policy__item">고객 관리: 개인 식별, 부정 이용 방지, 고지 사항 전달 등.</li>
+                            <li class="privacy-policy__item">신규 서비스 개발 및 마케팅 (선택): 신규 서비스 개발, 이벤트 및 광고성 정보 제공 (별도 동의 시).</li>
+                          </ul>              
+                        </div>
+                        <div class="privacy-policy__section">
+                          <strong class="privacy-policy__subtitle">나. 수집하는 개인정보 항목</strong>
+                        </div>
+                      </div>
+                    </div>                
+                    <div class="privacy-content__page" data-page-index="2">
+                      <div class="info-box">    
+                        <div class="privacy-policy__section">                                          
+                          <ul class="privacy-policy__list">
+                            <li class="privacy-policy__item">필수 항목: 성명, 연락처(휴대전화번호), 이메일 주소, 아이디(ID), 비밀번호 등 서비스에 따라 필요한 최소 정보.</li>
+                          </ul>
+                        </div>
+                        <div class="privacy-policy__section">                          
+                          <strong class="privacy-policy__subtitle">다. 개인정보 보유 및 이용 기간</strong>
+                        </div>
+                      </div>
+                    </div>                    
+                  </div>
+                </div>                
+                <div class="pagination-controller">                
+                  <button class="pagination-controller__button arrow-up" id="prevBtn" disabled aria-label="이전 페이지">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28.7372 21.4484C29.5227 20.8076 30.6816 20.8538 31.4139 21.5861L45.4139 35.5861C46.195 36.3671 46.195 37.6331 45.4139 38.4142C44.6329 39.1952 43.3668 39.1952 42.5858 38.4142L29.9998 25.8282L17.4139 38.4142C16.6329 39.1952 15.3668 39.1952 14.5858 38.4142C13.8047 37.6331 13.8047 36.3671 14.5858 35.5861L28.5858 21.5861L28.7372 21.4484Z" 
+                      fill="currentColor"/>
+                    </svg>
+                  </button>                
+                  <div class="pagination-controller__info">
+                    <strong class="fc-blue" id="currentPage">1</strong>/<span id="totalPages">3</span>
+                  </div>                
+                  <button class="pagination-controller__button arrow-down" id="nextBtn" aria-label="다음 페이지">
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M28.7372 38.5516C29.5227 39.1924 30.6816 39.1462 31.4139 38.4139L45.4139 24.4139C46.195 23.6329 46.195 22.3669 45.4139 21.5858C44.6329 20.8048 43.3668 20.8048 42.5858 21.5858L29.9998 34.1718L17.4139 21.5858C16.6329 20.8048 15.3668 20.8048 14.5858 21.5858C13.8047 22.3669 13.8047 23.6329 14.5858 24.4139L28.5858 38.4139L28.7372 38.5516Z"
+                       fill="currentColor"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="main-bottom mt-16">
+              <div class="main-bottom-buttons">
+                <div class="button main-button-secondary">
+                  <span class="secondary-btn-title">동의 안 함</span>
+                </div>
+                <div class="button main-button-primary">
+                  <span class="primary-btn-title">확인</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<script>
+    const pages = document.querySelectorAll('.privacy-content__page');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const confirmBtn = document.querySelector('.main-button-primary'); 
+    const currentPageSpan = document.getElementById('currentPage');
+    
+    const totalPages = pages.length;
+    let currentPage = 1;
+    document.getElementById('totalPages').textContent = totalPages; 
+
+    function goToPage(pageNumber) {
+        if (pageNumber < 1 || pageNumber > totalPages) {
+            return;
+        }
+
+        const activePage = document.querySelector('.privacy-content__page--active');
+        if (activePage) {
+            activePage.classList.remove('privacy-content__page--active');
+        }
+
+        currentPage = pageNumber;
+        
+        const nextPage = document.querySelector(`[data-page-index="${currentPage}"]`);
+        if (nextPage) {
+            nextPage.classList.add('privacy-content__page--active');
+        }
+
+        currentPageSpan.textContent = currentPage;
+        updateButtonState();
+    }
+
+    function updateButtonState() {
+        prevBtn.disabled = currentPage === 1;
+        nextBtn.disabled = currentPage === totalPages;     
+    }
+
+    prevBtn.addEventListener('click', () => {
+        goToPage(currentPage - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+        goToPage(currentPage + 1);
+    });
+    
+    window.onload = () => {
+        goToPage(1);
+    };
+
+</script>
+  </body>
+</html>
