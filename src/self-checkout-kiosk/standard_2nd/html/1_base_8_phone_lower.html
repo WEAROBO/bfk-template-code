@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_기본 상품구매_8_포인트 적립 번호 입력</title>
+  </head>
+  <body class="lower-screen">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--sub">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__cctv">
+              촬영 중
+            </div>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">상품 스캔</div>
+            </div>
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step progress-step--current" aria-current="step">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>      
+
+          <main class="main main-sub-bg">  
+            <h1 class="main__title main__title--progress">
+              포인트를 적립하시겠습니까?               
+            </h1>
+            <span class="main__title-desc">
+              적립을 위해 전화번호를 입력해 주세요.
+            </span>              
+
+            <div class="keyboard">
+              <div class="phone-input__area">
+                <input type="text" id="phoneInput" class="phone-input__field" value="010 - **** - 1234" readonly>     
+                <div class="point-notice">
+                  <p class="point-notice__expected">
+                    <span class="point-notice__amount">62P</span> 적립 예정
+                  </p>
+                  <p class="point-notice__warning">
+                    적립하지 않은 포인트는 소멸됩니다.
+                  </p>
+                </div>                              
+              </div>
+              <div class="phone-keypad">
+                <button type="button" class="phone-keypad__button">1</button>
+                <button type="button" class="phone-keypad__button">2</button>
+                <button type="button" class="phone-keypad__button">3</button>
+                <button type="button" class="phone-keypad__button">4</button>
+                <button type="button" class="phone-keypad__button">5</button>
+                <button type="button" class="phone-keypad__button">6</button>
+                <button type="button" class="phone-keypad__button">7</button>
+                <button type="button" class="phone-keypad__button">8</button>
+                <button type="button" class="phone-keypad__button">9</button>
+                <button type="button" class="phone-keypad__button type2" data-action="delete">
+                  <span class="phone-keypad__icon--del" aria-hidden="true"></span>
+                  <small>지우기</small>
+                </button>
+                <button type="button" class="phone-keypad__button">0</button>
+                <button type="button" class="phone-keypad__button type2" data-action="clear">
+                  <small>모두<br>지우기</small>
+                </button>
+              </div>
+            </div> 
+
+            <div class="main__bottoms">
+              <button class="button main__button main__button--secondary" aria-label="건너뛰기">
+                <span class="button__title">건너뛰기</span>
+              </button>
+              <button class="button main__button main__button--primary" aria-label="적립하기">
+                <span class="button__title">적립하기</span>
+              </button>
+            </div>         
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen accessibility__button--active">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

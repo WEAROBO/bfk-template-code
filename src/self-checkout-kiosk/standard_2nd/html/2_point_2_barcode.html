@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>2_기본 상품구매(포인트 적립)_2_상품 스캔 전</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--sub">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__cctv">
+              촬영 중
+            </div>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--current" aria-current="step">
+              <div class="progress-step__index"><span><strong>1</strong></span></div>
+              <div class="progress-step__label">상품 스캔</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>2</strong></span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span><strong>3</strong></span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+
+          <main class="main main-sub-bg">  
+            <div class="cart" role="region" aria-label="바코드 스캔중">
+              <div class="cart__header">
+                <div>상품명</div>
+                <div style="text-align:center">수량</div>
+                <div style="text-align:center">가격</div>
+              </div>
+              <div class="cart__content">
+                <div class="cart__barcode">
+                  <span class="cart__barcode-txt">
+                    상품의 바코드를 스캔해주세요.
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Shortcut -->
+            <div class="cart-shortcut">
+              <button class="cart-shortcut__item">바코드 없는 상품</strong></button>
+              <button class="cart-shortcut__item">비닐 봉투</button>
+            </div>            
+
+            <div class="cart-summary__line"></div>
+
+            <!-- Cart Bottom -->
+            <div class="cart-bottom">
+              <div class="cart-summary">
+                <div class="cart-summary-item">
+                  <span>합계</span>
+                  <span class="cart-summary__price">0원</span>
+                </div>
+                <div class="cart-summary-item">
+                  <span>할인</span>
+                  <span class="cart-summary__discount">-0원</span>
+                </div>
+                <div class="cart-summary-item">
+                  <span>포인트 할인</span>
+                  <span class="cart-summary__discount">-0원</span>
+                </div>
+                <div class="cart-summary-btm">
+                  <button class="cart-summary-btn">포인트 사용</button>
+                </div>
+              </div>              
+              <div class="cart-payment-wrap">
+                <div class="cart-payment">                
+                  <button class="cart-payment__btn" disabled>
+                    0원 <br><span class="cart-payment__text">결제하기</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>        
+
+
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
