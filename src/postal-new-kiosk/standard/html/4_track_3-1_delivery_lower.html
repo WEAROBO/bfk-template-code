@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>4_기본 배송 조회_3-1_배송 조회 완료</title>
+  </head>
+  <body class="lower-screen">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--sub">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--completed">
+              <div class="progress-step__index"><span>1</span></div>
+              <div class="progress-step__label">정보 입력</div>
+            </div>
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span>2</span></div>
+              <div class="progress-step__label">조회 완료</div>
+            </div>
+          </div>
+          
+          <main class="main main-sub-bg">  
+            <h1 class="main__title main__title--step">
+              배송 조회 완료
+            </h1>
+
+            <div class="tabs tabs-two">
+              <div class="tabs__item">기본 정보</div>
+              <div class="tabs__item tabs__item--active">배송 현황</div>
+            </div> 
+
+            <div class="info-section__wrap">
+              <div class="info-section__list">
+                <div class="info-section__header">
+                  <h2 class="info-section__title">
+                    배송 현황
+                    <span class="info-section__subtitle">(최신순으로 보여집니다.)</span>
+                  </h2>                  
+                </div>
+                <table class="info-table info-table--center">
+                  <thead>
+                    <tr class="info-table__row">
+                      <th class="info-table__label">처리 일시</th>
+                      <th class="info-table__label">상품 위치</th>
+                      <th class="info-table__label">배송 상태</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="info-table__row">
+                      <td class="info-table__data">2026-01-01 00:00:00</td>
+                      <td class="info-table__data">서울 중구</td>
+                      <td class="info-table__data"><span class="fc-blue">배송 완료</span></td>
+                    </tr>
+                    <tr class="info-table__row">
+                      <td class="info-table__data">2026-01-01 00:00:00</td>
+                      <td class="info-table__data">서울 중구</td>
+                      <td class="info-table__data">배송 출발</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="pagination pagination-small">
+                <button class="pagination__button" aria-label="이전 페이지" disabled>
+                  <span class="pagination-icon-arrow-up"></span>
+                </button>
+                <span class="pagination__page"><strong>1</strong>/3</span>
+                <button class="pagination__button" aria-label="다음 페이지">
+                  <span class="pagination-icon-arrow-down"></span>
+                </button>
+              </div>
+            </div>     
+
+            <div class="main__bottoms">
+              <button class="button main__button main__button--secondary" aria-label="이전">
+                <span class="main__icon main__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main__button--primary" aria-label="확인">
+                <span class="main__icon main__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>                 
+            </div>   
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen accessibility__button--active">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../resources/css/index.css">
+    <title>1_기본 현장 접수_6_주의사항</title>
+  </head>
+  <body class="">
+    <div class="container-wrap">    
+      <div class="container">
+        <div class="container-body">
+
+          <div class="header header--sub">
+            <button class="button header__button" aria-label="처음으로">
+              <span class="header__button__icon--home" aria-hidden="true"></span>
+              <span class="button__title">처음으로</span>
+            </button>
+            <div class="header__buttons">
+              <button class="button header__button header__button--lang" aria-label="lang">
+                <span class="header__button__icon--lang" aria-hidden="true"></span>
+              </button>
+              <button class="button header__button header__button--call" aria-label="직원호출">
+                <span class="header__button__icon--help" aria-hidden="true"></span>
+                <span class="button__title">직원호출</span>
+              </button>
+            </div>
+          </div>
+          
+          <div class="progress-steps">
+            <div class="progress-step progress-step--current">
+              <div class="progress-step__index"><span>1</span></div>
+              <div class="progress-step__label">서비스 선택</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>2</span></div>
+              <div class="progress-step__label">정보 입력</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>3</span></div>
+              <div class="progress-step__label">정보 확인</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>4</span></div>
+              <div class="progress-step__label">결제</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-step__index"><span>5</span></div>
+              <div class="progress-step__label">완료</div>
+            </div>
+          </div>
+          
+          <main class="main main-sub-bg">  
+            <h1 class="main__title main__title--step">
+              주의사항
+            </h1>
+
+            <div class="info-box mt-80">
+              <img src="../resources/img/svg/img_notice.svg" alt="">
+
+              <div class="info-box__divider"></div>
+              
+              <ul class="info-list">
+                <li>화물 내/외부의 포장박스 훼손으로 인한 사고보상은 불가합니다. (예 : 신발박스)</li>
+                <li>군부대 사서함 주소로 배송 불가 합니다.</li>
+                <li class="fc-red">사진과 같이 포장이 부실한 경우 "수거하지 않습니다."</li>
+                <li class="fc-red">우편법 제 2조 3항에 규정되어 있는 서신 / 서류 (예 : 편지, 서류) 등이 포함되어있는 경우, 창을 닫고 서신 / 서류 품목을 다시 선택해 주세요.</li>
+              </ul>
+            </div>              
+
+            <div class="main__bottoms">
+              <button class="button main__button main__button--secondary" aria-label="이전">
+                <span class="main__icon main__icon--prev" aria-hidden="true"></span>
+                <span class="button__title">이전</span>
+              </button>
+              <button class="button main__button main__button--primary" aria-label="확인">
+                <span class="main__icon main__icon--next" aria-hidden="true"></span>
+                <span class="button__title">확인</span>
+              </button>                
+            </div>   
+          </main>
+
+          <footer class="control-bar control-bar--no-bg">
+            <div class="control-bar__buttons">
+              <button type="button" class="accessibility__button accessibility__button--high-contrast">
+                <span class="accessibility__text">고대비</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--lower-screen">
+                <span class="accessibility__text">화면 내리기</span>
+              </button>
+              <button type="button" class="accessibility__button accessibility__button--full-screen">
+                <span class="accessibility__text">화면확대</span>
+              </button>
+            </div>
+            <div class="control-bar__sound">
+              <button type="button" class="control-bar__sound-button" aria-label="음량 줄이기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--minus" aria-hidden="true"></span>
+              </button>
+              <div class="control-bar__sound-status">
+                <span class="control-bar__sound-icon control-bar__sound-icon--volume" aria-hidden="true"></span>
+                <span class="control-bar__sound-level" aria-live="polite">5</span>
+              </div>
+              <button type="button" class="control-bar__sound-button" aria-label="음량 키우기">
+                <span class="control-bar__sound-icon control-bar__sound-icon--plus" aria-hidden="true"></span>
+              </button>
+            </div>
+          </footer>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
